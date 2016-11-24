@@ -130,8 +130,8 @@ var GR = {
 
 			// Check options to ensure the right mode is set
 			var settings = localStorage.settings ? JSON.parse(localStorage.settings) : {};
-			if (settings.nightly) {
-				this.mode = "dev";
+			if (settings.nightly === 'checked') {
+				self.mode = "dev";
 			}
 
 			$("#popup").empty();
@@ -406,7 +406,9 @@ var GR = {
 			for (var i = 0, l = GRJSON.length; i < l; i++) {
 				for (var style in GRJSON[i]) {
 					if (styles.indexOf(style) >= 0) {
-						var url = GRJSON[i][style].url + GRJSON[i][style].css + '_' + GRJSON[i][style][self.mode] + '.css?rel=chrome';
+						const s = GRJSON[i][style];
+						const baseUrl = self.mode === 'dev' ? s.dev_url : s.url;
+						const url = `${baseUrl}${s.css}_${s[self.mode]}.css?rel=chrome`;
 
 						var getEr = function (url, style) {
 							$.ajax({
