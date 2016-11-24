@@ -1,0 +1,106 @@
+body {
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#FFF),color-stop(1,#F9F9F9));
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	margin: 0;
+}
+
+#popup {
+	margin: 0;
+	padding: 0;
+	width: 200px;
+}
+
+	#popup .loading {
+		color: #333;
+		font-size: 11px;
+		padding: 6px 0 0;
+		text-align: center;
+		text-shadow: #FFF 0 1px 0;
+	}
+
+	#popup li {
+		border-bottom: 1px solid #DDD;
+		color: #000;
+		cursor: pointer;
+		font-size: 12px;
+		padding: 4px 10px 5px;
+		text-shadow: #FFF 0 1px 0;
+		-webkit-transition: 0.3s background ease, 0.3s box-shadow ease;
+	}
+
+	#popup li.disabled {color: #999}
+
+	#popup li:hover {
+		background: #EEE;
+		box-shadow: rgba(0,0,0,0.2) 0 0 5px inset;
+	}
+
+	#popup li:first-child {
+		border-radius: 4px 4px 0 0
+	}
+
+	#popup li:last-child {
+		border-bottom: 0;
+		border-radius: 0 0 4px 4px
+	}
+
+		#popup .version {
+			color: #999;
+			float: right;
+			font-size: 9px;
+			margin: 2px 0 0;
+		}
+
+		#popup .icon {
+			background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#77d648),color-stop(1,#3f9926));
+			border-radius: 8px;
+			box-shadow: #FFF 1px 1px 0;
+			display: block;
+			float: left;
+			height: 8px;
+			margin: 4px 6px 0 -4px;
+			width: 8px;
+		}
+
+		#popup .disabled .icon {
+			background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#DDD),color-stop(1,#BBB));
+		}
+
+	#popup .checker {
+		font-size: 11px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#popup .donate,
+	#popup .bugs {
+		font-size: 11px;
+		text-align: center;
+	}
+
+	#popup li.loading {
+		background: url(img/loading.gif) no-repeat 8px center;
+		color: #999;
+		cursor: default;
+	}
+
+	#popup .error {
+		background: #FBE3E4;
+		border: 1px solid #FBC2C4;
+		border-radius: 4px;
+		color: #8A1F11;
+		display: block;
+		margin: 0;
+		padding: 10px;
+		text-align: center;
+		text-shadow: 0 0 0;
+	}
+
+		#popup .error a {color: #6A0F00}
+
+			#popup li.error:hover {background: #FBE3E4;}
+
+				#popup .error a:hover {
+					color: #9A2F21
+				}

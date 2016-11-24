@@ -1,0 +1,61 @@
+{
+	"name": "Google Redesigned",
+	"version": "2.1.0",
+	"manifest_version": 2,
+	"description": "A complete redesign of popular Google services, Google Redesigned changes the appearance of popular Google services.",
+	"homepage_url": "http://www.globexdesigns.com/products/gr",
+	"icons": {
+		"16": "img/icon-16.png",
+		"48": "img/icon-48.png"
+	},
+	"background": {
+		"scripts": [
+			"js/jquery.js",
+			"js/utils.js",
+			"js/gr.js",
+			"js/background.js"
+		]
+	},
+	"options_page": "options.html",
+	"browser_action": {
+		"default_icon": 	"img/icon-19.png",
+		"default_popup": 	"popup.html",
+		"default_title": 	"Google Redesigned"
+	},
+	"permissions": [
+		"storage",
+		"notifications",
+		"tabs",
+		"*://*/*"
+	],
+	"content_scripts": [
+		{
+		  "all_frames": true,
+		  "js": [
+			  "js/jquery.js",
+			  "js/apply.js"
+		  ],
+		  "matches": ["*://*/*"],
+		  "run_at": "document_start"
+		}
+	],
+	"web_accessible_resources": [
+		"img/icon-32.png",
+		"img/icon-64.png",
+		"image-pack/agenda-arrows.gif",
+		"image-pack/arrow-down.png",
+		"image-pack/background.png",
+		"image-pack/button-toggle.gif",
+		"image-pack/checkbox.gif",
+		"image-pack/checkmark.png",
+		"image-pack/folder-icon.png",
+		"image-pack/icon-search.png",
+		"image-pack/logo-google.png",
+		"image-pack/new_folder_icon.png",
+		"image-pack/preview-icon.png",
+		"image-pack/reader-sprites.png",
+		"image-pack/stars.png",
+		"image-pack/toolbar.png",
+		"image-pack/trash-icon.png"
+	]
+}
