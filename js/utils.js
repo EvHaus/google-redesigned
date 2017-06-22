@@ -3,13 +3,11 @@
  *
  * File: Utility Functions
  * Author: Evgueni Naverniouk, evgueni@globexdesigns.com
- * Copyright: 2013 Globex Designs, Inc. All Rights Reserved.
+ * Copyright: 2017 Globex Designs, Inc. All Rights Reserved.
  *
  */
 
-/*jslint browser: true, vars: true, plusplus: true, indent: 4, maxerr: 50*/
-/*jshint expr: true, white: true*/
-/*globals $, chrome*/
+var browser = chrome || browser;
 
 var utils = {
 	// getExtensionVersion()
@@ -27,6 +25,6 @@ var utils = {
 	// openURLInNewTab()
 	// Opens a new Chrome tab to the given URL
 	openURLInNewTab: function (url) {
-		chrome.tabs.create({url: url});
+		browser.tabs.create({url: url});
 	}
 };

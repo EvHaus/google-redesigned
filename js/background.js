@@ -3,13 +3,11 @@
  *
  * File: Background Functions
  * Author: Evgueni Naverniouk, evgueni@globexdesigns.com
- * Copyright: 2013 Globex Designs, Inc. All Rights Reserved.
+ * Copyright: 2017 Globex Designs, Inc. All Rights Reserved.
  *
  */
 
-/*jslint browser: true, vars: true, plusplus: true, indent: 4, maxerr: 50*/
-/*jshint expr: true, white: true*/
-/*globals chrome, GR, utils*/
+var browser = chrome || browser;
 
 // Check for first install or update
 utils.getExtensionVersion(function (version) {
@@ -37,18 +35,19 @@ var timedCheckForUpdates = function () {
 };
 
 // Check for updates onload
-chrome.storage.local.remove('GoogleRedesigned');
+browser.storage.local.remove('GoogleRedesigned');
 GR.checkForStyleUpdates(function () {
 	timedCheckForUpdates();
 }, true);
 
-
 // Listen for events from apply.js
-chrome.extension.onRequest.addListener(function (request, sender, sendResponse) {
+browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 	if (request.name == 'loadStyles') {
 		var style = GR.getStyleFromURL(sender.tab.url);
 		GR.loadStyles(style, sender.tab, function (css) {
 			sendResponse(css);
 		});
 	}
+
+	return true;
 });

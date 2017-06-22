@@ -3,13 +3,11 @@
  *
  * File: Background Functions
  * Author: Evgueni Naverniouk, evgueni@globexdesigns.com
- * Copyright: 2013 Globex Designs, Inc. All Rights Reserved.
+ * Copyright: 2017 Globex Designs, Inc. All Rights Reserved.
  *
  */
 
-/*jslint browser: true, vars: true, plusplus: true, indent: 4, maxerr: 50*/
-/*jshint expr: true, white: true*/
-/*globals $, chrome*/
+var browser = chrome || browser;
 
 var applyCSS = function (css) {
 	var style = document.createElement("style");
@@ -25,12 +23,14 @@ var removeCSS = function () {
 };
 
 // When any tab is loaded will send request to extension
-chrome.extension.sendRequest({name: "loadStyles"}, function (response) {
-	applyCSS(response);
-});
+browser.runtime.sendMessage({name: "loadStyles"})
+	.then(function (response) {
+		console.log(response);
+		applyCSS(response);
+	});
 
 // When a style is toggled via the popup, or on update check
-chrome.extension.onMessage.addListener(function (request, sender, sendResponse) {
+browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 	if (request.name == 'toggleStyle') {
 		if (request.css) {
 			applyCSS(request.css);

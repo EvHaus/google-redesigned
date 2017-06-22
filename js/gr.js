@@ -3,13 +3,11 @@
  *
  * File: Extension Functions
  * Author: Evgueni Naverniouk, evgueni@globexdesigns.com
- * Copyright: 2013 Globex Designs, Inc. All Rights Reserved.
+ * Copyright: 2017 Globex Designs, Inc. All Rights Reserved.
  *
  */
 
-/*jslint browser: true, vars: true, plusplus: true, indent: 4, maxerr: 50*/
-/*jshint expr: true, white: true*/
-/*globals $, chrome, webkitNotifications*/
+var browser = chrome || browser;
 
 var GR = {
 	json_name:			'GoogleRedesigned',
@@ -37,7 +35,7 @@ var GR = {
 		var self = this;
 		callback = callback || function () {};
 
-		chrome.storage.local.get(null, function (items) {
+		browser.storage.local.get(null, function (items) {
 			if (items[self.json_name]) {
 				callback(items[self.json_name]);
 			} else {
@@ -66,7 +64,7 @@ var GR = {
 		var data = {};
 		data[this.json_name] = GRJSON;
 
-		chrome.storage.local.set(data, function () {
+		browser.storage.local.set(data, function () {
 			this.enableAllStyles(callback);
 		}.bind(this));
 
@@ -80,12 +78,12 @@ var GR = {
 		var self = this;
 		callback = callback || function () {};
 
-		chrome.storage.local.get(null, function (items) {
+		browser.storage.local.get(null, function (items) {
 			// If no styles set as enabled - enable all
 			if (items.enabled) {
 				callback();
 			} else {
-				chrome.storage.local.get(self.json_name, function (items) {
+				browser.storage.local.get(self.json_name, function (items) {
 					var GRJSON = items[self.json_name],
 						data = {'enabled': []};
 					for (var i = 0, l = GRJSON.length; i < l; i++) {
@@ -94,7 +92,7 @@ var GR = {
 							data.enabled.push(s);
 						}
 					}
-					chrome.storage.local.set(data, function () {
+					browser.storage.local.set(data, function () {
 						callback();
 					});
 				});
@@ -109,7 +107,7 @@ var GR = {
 		callback = callback || function () {};
 		var data = {};
 		data[style] = css;
-		chrome.storage.local.set(data, function () {
+		browser.storage.local.set(data, function () {
 			callback();
 		});
 	},
@@ -137,7 +135,7 @@ var GR = {
 			$("#popup").empty();
 
 			// Check which styles are enabled
-			chrome.storage.local.get('enabled', function (data) {
+			browser.storage.local.get('enabled', function (data) {
 				var enabled = data.enabled || null;
 
 				// If no enabled data exists -- everything is enabled
@@ -181,7 +179,7 @@ var GR = {
 				// Donate
 				$('<li class="donate">Make A Donation</li>').appendTo(popup)
 					.click(function () {
-						chrome.tabs.create({
+						browser.tabs.create({
 							active: true,
 							url: self.urlDonate
 						});
@@ -190,7 +188,7 @@ var GR = {
 				// Submit Bug Report
 				$('<li class="bugs">Submit Bug Report</li>').appendTo(popup)
 					.click(function () {
-						chrome.tabs.create({
+						browser.tabs.create({
 							active: true,
 							url: self.urlBugs
 						});
@@ -205,9 +203,9 @@ var GR = {
 	setBrowserIcon: function (type) {
 		type = type || 'default';
 		if (type == 'loading') {
-			chrome.browserAction.setIcon({"path": "img/icon-19-loading.gif"});
+			browser.browserAction.setIcon({"path": "img/icon-19-loading.gif"});
 		} else {
-			chrome.browserAction.setIcon({"path": "img/icon-19.png"});
+			browser.browserAction.setIcon({"path": "img/icon-19.png"});
 		}
 	},
 
@@ -217,14 +215,14 @@ var GR = {
 	msg: function (id, text) {
 		id = id || "";
 
-		chrome.notifications.create(id, {
-			iconUrl: chrome.extension.getURL('img/icon-64.png'),
+		browser.notifications.create(id, {
+			iconUrl: browser.extension.getURL('img/icon-64.png'),
 			message: text,
 			title: "Google Redesigned",
 			type: "basic"
 		}, function (id) {
 			setTimeout(function () {
-				chrome.notifications.clear(id);
+				browser.notifications.clear(id);
 			}, self.notificationTime);
 		});
 	},
@@ -239,7 +237,7 @@ var GR = {
 
 		var on = !popupitem.hasClass('disabled');
 
-		chrome.storage.local.get('enabled', function (data) {
+		browser.storage.local.get('enabled', function (data) {
 			var enabled = [], s;
 			for (var i = 0, l = data.enabled.length; i < l; i++) {
 				s = data.enabled[i];
@@ -250,7 +248,7 @@ var GR = {
 				enabled.push(style);
 			}
 
-			chrome.storage.local.set({'enabled': enabled}, function () {
+			browser.storage.local.set({'enabled': enabled}, function () {
 				// Look through open tabs, and toggle the styling in them
 				this.updateTabs("toggleStyle");
 			}.bind(this));
@@ -262,12 +260,23 @@ var GR = {
 	// Download the latest JSON file from the server
 	downloadJSON: function (callback) {
 		var jsontime = new Date().toJSON().replace(/[A-Z\-:\.]/g, "");
+		var info = browser.runtime.getBrowserInfo();
+		var browserName = info && info.name === 'Firefox' ? 'firefox' : 'chrome';
+		var url = this.json_url + "?rel=" + browserName + "&amp;time=" + jsontime;
 		$.ajax({
-			url: this.json_url + "?rel=chrome&amp;time=" + jsontime,
+			url: url,
 			type: "post",
 			dataType: "text",
 			success: function (GRJSON) {
-				callback(JSON.parse(GRJSON));
+				try {
+					const parsedJSON = JSON.parse(GRJSON);
+					callback(parsedJSON);
+				} catch (err) {
+					throw new Error(
+						'Failed to parse response from ' + url + '. ' +
+						'Response was: ' + GRJSON
+					);
+				}
 			},
 			error: function (xhr, text, err) {
 				var msg = ['Google Redesigned was unable to download style data from our servers due to: '];
@@ -317,7 +326,7 @@ var GR = {
 
 				var updates = self.compareStyles(oldJSON, remoteJSON);
 
-				chrome.storage.local.get(null, function (data) {
+				browser.storage.local.get(null, function (data) {
 					// Check to see if anything has been downloaded yet
 					var empty = false;
 					remoteJSON.forEach(function (st) {
@@ -420,7 +429,7 @@ var GR = {
 									css = css.substring(0, css.length - 1);
 
 									// Point insecure URLs to local image pack
-									css = css.replace(/http:\/\/[a-zA-Z0-9.-]+\.amazonaws\.com\/img\/2\.0\.0\//gi, chrome.extension.getURL('image-pack') + '/');
+									css = css.replace(/http:\/\/[a-zA-Z0-9.-]+\.amazonaws\.com\/img\/2\.0\.0\//gi, browser.extension.getURL('image-pack') + '/');
 
 									self.setStyle(style, css, function () {
 										gather();
@@ -461,7 +470,7 @@ var GR = {
 		tab = tab || null;
 
 		// Skip if disabled
-		chrome.storage.local.get(null, function (items) {
+		browser.storage.local.get(null, function (items) {
 			// On install, this sometimes get fired prematurely. Suppress it
 			// if nothing has been enabled yet
 			if (!items.enabled) {
@@ -481,7 +490,7 @@ var GR = {
 				Unfortunately, insertCSS limits the allowed code and truncates
 				the CSS data - making it corrupted.
 
-				chrome.tabs.insertCSS(tab.id, {
+				browser.tabs.insertCSS(tab.id, {
 					allFrames: true,
 					code: css,
 					runAt: "document_start"
@@ -503,12 +512,12 @@ var GR = {
 	//
 	updateTabs: function (requestName) {
 		var self = this;
-		chrome.tabs.query({}, function (tabs) {
+		browser.tabs.query({}, function (tabs) {
 			tabs.forEach(function (tab) {
 				var style = self.getStyleFromURL(tab.url);
 				if (!style) return;
 				GR.loadStyles(style, tab, function (css) {
-					chrome.tabs.sendMessage(tab.id, {name: requestName, css: css});
+					browser.tabs.sendMessage(tab.id, {name: requestName, css: css});
 				});
 			});
 		});
