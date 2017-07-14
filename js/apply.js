@@ -18,7 +18,7 @@ var applyCSS = function (css) {
 };
 
 var removeCSS = function () {
-	var style = $('#googleredesignedcss');
+	var style = document.getElementById('#googleredesignedcss');
 	style.remove();
 };
 

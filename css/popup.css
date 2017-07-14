@@ -1,5 +1,5 @@
 body {
-	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#FFF),color-stop(1,#F9F9F9));
+	background: linear-gradient(180deg, #FFF, #F9F9F9);
 	font-family: Tahoma, Verdana, Arial, sans-serif;
 	font-size: 12px;
 	margin: 0;
@@ -9,13 +9,14 @@ body {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	user-select: none;
 	width: 200px;
 }
 
 	#popup .loading {
 		color: #333;
 		font-size: 11px;
-		padding: 6px 0 0;
+		padding: 0;
 		text-align: center;
 		text-shadow: #FFF 0 1px 0;
 	}
@@ -54,7 +55,7 @@ body {
 		}
 
 		#popup .icon {
-			background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#77d648),color-stop(1,#3f9926));
+			background: linear-gradient(180deg, #77D648, #3F9926);
 			border-radius: 8px;
 			box-shadow: #FFF 1px 1px 0;
 			display: block;
@@ -65,7 +66,7 @@ body {
 		}
 
 		#popup .disabled .icon {
-			background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#DDD),color-stop(1,#BBB));
+			background: linear-gradient(180deg, #DDD, #BBB);
 		}
 
 	#popup .checker {

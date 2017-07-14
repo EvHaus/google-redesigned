@@ -32,21 +32,19 @@ var GR = {
 	// Loads in the latest JSON file. If one is not available in
 	// the storage DB, will read the default file on disk
 	readJSON: function (callback) {
-		var self = this;
-		callback = callback || function () {};
-
+		const self = this;
 		browser.storage.local.get(null, function (items) {
 			if (items[self.json_name]) {
-				callback(items[self.json_name]);
+				if (callback) callback(items[self.json_name]);
 			} else {
 				self.downloadJSON(function (GRJSON, err) {
 					if (err) {
-						callback(null, err);
+						if (callback) callback(null, err);
 						return;
 					}
 
 					self.setJSON(GRJSON);
-					callback(GRJSON);
+					if (callback) callback(GRJSON);
 				});
 			}
 		});
@@ -115,86 +113,22 @@ var GR = {
 
 	// renderPopup()
 	// Given the extension's JSON object, render the popup menu
-	renderPopup: function () {
-		var self = this,
-			popup = $("#popup").html('<p class="loading">Loading styles...</p>'),
-			style, i, l, d, li;
+	renderPopup: function (component) {
+		const target = document.getElementById('target');
 
-		this.readJSON(function (GRJSON, err) {
-			if (err) {
-				$("#popup").html('<p class="error">' + err + '</p>');
-				return;
-			}
-
-			// Check options to ensure the right mode is set
-			var settings = localStorage.settings ? JSON.parse(localStorage.settings) : {};
-			if (settings.nightly === 'checked') {
-				self.mode = "dev";
-			}
-
-			$("#popup").empty();
-
-			// Check which styles are enabled
-			browser.storage.local.get('enabled', function (data) {
-				var enabled = data.enabled || null;
-
-				// If no enabled data exists -- everything is enabled
-				if (!enabled) {
-					enabled = [];
-					for (i = 0, l = GRJSON; i < l; i++) {
-						style = GRJSON[i];
-						for (var sname in style) {
-							if (sname == 'images' || sname === null || sname === undefined) continue;
-							enabled.push(sname);
-						}
-					}
-				}
-
-				// Styles
-				for (i = 0, l = GRJSON.length; i < l; i++) {
-					style = GRJSON[i];
-					for (var name in style) {
-						if (name == 'images') continue;
-						d = style[name];
-						li = $('<li>' + name + '</li>')
-							.appendTo(popup)
-							.attr('rel', name)
-							.click(function () {
-								self.toggleStyle($(this).attr('rel'));
-							});
-
-						if (enabled.indexOf(name) < 0) li.addClass('disabled');
-
-						li.append('<span class="version">' + d[self.mode] + '</span>');
-						li.append('<span class="icon"></span>');
-					}
-				}
-
-				// Check for style updates
-				$('<li class="checker">Check For Style Updates</li>').appendTo(popup)
-					.click(function () {
-						self.checkForStyleUpdates();
-					});
-
-				// Donate
-				$('<li class="donate">Make A Donation</li>').appendTo(popup)
-					.click(function () {
-						browser.tabs.create({
-							active: true,
-							url: self.urlDonate
-						});
-					});
-
-				// Submit Bug Report
-				$('<li class="bugs">Submit Bug Report</li>').appendTo(popup)
-					.click(function () {
-						browser.tabs.create({
-							active: true,
-							url: self.urlBugs
-						});
-					});
-			});
-		});
+		ReactDOM.render(
+			React.createElement(component, {
+				checkForStyleUpdates: this.checkForStyleUpdates.bind(this),
+				getJSON: this.readJSON.bind(this),
+				getLocal: browser.storage.local,
+				mode: this.mode,
+				settings: this.getSettings(),
+				toggleStyle: this.toggleStyle.bind(this),
+				urlBugs: this.urlBugs,
+				urlDonate: this.urlDonate
+			}),
+			target
+		);
 	},
 
 
@@ -226,7 +160,6 @@ var GR = {
 			}, self.notificationTime);
 		});
 	},
-
 
 
 	// toggleStyle()
@@ -263,36 +196,27 @@ var GR = {
 		var info = browser.runtime.getBrowserInfo();
 		var browserName = info && info.name === 'Firefox' ? 'firefox' : 'chrome';
 		var url = this.json_url + "?rel=" + browserName + "&amp;time=" + jsontime;
-		$.ajax({
-			url: url,
-			type: "post",
-			dataType: "text",
-			success: function (GRJSON) {
-				try {
-					const parsedJSON = JSON.parse(GRJSON);
-					callback(parsedJSON);
-				} catch (err) {
-					throw new Error(
-						'Failed to parse response from ' + url + '. ' +
-						'Response was: ' + GRJSON
-					);
-				}
-			},
-			error: function (xhr, text, err) {
+
+		return fetch(url)
+			.then((response) => response.json())
+			.then(callback)
+			.catch((err) => {
+				// TODO: Check me?
+				console.log(err);
+
 				var msg = ['Google Redesigned was unable to download style data from our servers due to: '];
-				if (xhr.status == 404) {
+				if (err.status == 404) {
 					msg.push('404 error. Unable to connect.');
-				} else if (xhr.status == 408) {
+				} else if (err.status == 408) {
 					msg.push('408 timeout error. Unable to connect.');
-				} else if (xhr.status == 504) {
+				} else if (err.status == 504) {
 					msg.push('504 timeout error. Server unavailable.');
 				} else {
-					callback(null, 'Google Redesigned was unable to download style data from our servers due to: ' + err);
+					callback(null, 'Google Redesigned was unable to download style data from our servers due to: ' + err.message);
 				}
 
 				callback(null, msg.join(''));
-			}
-		});
+			});
 	},
 
 
@@ -302,7 +226,6 @@ var GR = {
 	checkForStyleUpdates: function (callback, silent) {
 		var self = this;
 		silent = silent || false;
-		callback = callback || function () {};
 
 		if (!silent) {
 			this.setBrowserIcon('loading');
@@ -341,7 +264,7 @@ var GR = {
 						if (!silent) {
 							self.msg('check', 'No style updates found.');
 						}
-						callback();
+						if (callback) callback();
 					} else {
 						if (self.mode == 'dev' || empty) {
 							updates = [];
@@ -366,7 +289,7 @@ var GR = {
 
 								self.updateTabs("updateStyles");
 
-								callback();
+								if (callback) callback();
 							});
 						});
 					}
@@ -448,6 +371,16 @@ var GR = {
 		});
 	},
 
+	getSettings: function () {
+		const settings = localStorage.settings ? JSON.parse(localStorage.settings) : {};
+
+		// Check options to ensure the right mode is set
+		if (settings.nightly === 'checked') {
+			this.mode = "dev";
+		}
+
+		return settings;
+	},
 
 	// getStyleFromURL
 	// Given a URL returns the style that shuold be loaded

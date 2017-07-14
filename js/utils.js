@@ -13,13 +13,11 @@ var utils = {
 	// getExtensionVersion()
 	// Returns the current extension version value
 	getExtensionVersion: function (callback) {
-		$.ajax({
-			url: "/manifest.json",
-			type: "get",
-			success: function (text) {
-				callback(JSON.parse(text).version);
-			}
-		});
+		return fetch('/manifest.json')
+			.then(function (response) {
+				return response.json();
+			})
+			.then(callback);
 	},
 
 	// openURLInNewTab()

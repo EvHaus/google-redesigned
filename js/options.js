@@ -18,19 +18,21 @@ var get = function () {
 	return {};
 };
 
-$(document).ready(function () {
+document.onload = function () {
 	var settings = get();
 
 	// On Change
-	var nightly = $('#googleredesigned-nightly');
-	nightly.change(function () {
-		if ($(this).attr('checked')) {
+	var nightly = document.getElementById('#googleredesigned-nightly');
+	nightly.addEventListener('change', function () {
+		if (nightly.getAttribute('checked')) {
 			settings.nightly = 'checked';
 		} else {
 			settings.nightly = null;
 		}
 
-		if ($('.notice').length === 0 && settings.nightly) {
+		var notices = document.getElementsByClassName('notice');
+
+		if (notices.length === 0 && settings.nightly) {
 			var msg = [
 				'Nightly development versions are now enabled.',
 				'Please note that nightly versions may be incomplete, partially unstyled and are ',
@@ -38,9 +40,14 @@ $(document).ready(function () {
 				'"Check For Style Updates" to download the latest nightly updates.'
 			];
 
-			$('<div class="notice">' + msg.join(' ') + '</div>').appendTo(nightly.parent());
+			var notice = document.createElement('div');
+			notice.className = "notice";
+			notice.innerHTML = msg.join(' ');
+			nightly.parentNode.appendChild(notice);
 		} else {
-			$('.notice').remove();
+			notices.forEach(function (notice) {
+				notice.remove();
+			});
 		}
 
 		save(settings);
@@ -52,7 +59,7 @@ $(document).ready(function () {
 		save({});
 	} else {
 		if (settings.nightly) {
-			nightly.attr('checked', 'checked');
+			nightly.setAttribute('checked', 'checked');
 		}
 	}
-});
+};

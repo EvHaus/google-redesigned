@@ -17,7 +17,8 @@
 	},
 	"background": {
 		"scripts": [
-			"js/jquery.js",
+			"libs/react.min.js",
+			"libs/react-dom.min.js",
 			"js/utils.js",
 			"js/gr.js",
 			"js/background.js"
@@ -31,7 +32,8 @@
 	"content_scripts": [{
 	  "all_frames": true,
 	  "js": [
-		  "js/jquery.js",
+		  "libs/react.min.js",
+		  "libs/react-dom.min.js",
 		  "js/apply.js"
 	  ],
 	  "matches": ["*://*/*"],
