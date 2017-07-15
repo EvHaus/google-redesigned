@@ -42,8 +42,6 @@ class Popup extends React.Component {
 		if (error) return this._renderError();
 		if (!data) return this._renderEmpty();
 
-		console.log(data, enabled);
-
 		return React.createElement('ul', {
 			id: 'popup'
 		}, this._renderListItems());

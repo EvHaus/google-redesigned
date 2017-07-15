@@ -165,27 +165,25 @@ var GR = {
 	// toggleStyle()
 	// Toggles an individual style
 	toggleStyle: function (style) {
-		var popupitem = $("#popup li[rel='" + style + "']").first();
-		popupitem.toggleClass('disabled');
-
-		var on = !popupitem.hasClass('disabled');
-
-		browser.storage.local.get('enabled', function (data) {
+		browser.storage.local.get('enabled', (data) => {
 			var enabled = [], s;
 			for (var i = 0, l = data.enabled.length; i < l; i++) {
 				s = data.enabled[i];
 				if (s != style && s !== null && s !== undefined) enabled.push(s);
 			}
+			const index = enabled.indexOf(style);
 
-			if (on && enabled.indexOf(style) < 0) {
+			if (index < 0) {
 				enabled.push(style);
+			} else {
+				enabled.splice(index, 1);
 			}
 
-			browser.storage.local.set({'enabled': enabled}, function () {
+			browser.storage.local.set({'enabled': enabled}, () => {
 				// Look through open tabs, and toggle the styling in them
 				this.updateTabs("toggleStyle");
-			}.bind(this));
-		}.bind(this));
+			});
+		});
 	},
 
 
@@ -343,10 +341,9 @@ var GR = {
 						const url = `${baseUrl}${s.css}_${s[self.mode]}.css?rel=chrome`;
 
 						var getEr = function (url, style) {
-							$.ajax({
-								url: url,
-								method: 'post',
-								success: function (css) {
+							fetch(url, {method: 'POST'})
+								.then((response) => response.text())
+								.then((css) => {
 									// Strip the -moz-document from the style
 									css = css.replace(/@-moz-document(.*?){/, "");
 									css = css.substring(0, css.length - 1);
@@ -357,11 +354,10 @@ var GR = {
 									self.setStyle(style, css, function () {
 										gather();
 									});
-								},
-								error: function (xhr, text, err) {
+								})
+								.catch((err) => {
 									//console.error(err);
-								}
-							});
+								});
 						};
 
 						getEr(url, style);
