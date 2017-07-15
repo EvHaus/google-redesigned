@@ -17,7 +17,7 @@
 	},
 	"background": {
 		"scripts": [
-			"js/jquery.js",
+			"libs/jquery-3.2.1.slim.min.js",
 			"js/utils.js",
 			"js/gr.js",
 			"js/background.js"
@@ -31,7 +31,7 @@
 	"content_scripts": [{
 	  "all_frames": true,
 	  "js": [
-		  "js/jquery.js",
+		  "libs/jquery-3.2.1.slim.min.js",
 		  "js/apply.js"
 	  ],
 	  "matches": ["*://*/*"],
