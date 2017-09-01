@@ -8,6 +8,7 @@
  */
 
 var browser = chrome || browser;
+var browserName = window.navigator.appCodeName === 'Mozilla' ? 'firefox' : 'chrome';
 
 var GR = {
 	json_name:			'GoogleRedesigned',
@@ -260,12 +261,10 @@ var GR = {
 	// Download the latest JSON file from the server
 	downloadJSON: function (callback) {
 		var jsontime = new Date().toJSON().replace(/[A-Z\-:\.]/g, "");
-		var info = browser.runtime.getBrowserInfo();
-		var browserName = info && info.name === 'Firefox' ? 'firefox' : 'chrome';
 		var url = this.json_url + "?rel=" + browserName + "&amp;time=" + jsontime;
 		$.ajax({
 			url: url,
-			type: "post",
+			type: "get",
 			dataType: "text",
 			success: function (GRJSON) {
 				try {
@@ -417,12 +416,12 @@ var GR = {
 					if (styles.indexOf(style) >= 0) {
 						const s = GRJSON[i][style];
 						const baseUrl = self.mode === 'dev' ? s.dev_url : s.url;
-						const url = `${baseUrl}${s.css}_${s[self.mode]}.css?rel=chrome`;
+						const url = `${baseUrl}${s.css}_${s[self.mode]}.css?rel=${browserName}`;
 
 						var getEr = function (url, style) {
 							$.ajax({
 								url: url,
-								method: 'post',
+								method: 'get',
 								success: function (css) {
 									// Strip the -moz-document from the style
 									css = css.replace(/@-moz-document(.*?){/, "");
