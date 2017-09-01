@@ -23,3 +23,18 @@ This repository holds the code for the Google Redesigned browser extension. Code
 - Run Chrome
 - Go to `chrome://extensions/` and enable the "Developer mode" checkbox in the top-right corner
 - Click on "Load unpackaged extension...", the select this repository's directory
+
+## [How to Publish](#how-to-publish)
+
+- Make sure to version up the extension in `manifest.json` first
+- Then deploy follow browser-specific instructions below:
+
+### Firefox
+
+- Open the root of the extension
+- Select all files and choose "Send to" > "Compressed (zipped) folder"
+- Upload the generated `.zip` file to `addons.mozilla.org`
+
+### Chrome
+
+TODO
