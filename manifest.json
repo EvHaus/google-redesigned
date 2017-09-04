@@ -48,22 +48,8 @@
 		"*://*/*"
 	],
 	"web_accessible_resources": [
-		"img/icon-32.png",
-		"img/icon-64.png",
-		"image-pack/agenda-arrows.gif",
-		"image-pack/arrow-down.png",
-		"image-pack/background.png",
-		"image-pack/button-toggle.gif",
-		"image-pack/checkbox.gif",
-		"image-pack/checkmark.png",
-		"image-pack/folder-icon.png",
-		"image-pack/icon-search.png",
-		"image-pack/logo-google.png",
-		"image-pack/new_folder_icon.png",
-		"image-pack/preview-icon.png",
-		"image-pack/reader-sprites.png",
-		"image-pack/stars.png",
-		"image-pack/toolbar.png",
-		"image-pack/trash-icon.png"
+		"img/*.png",
+		"image-pack/*.gif",
+		"image-pack/*.png"
 	]
 }
