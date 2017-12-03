@@ -1,3 +1,5 @@
+**THIS EXTENSION IS NOW DEPRECATED. SEE: https://www.globexdesigns.com/blog/43-browser-extension-is-being-deprecated**
+
 # Google Redesigned
 
 **A complete redesign of popular Google services, Google Redesigned changes the appearance of popular Google services.**

@@ -1,11 +1,9 @@
-/*
- * Google Redesigned
- *
- * File: Extension Popup
- * Author: Evgueni Naverniouk, evgueni@globexdesigns.com
- * Copyright: 2017 Globex Designs, Inc. All Rights Reserved.
- *
- */
+var browser = chrome || browser;
 
-// Initialize Popup
-GR.renderPopup();
+document.addEventListener('DOMContentLoaded', function () {
+	document.getElementById('link').addEventListener("click", function () {
+		browser.tabs.create({
+			url: "https://www.globexdesigns.com/blog/43-browser-extension-is-being-deprecated"
+		});
+	});
+});

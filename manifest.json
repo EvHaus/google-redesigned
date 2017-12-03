@@ -1,6 +1,6 @@
 {
 	"name": "Google Redesigned",
-	"version": "4.0.3",
+	"version": "4.1.0",
 	"manifest_version": 2,
 	"description": "A complete redesign of popular Google services, Google Redesigned changes the appearance of popular Google services.",
 	"homepage_url": "http://www.globexdesigns.com/products/gr",
@@ -16,40 +16,15 @@
 		}
 	},
 	"background": {
-		"scripts": [
-			"libs/jquery-3.2.1.min.js",
-			"js/utils.js",
-			"js/gr.js",
-			"js/background.js"
-		]
+		"scripts": ["js/background.js"]
 	},
 	"browser_action": {
 		"default_icon": 	"img/icon-19.png",
 		"default_popup": 	"popup.html",
 		"default_title": 	"Google Redesigned"
 	},
-	"content_scripts": [{
-	  "all_frames": true,
-	  "js": [
-		  "libs/jquery-3.2.1.min.js",
-		  "js/apply.js"
-	  ],
-	  "matches": ["*://*/*"],
-	  "run_at": "document_start"
-	}],
-	"options_ui": {
-		"browser_style": true,
-		"page": "options.html"
-	},
 	"permissions": [
-		"storage",
-		"notifications",
 		"tabs",
 		"*://*/*"
-	],
-	"web_accessible_resources": [
-		"img/*.png",
-		"image-pack/*.gif",
-		"image-pack/*.png"
 	]
 }
