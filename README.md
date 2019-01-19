@@ -1,38 +1,27 @@
-**THIS EXTENSION IS NOW DEPRECATED. SEE: https://www.globexdesigns.com/blog/43-browser-extension-is-being-deprecated**
-
 # Google Redesigned
 
 **A complete redesign of popular Google services, Google Redesigned changes the appearance of popular Google services.**
 
-This repository holds the code for the Google Redesigned browser extension. Code is written in the standard [extension API](https://developer.mozilla.org/en-US/Add-ons/WebExtensions) to maintain support for *Google Chrome* and *Mozilla Firefox*.
+This repository holds the user styles which you can install via your favorite user style browser extension.
 
-## [Browser Support](#browser-support)
+## Gmail
 
-- Firefox 45 and greater
-- Chrome 38 and greater
+Coming soon
 
-## [How to Run](#how-to-run)
+## Google Calendar
 
-### Firefox
+![Google Calendar Redesigned](calendar.png)
 
-- Run Firefox
-- Go to `about:debugging`
-- Click on "Load Temporary Add-on", then select any file this repository's directory
-- Use the "Reload" button on that page to reload the extension after any code change
+### How to Install
 
-### Chrome
+#### Firefox
 
-- Run Chrome
-- Go to `chrome://extensions/` and enable the "Developer mode" checkbox in the top-right corner
-- Click on "Load unpackaged extension...", the select this repository's directory
+- Install [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+- Go to https://userstyles.org/styles/7339/google-calendar-redesigned-dark-mode
+- Click the "Install" button
 
-## [How to Publish](#how-to-publish)
+#### Chrome
 
-- Make sure to version up the extension in `manifest.json` first
-- Then deploy follow browser-specific instructions below:
-
-### Firefox / Chrome
-
-- Open the root of the extension
-- Select all files and choose "Send to" > "Compressed (zipped) folder"
-- Upload the generated `.zip` file to `addons.mozilla.org` and `chrome.google.com/webstore`
+- Install [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)
+- Go to https://userstyles.org/styles/7339/google-calendar-redesigned-dark-mode
+- Click the "Install" button
