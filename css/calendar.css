@@ -35,7 +35,7 @@
     .rF3YF span, /* Header/Sidebar Arrows, Search */
     .gb_Wa.gb_xe svg, /* Header Settings, Apps, Bell */
     .xmVoP, /* Header "2 weeks" Button Arrow */
-    .gb_Wa.gb_Ce svg, /* Header Search Icons */
+    .gb_hf.gb_if svg, /* Header Search Icons */
     .xJ65bd, /* Event Popover Header */
     .cjq2Db, /* Event Popover Close */
     .kMp0We .DPvwYc, /* Event Popover Rows */
@@ -128,21 +128,21 @@
 
 /* SEARCH HEADER */
 
-    /* "Search" */
+    /* "Search" header title */
     .NkK3Fc span[role=heading] {
         color: var(--GR16) !important;
     }
 
     /* Input Wrapper Focused */
-    .gb_gf.gb_hf {
+    .gb_hf.gb_if {
         background: var(--GR6) !important;
         border-color: var(--GR8) !important;
     }
 
         /* Input */
-        .gb_Cf { color: var(--GR16) !important }
-        .gb_Cf::placeholder { color: var(--GR12) !important }
-
+        .gb_Df { color: var(--GR16) !important }
+        .gb_Df::placeholder { color: var(--GR12) !important }
+       
     /* Search Options Dropdown */
     .BYXlo {
         background: var(--GR6) !important;
@@ -155,22 +155,22 @@
         background: var(--GR6) !important;
         border-color: var(--GR8) !important;
     }
-
+    
         /* Row */
         .gssb_m {
             background: transparent !important;
             color: var(--GR16) !important;
         }
-
+        
             /* Row Hover */
             .gssb_i {
                 background: var(--GR8) !important;
                 cursor: pointer;
             }
-
+            
             /* Group Separator */
             .gssb_l { background: var(--GR8) !important }
-
+            
             /* Row Details */
             .gstq_c, .asor_e { color: var(--GR14) !important }
 
@@ -192,7 +192,7 @@
 
     /* Create Button */
     .VfPpkd-BIzmGd { background: var(--GR6) !important }
-
+        
         /* Text */
         .u5sQsb { color: var(--GR16) !important }
 
@@ -234,10 +234,10 @@
 
             /* Input Focus Animated Underline */
             .OabDMe { background: var(--GRSELECTED) !important }
-
+        
         /* ... Button */
         div.oFBMuc { margin-left: 8px !important }
-
+        
             div.oFBMuc:hover { background: var(--GR6) !important}
 
     /* CALENDARS */
@@ -246,15 +246,17 @@
         .uQ1ixe .snByac { color: var(--GR12) !important }
 
             .I2LGc:hover { background: var(--GR4) !important }
+            
+                .uQ1ixe .CeoRYc { background: transparent !important }
 
         /* Calendar Name */
 	    .DYTqTd .NI2kfb { color: var(--GR16) !important }
 
             .kMp0We.Wm6kRe:hover { background: var(--GR4) !important }
-
+        
         /* Color Box Center */
         .uHMk6b { border-color: var(--GR2) !important }
-
+        
 /* DAY VIEW */
 
     /* Body */
@@ -284,7 +286,7 @@
 
     /* Time Column */
     .Gk2izd, .GENA3c { background: transparent !important }
-
+        
         /* Text */
 		.pCoqfc, .MANBAf { color: var(--GR12) !important }
 
@@ -346,15 +348,15 @@
 
     /* Time Event */
     .g3dbUc.smECzc { color: var(--GR16) !important }
-
+    
         .g3dbUc.smECzc:hover {
             background: var(--GR6) !important;
             color: var(--GR18) !important;
         }
-
+    
     /* Time Event (Past) */
     .g3dbUc.UflSff { color: var(--GR12) !important }
-
+    
     /* Time Event (Selected) */
     .g3dbUc.smECzc.KKjvXb { background: var(--GR10) !important }
 
@@ -383,7 +385,7 @@
         /* Today */
         .OmwDud.F262Ye .O3EOA {
             background: var(--GR7) !important;
-            color: var(--GRSELECTED) !important;
+            color: var(--GRSELECTED) !important;  
         }
 
     /* Month, Day of the Week */
@@ -391,7 +393,7 @@
 
         /* Today */
         .OmwDud.F262Ye { color: var(--GRSELECTED) !important }
-
+    
     /* Event */
     .dtaVuc { color: var(--GR16) !important }
 
@@ -428,7 +430,7 @@
 
     /* Date & Address */
     .DN1TJ { color: var(--GR16) !important }
-
+    
     /* Close Icon Circle */
     .XsU8xf { background-color: var(--GR3) !important }
 
@@ -455,12 +457,12 @@
 
                 /* Text */
                 .HLI7qf .c7fp5b { color: var(--GR16) !important }
-
+     
      /* GoToMeeting Links */
      .goktNc {
         color: var(--GR16) !important;
      }
-
+     
         .goktNc:hover { color: var(--GR18) !important }
 
 /* TASK POPOVER */
@@ -541,7 +543,7 @@
                 color: var(--GR18) !important;
                 cursor: pointer;
             }
-
+    
     /* Calendar Select */
     .jZ0DTb { background: var(--GR4) !important }
 
@@ -588,7 +590,7 @@
 
     /* "More options" Button */
     .nYqxP { color: var(--GR16) !important }
-
+        
         .nYqxP:hover { color: var(--GR18) !important }
 
     /* "Save" Button */
@@ -662,10 +664,10 @@
         {
             border-color: var(--GR0) !important
         }
-
+        
     /* Tab */
     .r5F2ye .VZhFab { color: var(--GR12) !important }
-
+    
         /* Active */
         .DvZJme.KKjvXb .VZhFab { color: var(--GR16) !important }
 
@@ -684,70 +686,70 @@
         background: var(--GR6) !important;
         color: var(--GR16) !important;
     }
-
+    
         /* Row Hover */
         .oKubKe[aria-selected="true"] {
             background: var(--GR8) !important;
             cursor: pointer;
         }
-
+        
     /* Notification "Before at" text */
     .j3nyw { color: var(--GR16) !important }
-
+        
     /* "Add Notification" Button */
     .rhtYVe .snByac { color: var(--GR16) !important }
-
+    
     /* Color Select */
     .FpmPAb { background: var(--GR6) !important }
-
+    
     /* "Learn more about event visibility" */
     .HvbOJ { color: var(--GRSELECTED) !important }
-
+        
         .HvbOJ:focus, .HvbOJ:hover { color: var(--GR14) !important }
-
+    
     /* Description Textbox */
     .DyOaYd { background: var(--GR6) !important }
-
+    
         /* Toolbar Dividers */
         .PqAscf { border-color: var(--GR10) !important }
-
+        
         /* Toolbar Selected Button */
         .Erb9le:not(.RDPZE) .qmMNRc.y7OZL { background: var(--GR4) !important }
-
+        
         /* Placeholder Text */
         .lR3h6d .snByac { color: var(--GR12) !important }
-
+        
         /* File Attachment */
         .Vq3YLb { color: var(--GR16) !important }
-
+        
         /* Links */
         .lR3h6d .iuaqab a {
             color: var(--GRSELECTED) !important;
             cursor: pointer !important;
         }
-
+        
             .lR3h6d .iuaqab a:focus, .lR3h6d .iuaqab a:hover {
                 color: var(--GR14) !important;
             }
-
+    
     /* "Calendar cannot be shown" message */
     .srd2n { color: var(--GR14) !important }
-
+    
     /* "Guests Can" */
     .hGcgEd { color: var(--GR16) !important }
-
+    
     /* "Find a Time" date range */
     .oPF3Ce { color: var(--GR16) !important }
-
+    
     /* Rooms Icon Row */
     .qTH1m { background: transparent !important }
-
+    
         /* Placeholder */
         .bojM1c { color: var(--GR12) !important }
-
+        
     /* Rooms Search Results */
     .pwzJje { border-color: var(--GR10) !important }
-
+    
 /* SETTINGS */
 
     /* Sidebar */
@@ -755,63 +757,63 @@
 
         /* Current Page Highlight */
         .cAYGed.KKjvXb .Ioup7e, .cAYGed.KKjvXb .BMQm1d { background: var(--GR6) !important }
-
+        
         /* Breadcrumb */
         .DaQ2rc::before { background: var(--GR6) !important }
-
+        
         /* Breadcrumb Active */
         .DaQ2rc.KKjvXb .Oxnkef { border-color: var(--GRSELECTED) !important }
-
+        
         /* Category */
         .nxPHec { color: var(--GR10) !important }
-
+        
    /* Scroll Indicator (Left) */
    .a0xMze.T8M5bd::after {
        background-image: linear-gradient(to left, rgba(0,0,0,0), var(--GR8)) !important;
    }
-
+   
    /* Sections */
    .MDfQ7 {
        background: transparent !important;
        color: var(--GR16) !important;
    }
-
+   
         /* Title */
         .O1gyfd { color: var(--GR16) !important }
-
+        
         /* Select Field Labels */
         .LGMdbc { color: var(--GR12) !important }
-
+        
     /* Browse calendars of interest */
-
+    
         /* Row */
         .jxUZDd { border-color: var(--GR8) !important }
-
+        
             .jxUZDd:hover { background: var(--GR2) !important }
-
+    
             /* Row label */
             .Ccr7Rb { color: var(--GR12) !important }
-
+            
 /* TRASH */
 
     /* Sidebar */
     .pljXM { background: transparent !important }
-
+    
         /* Calendar Header */
         .aDCdzb { color: var(--GR10) !important }
 
         /* Selected Calendar */
         .LOewLb.KKjvXb { background: var(--GR6) !important }
-
+    
     /* Lister */
     .NekIXe, .Lzfnue { background: transparent !important }
-
+    
         /* Table Headers */
         .M1ZIGd { color: var(--GR16) !important }
-
+        
         /* Content */
         .ETUnje > * { color: var(--GR14) !important }
-
+        
         /* Row Hover */
         .v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
         .ETUnje { border-color: var(--GR6) !important }
