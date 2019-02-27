@@ -465,6 +465,12 @@
      
         .goktNc:hover { color: var(--GR18) !important }
 
+    /* "Everyone else declined the event" footer */
+    .U0vptb {
+        background: var(--GR4) !important;
+        border-color: var(--GR8) !important;
+    }
+
 /* TASK POPOVER */
 
     /* Footer */
@@ -749,7 +755,39 @@
         
     /* Rooms Search Results */
     .pwzJje { border-color: var(--GR10) !important }
+
+    /* Event Tooltip on Hover */
+    .VmTz5c {
+        background: var(--GR6) !important;
+        color: var(--GR16) !important;
+    }
+
+/* PROPOSE A NEW TIME AREA */
+
+    /* Header */
+    .TxuuLc {
+        background: var(--GR4) !important;
+        border-color: var(--GR10) !important;
+        color: var(--GR16) !important;
+    }
+
+    /* Left Sidebar */
+    .eQHds { border-color: var(--GR4) !important}
     
+        /* Text */
+        .yP0bV { color: var(--GR16) !important }
+
+            /* Proposal Time Row */
+            .qrLqp .SmCjzc { background: transparent !important }
+
+    /* Calendar */
+
+        /* Header */
+        .Xo3rO { border-color: var(--GR8) !important}
+
+        /* Outside of work week area */
+        .YFcgVb { background: var(--GR3) !important }
+
 /* SETTINGS */
 
     /* Sidebar */
