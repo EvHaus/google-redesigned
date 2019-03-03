@@ -35,7 +35,7 @@
     .rF3YF span, /* Header/Sidebar Arrows, Search */
     .gb_Wa.gb_xe svg, /* Header Settings, Apps, Bell */
     .xmVoP, /* Header "2 weeks" Button Arrow */
-    .gb_hf.gb_if svg, /* Header Search Icons */
+    .gb_De.gb_Ee button svg, /* Header Search Icons */
     .xJ65bd, /* Event Popover Header */
     .cjq2Db, /* Event Popover Close */
     .kMp0We .DPvwYc, /* Event Popover Rows */
@@ -134,14 +134,14 @@
     }
 
     /* Input Wrapper Focused */
-    .gb_hf.gb_if {
+    .gb_De.gb_Ee {
         background: var(--GR6) !important;
         border-color: var(--GR8) !important;
     }
 
         /* Input */
-        .gb_Df { color: var(--GR16) !important }
-        .gb_Df::placeholder { color: var(--GR12) !important }
+        .gb_1e { color: var(--GR16) !important }
+        .gb_1e::placeholder { color: var(--GR12) !important }
        
     /* Search Options Dropdown */
     .BYXlo {
@@ -161,6 +161,9 @@
             background: transparent !important;
             color: var(--GR16) !important;
         }
+        
+            /* Row Color */
+            .asor_x { color: var(--GR16) !important }
         
             /* Row Hover */
             .gssb_i {
