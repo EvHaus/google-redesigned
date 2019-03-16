@@ -1,4 +1,6 @@
 @-moz-document domain("calendar.google.com") {
+/* https://github.com/EvHaus/google-redesigned/ */
+
 /* COLOR PALETTE */
 
 :root {
@@ -460,11 +462,17 @@
 
                 /* Text */
                 .HLI7qf .c7fp5b { color: var(--GR16) !important }
+
+    /* Email Guests */
+    
+        /* List of invitees */
+        .J09ahd { background: transparent !important }
+
+            /* Invitee pill */
+            .cnTo8e { background: var(--GR4) !important }
      
-     /* GoToMeeting Links */
-     .goktNc {
-        color: var(--GR16) !important;
-     }
+    /* GoToMeeting Links */
+    .goktNc { color: var(--GR16) !important }
      
         .goktNc:hover { color: var(--GR18) !important }
 
