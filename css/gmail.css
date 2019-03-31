@@ -264,6 +264,55 @@
 
     .bkK { background: var(--GR0) !important }
 
+/* INBOX TOOLBAR */
+
+    /* Icons */
+    
+        /* Checkbox */
+        .G-tF .T-Jo { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_outline_blank_white_20dp.png') !important }
+
+        /* Dropdown Arrow */
+        .G-asx { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png') !important }
+
+        /* Refresh */
+        .asf { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/refresh_white_20dp.png') !important }
+
+        /* Vertical 3 Dot */
+        .bjy::after { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png') !important }
+
+        /* Left Arrow */
+        .amI { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/chevron_left_white_20dp.png') !important }
+
+        /* Right Arrow */
+        .amJ { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/chevron_right_white_20dp.png') !important }
+
+        /* View Mode */
+        .apK { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/vertical_split_white_20dp.png') !important }
+
+        /* Settings */
+        .aos { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/settings_white_20dp.png') !important }
+
+        /* Archive */
+        .ar8 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/archive_white_20dp.png') !important }
+
+        /* Spam */
+        .asl { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/report_white_20dp.png') !important }
+
+        /* Delete */
+        .ar9 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/delete_white_20dp.png') !important }
+
+        /* Mark as Unread */
+        .bAP { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/mark_as_unread_white_20dp.png') !important }
+
+        /* Snooze */
+        .brW { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png') !important }
+
+        /* Move To */
+        .ase { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/drive_file_move_white_20dp.png') !important }
+
+        /* Labels */
+        .asb { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/label_white_20dp.png') !important }
+
 /* RIGHT SIDEBAR */
 
     /* Body */
