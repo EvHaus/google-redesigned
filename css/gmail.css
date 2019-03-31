@@ -1,0 +1,286 @@
+/* COLOR PALETTE */
+
+:root {
+    --GR0: #0F1112; /* Background */
+    --GR1: #17191B;
+    --GR2: #1E2224;
+    --GR3: #252A2D;
+    --GR4: #2D3236;
+    --GR5: #343A3F;
+    --GR6: #3B4348;
+    --GR7: #434B51;
+    --GR8: #4A535A;
+    --GR9: #515B62;
+    --GR10: #606970;
+    --GR11: #70787E;
+    --GR12: #80878C;
+    --GR13: #90969B;
+    --GR14: #A0A5A9;
+    --GR14: #AFB4B7;
+    --GR15: #BFC3C5;
+    --GR16: #CFD2D4; /* Text/Icons */
+    --GR17: #DFE1E2;
+    --GR18: #EFF0F0; /* Text/Icons Hover */
+    --GRSELECTED: #FB0;
+}
+
+/* GLOBAL */
+
+    body { background: var(--GR0) !important }
+
+/* ICONS */
+
+    .gb_ja svg /* Header Icons */
+    {
+        color: var(--GR16) !important;
+        fill: var(--GR16) !important;
+    }
+
+/* HEADER */
+
+    .aiw { border-bottom: 1px solid var(--GR6) !important }
+
+    .gb_0d { background: var(--GR4) !important }
+
+    /* Icons */
+    .gb_ja svg { opacity: 1 !important }
+
+    /* "Gmail" logo */
+	img.gb_ma {
+        background: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png') no-repeat center center !important;
+        height: 0 !important;
+        padding: 40px 109px 0 0 !important;
+        width: 0 !important;
+    }
+
+/* SEARCH HEADER */
+
+    /* Input Wrapper Focused */
+    .gb_qe.gb_re {
+        background: var(--GR6) !important;
+        border-color: var(--GR8) !important;
+    }
+
+        /* Input */
+        .gb_Le { color: var(--GR16) !important }
+        .gb_Le::placeholder { color: var(--GR12) !important }
+       
+    /* Search Options Dropdown */
+    .ZF-zT {
+        background: var(--GR6) !important;
+        color: var(--GR16) !important;
+    }
+
+        /* Labels */
+        .boo>.ZG { color: var(--GR16) !important }
+
+        /* Select Fields */
+        .boo .aQl>.J-JN-M-I-Jm,
+        .boo .aaa>.J-JN-M-I-Jm,
+        .boo .ZE>.J-JN-M-I-Jm {
+            color: var(--GR16) !important
+        }
+
+        /* Select Arrow Icons */
+        .T-axO .J-JN-M-I-JG { filter: invert(1) !important }
+
+        /* Calendar Icon */
+        .bs5::after { filter: invert(1) !important }
+
+        /* Text Input */
+        .boo .nr {
+            background: var(--GR4) !important;
+            color: var(--GR16) !important;
+        }
+            
+            .boo .nr:focus {
+                box-shadow: inset 0 -1px 0 0 var(--GRSELECTED) !important;
+            }
+
+        /* Checkbox */
+        .bs1+.bs3::before, .btj+.aD::before {
+            filter: invert(1) !important
+        }
+
+        /* Checkbox Labels */
+        .bs1+.bs3, .btj+.aD { color: var(--GR16) !important }
+
+/* SEARCH DROPDOWN */
+
+    .gssb_e {
+        background: var(--GR6) !important;
+        border-color: var(--GR8) !important;
+    }
+    
+        /* Row */
+        .gssb_m {
+            background: transparent !important;
+            color: var(--GR16) !important;
+        }
+        
+            /* Row Color */
+            .asor_x { color: var(--GR16) !important }
+        
+            /* Row Hover */
+            .gssb_i {
+                background: var(--GR8) !important;
+                cursor: pointer;
+            }
+            
+            /* Group Separator */
+            .gssb_l { background: var(--GR8) !important }
+            
+            /* Row Details */
+            .gstq_c, .asor_e { color: var(--GR14) !important }
+
+            /* Row Icons */
+            .asor, /* Historical Search */
+            .asor_o, /* Attachment Icon */
+            .gsaq_b, /* Remove Historical Search */
+            .gsoi_0 /* Mail Icon */
+            {
+                filter: invert(1) !important
+            }
+
+/* MAIN BODY */
+
+    .wl { background: var(--GR3) !important }
+
+    .aeJ { background: transparent !important }
+
+/* LEFT SIDEBAR */
+
+.aj9 { background: var(--GR2) !important }
+
+    /* Compose Button */
+    .z0 > .L3 {
+        background: var(--GR6) !important;
+        color: var(--GR16) !important
+    }
+
+    /* Icons */
+
+        /* Inbox */
+        .aHS-bnt .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/inbox_white_20dp.png') !important }
+
+        /* Inbox Arrow */
+        .nZ .afM { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png') !important }
+
+        /* Starred */
+        .aHS-bnw .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/grade_white_20dp.png') !important }
+
+        /* Snoozed */
+        .aHS-bu1 .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png') !important }
+
+        /* Sent */
+        .aHS-bnu .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/send_white_20dp.png') !important }
+
+        /* Drafts */
+        .aHS-bnq .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/insert_drive_file_white_20dp.png') !important }
+
+        /* All Mail */
+        .aHS-aHO .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/mail_white_20dp.png') !important }
+
+        /* Arrow Down */
+        .aih { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png') !important }
+
+        /* Arrow Right */
+        .aii { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_right_white_20dp.png') !important }
+
+        /* Categories */
+        .qr { border-color: #FFF !important }
+
+        /* Social */
+        .aS6 .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/people_white_20dp.png') !important }
+
+        /* Updates */
+        .aS4 .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/info_white_20dp.png') !important }
+
+        /* Forums */
+        .aS3 .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/forum_white_20dp.png') !important }
+
+        /* Promotions */
+        .aS5 .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/local_offer_white_20dp.png') !important }
+
+        /* Less */
+        .air .G-asx { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/expand_less_white_20dp.png') !important }
+
+        /* More */
+        .n4 .G-asx { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/expand_more_white_20dp.png') !important }
+
+        /* Important */
+        .aHS-bns .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/label_important_white_20dp.png') !important }
+
+        /* Chats */
+        .aHS-aHP .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/hangout_white_20dp.png') !important }
+
+        /* Spam */
+        .aHS-bnv .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/report_white_20dp.png') !important }
+
+        /* Trash */
+        .aHS-bnx .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/delete_white_20dp.png') !important }
+
+        /* Manage Labels */
+        .CL::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/settings_white_20dp.png') !important }
+
+        /* Create new label */
+        .Wj::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/add_white_20dp.png') !important }
+
+        /* Vertical 3 Dot */
+        .pM { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png') !important }
+
+    /* Menu Items */
+    .TO { cursor: pointer !important }
+
+        /* Text */
+        .TO .nU > .n0,  /* Regular Items */
+        .ah9 > .CJ,     /* "More" */
+        .n3 > .CL > .CK /* "Manage labels" and "Create new label" */
+        {
+            color: var(--GR16) !important
+        }
+
+        /* Email Count */
+        .bsU { color: var(--GR14) !important }
+
+    /* Hover */
+    .TO.NQ,
+    .n6 .ah9:hover, /* "More" */
+    .CL:hover
+    {
+        background: var(--GR4) !important
+    }
+
+    /* Active */
+    .TO.nZ { background: var(--GR6) !important }
+        
+        /* Icon */
+        .TO.nZ .qj { opacity: 1 !important }
+
+        /* Text */
+        .TO.nZ .n0 { color: var(--GR18) !important }
+
+/* MAIN CONTENT */
+
+    .bkK { background: var(--GR0) !important }
+
+/* RIGHT SIDEBAR */
+
+    /* Body */
+    .brC-aT5-aOt-Jw {
+        background: var(--GR2) !important;
+        border-color: var(--GR6) !important;
+    }
+
+    /* Divider */
+	.brC-aT5-aOt-axR { border-color: var(--GR6) !important }
+
+    /* Buttons */
+    .aT5-aOt-I-JX-Jw:hover {
+        background-color: var(--GR7) !important;
+    }
+
+        /* "Get Addons" icon */
+        .aT5-aOt-I-JX-Jw[style*="material/system"] {
+            background-image: url(https://www.gstatic.com/images/icons/material/system/1x/add_white_24dp.png) !important
+        }
