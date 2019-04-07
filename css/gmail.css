@@ -56,14 +56,15 @@
 /* SEARCH HEADER */
 
     /* Input Wrapper Focused */
-    .gb_qe.gb_re {
+    /* NOTE: The classes on this seems to change very often, so using ID instead */
+    #aso_search_form_anchor {
         background: var(--GR6) !important;
         border-color: var(--GR8) !important;
     }
 
         /* Input */
-        .gb_Le { color: var(--GR16) !important }
-        .gb_Le::placeholder { color: var(--GR12) !important }
+        #aso_search_form_anchor input { color: var(--GR16) !important }
+        #aso_search_form_anchor input::placeholder { color: var(--GR12) !important }
        
     /* Search Options Dropdown */
     .ZF-zT {
@@ -312,6 +313,85 @@
 
         /* Labels */
         .asb { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/label_white_20dp.png') !important }
+
+        /* Back */
+        .ar6 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_back_white_20dp.png') !important }
+
+    /* Buttons */
+
+        /* "Settings" Focused State (Outer Ring) */
+        .asa::before { border-color: var(--GR10) !important }
+
+/* INBOX LIST */
+
+    /* Row */
+    .yO {
+        background: var(--GR4) !important;
+        color: var(--GR16) !important;
+    }
+
+        /* Hover */
+        .zA:hover {
+            background: var(--GR6) !important;
+            box-shadow: inset 1px 0 0 var(--GR7),
+                        inset -1px 0 0 var(--GR9),
+                        0 1px 2px 0 var(--GR2),
+                        0 1px 3px 1px var(--GR4)
+        }
+
+        /* Unread */
+        .zE {
+            background: var(--GR6) !important;
+            color: var(--GR18) !important;
+        }
+            
+            .zE:hover { background: var(--GR8) !important }
+
+        /* Description Text */
+        .y2 { color: var(--GR12) !important }
+
+        /* Date Text */
+        .yO > .xW { color: var(--GR12) !important }
+
+        /* Attachment Pill */
+        .brc {
+            box-shadow: inset 0 0 0 1px var(--GR8) !important;
+            color: var(--GR12) !important
+        }
+
+            .brc:hover {
+                box-shadow: inset 0 0 0 1px var(--GR12) !important;
+                color: var(--GR14) !important
+            }
+
+    /* Icons */
+
+        /* Checkbox */
+        .xY > .T-Jo { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_outline_blank_white_20dp.png') !important }
+
+        /* Star */
+        td.apU > .T-KT.aXw::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/star_border_white_20dp.png') !important }
+
+        /* Archive */
+        .brq { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/archive_white_20dp.png') !important }
+
+        /* Delete */
+        .bru { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/delete_white_20dp.png') !important }
+
+        /* Mark as Read */
+        .brr { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/drafts_white_20dp.png') !important }
+
+        /* Mark as Unread */
+        .brs { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/mark_as_unread_white_20dp.png') !important }
+
+        /* Snooze */
+        .brv { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png') !important }
+
+        /* Calendar */
+        .xL { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/today_white_20dp.png') !important }
+    
+        /* Hangouts */
+        .aVb { background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/wbt/hangouts_white_icon16.png) !important }
 
 /* RIGHT SIDEBAR */
 
