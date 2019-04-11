@@ -106,6 +106,53 @@
         /* Checkbox Labels */
         .bs1+.bs3, .btj+.aD { color: var(--GR16) !important }
 
+/* GENERIC DROPDOWNS */
+
+    /* Body */
+    .J-M { background: var(--GR6) !important }
+
+        /* Inbox Type Dropdown - Right Border */
+        .afL .J-M-Jz { border-color: var(--GR8) !important }
+
+        /* Title */
+        .J-awr,
+        .afQ /* Inbox Type Dropdown - Right-side title */
+        {
+            color: var(--GR14) !important
+        }
+
+        /* Row */
+        .J-N,
+        .afP  /* Inbox Type Dropdown - Right-side text */
+        {
+            color: var(--GR16) !important
+        }
+
+            /* Selected */
+            .J-Ks-KO .J-N-Jz { color: var(--GRSELECTED) !important }
+
+            /* Hover */
+            .J-N-JT { background: var(--GR8) !important }
+
+                /* Hover Text */
+                .J-N-JT .J-N-Jz { color: var(--GR18) !important }
+
+        /* Divider */
+        .J-Kh { border-color: var(--GR10) !important }
+
+        /* Checkmark Icon */
+        .J-Ks-KO .J-N-Jo {
+            background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_white_20dp.png') !important;
+        }
+
+        /* Links */
+        .e { color: var(--GR16) !important }
+            
+            .e:focus,
+            .e:hover {
+                color: var(--GR18) !important
+            }
+
 /* SEARCH DROPDOWN */
 
     .gssb_e {
@@ -265,12 +312,43 @@
 
     .bkK { background: var(--GR0) !important }
 
+    /* With preview pane enabled */
+    .age { background: transparent !important }
+
+        /* Draggable Separator */
+        .apj, /* Horizontal */
+        .aph  /* Vertical */
+        {
+            background: var(--GR6) !important;
+            border-color: var(--GR10) !important
+        }
+
+        /* "No conversations selected */
+        .apb { color: var(--GR14) !important }
+
+    /* "You are currently using..." */
+    .mj { color: var(--GR12) !important }
+
+        /* Progress bar */
+        .apc .aeZ { border-color: var(--GR6) !important }
+    
+            /* Active */
+            .apc .ae0 { background: var(--GR4) !important }
+
+        /* "Manage" */
+        .l8 { color: var(--GR12) !important }
+
+            .l8:hover { color: var(--GR14) !important }
+
 /* INBOX TOOLBAR */
 
     /* Icons */
     
         /* Checkbox */
         .G-tF .T-Jo { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_outline_blank_white_20dp.png') !important }
+
+        /* Checkbox (Checked) */
+        .G-tF .T-Jo-Jp { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_white_20dp.png') !important }
 
         /* Dropdown Arrow */
         .G-asx { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png') !important }
@@ -289,6 +367,9 @@
 
         /* View Mode */
         .apK { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/vertical_split_white_20dp.png') !important }
+
+        /* View Mode - Panes Enabled */
+        .apJ { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/reorder_white_20dp.png') !important }
 
         /* Settings */
         .aos { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/settings_white_20dp.png') !important }
@@ -368,6 +449,9 @@
 
         /* Checkbox */
         .xY > .T-Jo { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_outline_blank_white_20dp.png') !important }
+
+        /* Checkbox (Checked) */
+        .xY > .T-Jo-Jp { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_white_20dp.png') !important }
 
         /* Star */
         td.apU > .T-KT.aXw::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/star_border_white_20dp.png') !important }
