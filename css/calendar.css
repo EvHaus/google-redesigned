@@ -37,7 +37,7 @@
     .rF3YF span, /* Header/Sidebar Arrows, Search */
     .gb_Wa.gb_xe svg, /* Header Settings, Apps, Bell */
     .xmVoP, /* Header "2 weeks" Button Arrow */
-    .gb_De.gb_Ee button svg, /* Header Search Icons */
+    .gb_ne.gb_oe button svg, /* Header Search Icons */
     .xJ65bd, /* Event Popover Header */
     .cjq2Db, /* Event Popover Close */
     .kMp0We .DPvwYc, /* Event Popover Rows */
@@ -51,6 +51,11 @@
     {
         color: var(--GR16) !important;
         fill: var(--GR16) !important;
+    }
+
+    .OQPTvb /* Header "Help" Icon */
+    {
+        filter: invert(1) !important;    
     }
 
 /* HEADER */
@@ -95,6 +100,9 @@
     /* Circle Button Hover */
     .rF3YF:hover { background-color: var(--GR7) !important }
 
+    /* "Calendar" title */
+    .gb_qc .gb_Pd { color: var(--GR16) !important }
+
     /* Calendar Range */
 	.rSoRzd { color: var(--GR16) !important }
 
@@ -136,14 +144,14 @@
     }
 
     /* Input Wrapper Focused */
-    .gb_De.gb_Ee {
+    .gb_ne.gb_la {
         background: var(--GR6) !important;
         border-color: var(--GR8) !important;
     }
 
         /* Input */
-        .gb_1e { color: var(--GR16) !important }
-        .gb_1e::placeholder { color: var(--GR12) !important }
+        .gb_Ie { color: var(--GR16) !important }
+        .gb_Ie::placeholder { color: var(--GR12) !important }
        
     /* Search Options Dropdown */
     .BYXlo {
