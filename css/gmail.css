@@ -1,3 +1,4 @@
+@-moz-document url-prefix("https://mail.google.com") {
 /* COLOR PALETTE */
 
 :root {
@@ -40,15 +41,18 @@
 
     .aiw { border-bottom: 1px solid var(--GR6) !important }
 
-    .gb_0d { background: var(--GR4) !important }
+    .gb_2d { background: var(--GR4) !important }
 
     /* Icons */
     .gb_ja svg { opacity: 1 !important }
 
     /* "Gmail" logo */
-	img.gb_ma {
+	img.gb_ma, /* Personal */
+    img.gb_la  /* Business */
+    {
         background: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png') no-repeat center center !important;
         height: 0 !important;
+        opacity: 1 !important;
         padding: 40px 109px 0 0 !important;
         width: 0 !important;
     }
@@ -261,6 +265,9 @@
 
         /* Chats */
         .aHS-aHP .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/hangout_white_20dp.png') !important }
+        
+        /* Scheduled */
+        .TO>.aHS-nd .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/schedule_send_white_20dp.png') !important }
 
         /* Spam */
         .aHS-bnv .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/report_white_20dp.png') !important }
@@ -360,10 +367,10 @@
         .bjy::after { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png') !important }
 
         /* Left Arrow */
-        .amI { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/chevron_left_white_20dp.png') !important }
+        .amI, .adj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/chevron_left_white_20dp.png') !important }
 
         /* Right Arrow */
-        .amJ { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/chevron_right_white_20dp.png') !important }
+        .amJ, .adk { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/chevron_right_white_20dp.png') !important }
 
         /* View Mode */
         .apK { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/vertical_split_white_20dp.png') !important }
@@ -402,6 +409,13 @@
 
         /* "Settings" Focused State (Outer Ring) */
         .asa::before { border-color: var(--GR10) !important }
+
+    /* Page Count (1 of 3) */
+    .Dj, /* Inbox */
+    .h0  /* Email View */
+    {
+        color: var(--GR14) !important
+    }
 
 /* INBOX LIST */
 
@@ -497,3 +511,27 @@
         .aT5-aOt-I-JX-Jw[style*="material/system"] {
             background-image: url(https://www.gstatic.com/images/icons/material/system/1x/add_white_24dp.png) !important
         }
+        
+/* EMAIL CONTENT (EXPERIMENTAL) */
+
+    /* Background */
+    /*.iY .Bu { background: transparent !important } */
+    
+    .ha > .hP,  /* Title */
+    .hx .gD,    /* Author */
+    .hx         /* Body */
+    {
+        /*color: var(--GR16) !important*/
+    }
+    
+    
+    .iv .g3,    /* Date */
+    .hx .hb     /* Recepients */
+    {
+        /*color: var(--GR14) !important*/
+    }
+
+    /* Footer Action Buttons */
+    .nr { background: transparent !important }
+    
+}
