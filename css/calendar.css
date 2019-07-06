@@ -33,7 +33,7 @@
 
 /* ICONS */
 
-    .gb_sc svg, /* Header Hamburger Menu */
+    .gb_ja svg, /* Header Hamburger Menu */
     .rF3YF span, /* Header/Sidebar Arrows, Search */
     .gb_Wa.gb_xe svg, /* Header Settings, Apps, Bell */
     .xmVoP, /* Header "2 weeks" Button Arrow */
@@ -102,7 +102,7 @@
     .rF3YF:hover { background-color: var(--GR7) !important }
 
     /* "Calendar" title */
-    .gb_qc .gb_Pd { color: var(--GR16) !important }
+    .gb_Xc .gb_4d { color: var(--GR16) !important }
 
     /* Calendar Range */
 	.rSoRzd { color: var(--GR16) !important }
