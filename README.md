@@ -6,6 +6,10 @@ This repository holds the user styles which you can install via your favorite us
 
 ## Gmail
 
+<div align="center">
+  <img alt="Gmail Redesigned" src="/gmail.png" width="600" />
+</div>
+
 ### How to Install
 
 #### Firefox
@@ -24,7 +28,9 @@ This repository holds the user styles which you can install via your favorite us
 
 ## Google Calendar
 
-![Google Calendar Redesigned](calendar.png)
+<div align="center">
+  <img alt="Google Calendar Redesigned" src="/calendar.png" width="600" />
+</div>
 
 ### How to Install
 
