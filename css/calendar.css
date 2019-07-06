@@ -39,6 +39,7 @@
     .xmVoP, /* Header "2 weeks" Button Arrow */
     .gb_ne.gb_oe button svg, /* Header Search Icons */
     .xJ65bd, /* Event Popover Header */
+    .d29e1c, /* Event Popover Three Dots */
     .cjq2Db, /* Event Popover Close */
     .kMp0We .DPvwYc, /* Event Popover Rows */
     .QusFJf, /* Create Event Popover Icons */
@@ -337,6 +338,7 @@
 
     /* Grid Lines */
 	.tNDBE:not(.Wyo4Qe), /* Left-most */
+    .CIFHgc, /* Left-most in Business */
     .PhLhOd, /* Header */
     .t8qpF, /* Vertical */
     .QIadxc /* Horizontal */
@@ -440,6 +442,14 @@
 
     /* Title & Labels */
     .agOyMd .JAPzS, .NI2kfb { color: var(--GR18) !important }
+
+    /* Links in the Description */
+    .S4zwaf a { color: var(--GR16) !important }
+        
+        .S4zwaf a:focus,
+        .S4zwaf a:hover {
+            color: var(--GR18) !important
+        }
 
     /* Date & Address */
     .DN1TJ { color: var(--GR16) !important }
@@ -717,7 +727,21 @@
             background: var(--GR8) !important;
             cursor: pointer;
         }
-        
+
+    /* Join Hangsout Meet */
+    .cBVkjf { border-color: var(--GR12) !important }
+
+        /* Links & Accents */
+        .Q30cfe,
+        .Fjbmi a {
+            color: var(--GRSELECTED) !important;
+        }
+
+            .Q30cfe:hover,
+            .Fjbmi a:hover {
+                color: var(--GR18) !important;
+            }
+
     /* Notification "Before at" text */
     .j3nyw { color: var(--GR16) !important }
         
@@ -781,7 +805,14 @@
         color: var(--GR16) !important;
     }
 
-/* PROPOSE A NEW TIME AREA */
+    /* "Calendar cannot be shown" */
+    .GEhdLd,    /* Text */
+    .EmURbc     /* Help Popup Text */
+    {
+        color: var(--GR16)
+    }
+
+/* "FIND A TIME" AREA */
 
     /* Header */
     .TxuuLc {
@@ -805,7 +836,7 @@
         .Xo3rO { border-color: var(--GR8) !important}
 
         /* Outside of work week area */
-        .YFcgVb { background: var(--GR3) !important }
+        .SJbruc { background: var(--GR3) !important }
 
 /* SETTINGS */
 
@@ -850,7 +881,12 @@
     
             /* Row label */
             .Ccr7Rb { color: var(--GR12) !important }
-            
+
+    /* Working Hours */
+
+        /* "To" block */
+        .aJRNHb { background: transparent !important }
+
 /* TRASH */
 
     /* Sidebar */
