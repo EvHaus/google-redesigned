@@ -489,7 +489,7 @@
         .xL { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/today_white_20dp.png') !important }
     
         /* Hangouts */
-        .aVb { background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/wbt/hangouts_white_icon16.png) !important }
+        .aVb { background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/wbt/hangouts_white_icon16.png') !important }
 
 /* RIGHT SIDEBAR */
 
@@ -509,7 +509,7 @@
 
         /* "Get Addons" icon */
         .aT5-aOt-I-JX-Jw[style*="material/system"] {
-            background-image: url(https://www.gstatic.com/images/icons/material/system/1x/add_white_24dp.png) !important
+            background-image: url('https://www.gstatic.com/images/icons/material/system/1x/add_white_24dp.png') !important
         }
         
 /* EMAIL CONTENT (EXPERIMENTAL) */
