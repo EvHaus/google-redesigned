@@ -102,7 +102,7 @@
     .rF3YF:hover { background-color: var(--GR7) !important }
 
     /* "Calendar" title */
-    .gb_Xc .gb_4d { color: var(--GR16) !important }
+    .gb_Zc .gb_5d { color: var(--GR16) !important }
 
     /* Calendar Range */
 	.rSoRzd { color: var(--GR16) !important }
@@ -315,6 +315,12 @@
 		}
 
 /* WEEK VIEW */
+
+    /* Header/Body Divider */
+    .J2aUD.T8M5bd .qmFsL::before,
+    .SGFqbe.T8M5bd .qmFsL::before {
+        box-shadow: inset var(--GR12) 0 1px 3px !important;
+    }
 
     /* Body */
     .v83gc { background: transparent !important }
