@@ -449,6 +449,12 @@
     /* Title & Labels */
     .agOyMd .JAPzS, .NI2kfb { color: var(--GR18) !important }
 
+    /* Dividers (appear when setting description) */
+    .AZLU4c.gUZKAc:not(.sMVRZe):not(.dBA1M),
+    .AZLU4c:not(.gUZKAc).sMVRZe:not(.dBA1M) {
+        border-color: var(--GR12) !important
+    }
+
     /* Links in the Description */
     .S4zwaf a { color: var(--GR16) !important }
         
@@ -457,8 +463,25 @@
             color: var(--GR18) !important
         }
 
+    /* "Outside working hours" */
+    .bjNu9b { background: var(--GR2) !important }
+
+        /* Icon */
+        .bjNu9b .Kww6bc { fill: var(--GRSELECTED) !important }
+
     /* Date & Address */
     .DN1TJ { color: var(--GR16) !important }
+
+    /* RTE for Description */
+    .XOE24 { background: var(--GR4) !important }
+
+        /* Toolbar Dividers */
+        .XOE24 .AMBzld { border-color: var(--GR8) !important}
+
+        /* Toolbar Button Hover */
+        .XOE24:not(.W1ZWq) .gHlG4 .Erb9le:not(.Hcv3ye) .qmMNRc:hover {
+            background: var(--GR2) !important
+        }
     
     /* Close Icon Circle */
     .XsU8xf { background-color: var(--GR3) !important }
@@ -547,8 +570,7 @@
 
     /* Time Select */
     .BvQsje, /* Row */
-    .Kb2sf, /* Start/End Time */
-    .CCRNT /* "Add Time" button */
+    .Kb2sf /* Start/End Time */
     {
         background: var(--GR4) !important;
     }
@@ -563,10 +585,12 @@
         .DSC0Mc { background: var(--GRSELECTED) !important }
 
         /* Add Time Button */
-        .CCRNT { color: var(--GR16) !important }
+        .e3UiQ {
+            border-color: transparent !important;
+            color: var(--GR16) !important;
+        }
 
-            .CCRNT:hover {
-                background: var(--GR8) !important;
+            .e3UiQ:hover {
                 color: var(--GR17) !important;
             }
 
