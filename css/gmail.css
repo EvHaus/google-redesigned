@@ -72,7 +72,7 @@
 
     /* "Gmail" logo */
 	img.gb_ma, /* Personal */
-    img.gb_la  /* Business */
+    .gb_qc img.gb_la  /* Business */
     {
         background: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png') no-repeat center center !important;
         height: 0 !important;
@@ -599,7 +599,71 @@
             padding: 32px;
         }
 
+    /* Attachments */
+
+        /* Divider */
+        .hp { border-top: 1px solid var(--GR8) !important }
+
+        /* "# Attachments" */
+        .aVW { color: var(--GR16) }
+
+        /* Download Icon */
+        .asa > .aZh { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/file_download_white_20dp.png') !important }
+
+        /* Google Drive Icon */
+        .asa > .aZg { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/attach_drive_white_20dp.png') !important }
+
+        /* Attachment Item */
+        .aQy, .aSG { background: var(--GR2) !important }
+        .aZn, .aZn:after, .aZm, .aZm:after { border-color: var(--GR8) !important }
+
+            /* Title */
+            .aYy { background: var(--GR4) !important }
+
+                /* Text */
+                .aQA { color: var(--GR16) !important }
+
+    /* Recommended Responses */
+
+    .bra {
+        box-shadow: inset 0 0 0 1px var(--GR8) !important;
+        color: var(--GRSELECTED) !important;
+    }
+
+        .bra:hover { background: var(--GR3) !important }
+
     /* Footer Action Buttons */
-    .nr { background: transparent !important }
     
+        /* Row */
+        .nr { background: transparent !important }
+
+        /* Button */
+
+        .amn > .ams {
+            box-shadow: inset 0 0 0 1px var(--GR8) !important;
+            color: var(--GR16) !important;
+        }
+    
+            .amn > .ams:hover { background: var(--GR3) !important }
+
+        /* Reply Icon */
+        .ams.bkH::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/reply_white_20dp.png') !important }
+
+        /* Reply All Icon */
+        .ams.bkI::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/reply_all_white_20dp.png') !important }
+
+        /* Forward Icon */
+        .ams.bkG::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/forward_white_20dp.png') !important }
+
+    /* Deleted messages banner */
+
+    .iS {
+        background: var(--GR2) !important;
+        border-color: var(--GR4) !important;
+    }
+    
+        /* Button */
+        .iT { color: var(--GRSELECTED) !important }
+
+            .iT:hover { color: var(--GR18) !important }
 }
