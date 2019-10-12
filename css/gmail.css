@@ -1,3 +1,4 @@
+@-moz-document url-prefix("https://mail.google.com") {
 /* COLOR PALETTE */
 
 :root {
@@ -585,12 +586,20 @@
             /* Star */
             .bi4 > .T-KT:not(.T-KT-Jp):not(.byM)::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/star_border_white_20dp.png') !important }
 
+            /* Reply */
+            .hB { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/reply_white_20dp.png') !important }
+
             /* Reply All */
             .aaq .mK { background-image: url(https://www.gstatic.com/images/icons/material/system/1x/reply_all_white_20dp.png) !important }
 
         /* Email Content */
-        .a3s { background: white }
+        .a3s {
+            background: #FFF;
+            border-radius: 8px;
+            padding: 32px;
+        }
 
     /* Footer Action Buttons */
     .nr { background: transparent !important }
     
+}
