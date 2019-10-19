@@ -235,6 +235,26 @@
         /* Day (selected) */
         .W0m3G.i8dSE .r4nke { color: var(--GRSELECTED) !important}
 
+    /* MEET WITH */
+
+        /* "Meet with" */
+        .Ox3r3c { color: var(--GR12) !important }
+        
+        /* Selected Person Pill */
+        .cnTo8e.FYQzvb::before { background: var(--GR4) !important }
+
+            /* Avatar */
+                /* Circle */
+                .EzBbpc path[fill="#E0E0E0"] { fill: var(--GR0) !important }
+
+                /* Person Icon */
+                .EzBbpc path[fill="#BDBDBD"] { fill: var(--GR12) !important }
+
+            /* Remove Icon */
+            .RpN9Ve { color: var(--GR16) !important }
+
+                .RpN9Ve:hover { background: var(--GR10) !important }
+
     /* ADD CALENDAR */
 
         /* Input Wrapper */
@@ -335,6 +355,17 @@
 
     /* Current Day Highlight */
     .SU7tYb.F262Ye, .yEkOpe.F262Ye  { background: var(--GR3) !important }
+
+    /* Crossed-out area when using "Meet with" feature */
+    .eh9LUb .PKtsjf, .sphSn .PKtsjf, .mjwRo .PKtsjf, .s4ZaLd.GIIru {
+        filter: invert(1) brightness(3) grayscale(1) !important;    
+    }
+
+    /* Selected Time when using "Meet With" feature */
+    .EfQccc.pZRd0d {
+        background: var(--GR12) !important;
+        border: 1px solid var(--GR18) !important;
+    }
 
 /* MONTH VIEW */
 
@@ -608,7 +639,14 @@
                 color: var(--GR18) !important;
                 cursor: pointer;
             }
+
+    /* "Suggested times" Button */
+    .tDiQl { border-color: var(--GR12) !important }
+
+        .tDiQl:hover { border-color: var(--GRSELECTED) !important }
     
+        .tDiQl .snByac { color: var(--GR16) !important }
+
     /* Calendar Select */
     .jZ0DTb { background: var(--GR4) !important }
 
