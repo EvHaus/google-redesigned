@@ -1,4 +1,3 @@
-@-moz-document url-prefix("https://mail.google.com") {
 /* COLOR PALETTE */
 
 :root {
@@ -570,6 +569,9 @@
         /* More */
         .hA { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png') !important }
 
+        /* Attachment Clip */
+        .gW { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/attachment_white_20dp.png') !important }
+
     /* Thread */
 
         /* Author */
@@ -666,4 +668,63 @@
         .iT { color: var(--GRSELECTED) !important }
 
             .iT:hover { color: var(--GR18) !important }
-}
+
+    /* Calendar Invite */
+    .aU9 { border-color: var(--GR6) !important }
+
+        /* First Panel */
+        .aRi {
+            background: var(--GR4) !important;
+            border-color: var(--GR6) !important;
+        }
+
+        /* Second Panel */
+        .aU4 {
+            background: var(--GR2) !important;
+            color: var(--GR16) !important;
+        }
+
+            /* Event Title */
+            .aRo { color: var(--GR16) !important }
+
+            /* "View on Google Calendar" */
+            .aRn .e { color: var(--GR14) !important }
+
+            /* "When", "Where", "Who", "Agenda" labels */
+            .aRk, .aQ4, .aQ5 { color: var(--GR14) !important }
+
+            /* "Yes" button */
+            .bqc.T-I-ax7.bAL.aRa {
+                background: var(--GR4) !important;
+                box-shadow: inset 0 0 0 1px var(--GR8) !important;
+                color: var(--GRSELECTED) !important;
+            }
+    
+                .bqc.T-I-ax7.bAL.aRa:hover {
+                    background: var(--GRSELECTED) !important;
+                    box-shadow: inset 0 0 0 1px var(--GRSELECTED) !important;
+                    color: var(--GR0) !important;
+                }
+
+            /* "Maybe", "No" Buttons */
+            .bqc.T-I-ax7 {
+                background: var(--GR2) !important;
+                box-shadow: inset 0 0 0 1px var(--GR8) !important;
+                color: var(--GR16) !important;
+            }
+
+                .bqc.T-I-ax7:hover {
+                    background: var(--GR4) !important;
+                    box-shadow: inset 0 0 0 1px var(--GRSELECTED) !important;
+                }
+
+        /* Third Panel */
+        .aRc {
+            background: var(--GR2) !important;
+            border-color: var(--GR6) !important;
+        }
+
+            /* Agenda Links */
+            .aU7 { color: var(--GR16) !important }
+            
+                .aU7:hover { color: var(--GRSELECTED) !important }
