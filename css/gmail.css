@@ -445,6 +445,11 @@
 
 /* INBOX LIST */
 
+    /* Toolbar */
+
+        /* Separators */
+        .G-Ni.G-aE:not(:first-child) {box-shadow: inset -1px 0 0 hsla(211, 18%, 88%, .122) !important }
+
     /* Row */
     .yO {
         background: var(--GR4) !important;
@@ -511,11 +516,78 @@
         /* Snooze */
         .brv { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png') !important }
 
+        /* Move to Inbox */
+        .bq5 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/move_to_inbox_white_20dp.png') !important }
+
         /* Calendar */
         .xL { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/today_white_20dp.png') !important }
     
         /* Hangouts */
         .aVb { background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/wbt/hangouts_white_icon16.png') !important }
+
+        /* Attachment */
+        .yE { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/attachment_white_20dp.png') !important }      
+
+/* INBOX CONTEXT MENU */
+
+    /* Icons */
+
+        /* Reply All */
+        .BR { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/reply_all_white_20dp.png') !important }
+
+        /* Reply All */
+        .BS { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/reply_white_20dp.png') !important }
+
+        /* Forward */
+        .BQ { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/forward_white_20dp.png') !important }
+
+        /* Forward as attachment */
+        .In { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/attachment_white_20dp.png') !important }
+
+        /* Archive */
+        .aDD { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/archive_white_20dp.png') !important }
+
+        /* Move to inbox */
+        .s0 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/move_to_inbox_white_20dp.png') !important }
+
+        /* Not spam */
+        .s3 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/report_off_white_20dp.png') !important }
+
+        /* Delete */
+        .aDF { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/delete_white_20dp.png') !important }
+
+        /* Discard drafts */
+        .UN { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/delete_white_20dp.png') !important }
+
+        /* Mark as read */
+        .sX { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/drafts_white_20dp.png') !important }
+
+        /* Mark as unread */
+        .sY { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/mark_as_unread_white_20dp.png') !important }
+
+        /* Snooze */
+        .s7 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png') !important }
+
+        /* Move to */
+        .sZ { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/drive_file_move_white_20dp.png') !important }
+
+        /* Label as */
+        .zp { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/label_white_20dp.png') !important }
+
+        /* Mute */
+        .s1 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/volume_off_white_20dp.png') !important }
+
+        /* Unmute */
+        .s9 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/volume_up_white_20dp.png') !important }
+
+        /* Find emails from ___ */
+        .s6 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/search_white_20dp.png') !important }
+
+        /* Open in new window */
+        .zn { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/open_in_new_white_20dp.png') !important }
+
+        /* Arrow */
+        .J-Ph-hFsbo { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_right_white_20dp.png') !important }
 
 /* RIGHT SIDEBAR */
 
@@ -556,6 +628,9 @@
     .hx .hb { color: var(--GR14) !important }
 
     /* Header Icons */
+
+        /* Recepients Arrow */
+        .ajy > .ajz { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png') !important }
 
         /* Collapse All */
         .gx { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/expand_all_white_20dp.png') !important }
