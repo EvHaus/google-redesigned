@@ -612,6 +612,17 @@
         
 /* EMAIL THREADS */
 
+    /* Snoozed Bar */
+    .bAR { background: var(--GR4) !important }
+
+        /* Text */
+        .bAV { color: var(--GR14) !important }
+
+        /* Unsnooze Button */
+        .bAS { color: var(--GRSELECTED) !important }
+
+            .bAS:focus, .bAS:hover { color: var(--GR16) !important }
+
     /* Overall Background */
     .iY .Bu { background: transparent !important }
 
@@ -621,11 +632,34 @@
     /* Email Title */
     .ha > .hP { color: var(--GR16) !important }
 
+    /* Flight Details */
+    .aX3 { border-color: var(--GR4) !important }
+
+        /* Left Side */
+        .aXt {
+            background: var(--GR2) !important;
+            border-color: var(--GR4) !important;
+        }
+
+        /* Right Side */
+            
+            /* Flight Number */
+            .aHz { color: var(--GR16) !important }
+
+            /* Dates */
+            .aHB { color: var(--GR14) !important }
+
+            /* From/To Sections */
+            .aNp, .aYl { border-color: var(--GR4) !important }
+
+            /* Selected Item */
+            .aNA .aX5, .aNp:hover .aX5 { color: var(--GRSELECTED) !important }
+
     /* Body Preview */
     .g6 { color: var(--GR14) !important }
 
     /* Recepients */
-    .hx .hb { color: var(--GR14) !important }
+    .hx .hb, .ac2 { color: var(--GR14) !important }
 
     /* Header Icons */
 
