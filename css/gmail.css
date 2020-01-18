@@ -7,7 +7,7 @@
     --GR3: #252A2D;
     --GR4: #2D3236;
     --GR5: #343A3F;
-    --GR6: #3B4348;
+    --GR6: #3B4348; /* Dropdown/Popover Background */
     --GR7: #434B51;
     --GR8: #4A535A;
     --GR9: #515B62;
@@ -64,14 +64,15 @@
 
     .aiw { border-bottom: 1px solid var(--GR6) !important }
 
-    .gb_7d { background: var(--GR4) !important }
+    .gb_Vd { background: var(--GR4) !important }
 
     /* Icons */
-    .gb_ja svg { opacity: 1 !important }
+    .gb_sa svg {
+        color: var(--GR15) !important;
+    }
 
     /* "Gmail" logo */
-	img.gb_ma, /* Personal */
-    .gb_qc img.gb_la  /* Business */
+	img.gb_ua
     {
         background: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png') no-repeat center center !important;
         height: 0 !important;
@@ -91,13 +92,18 @@
 
         /* Input */
         #aso_search_form_anchor input { color: var(--GR16) !important }
-        #aso_search_form_anchor input::placeholder { color: var(--GR12) !important }
+
+            /* "Search mail" placeholder */
+            #aso_search_form_anchor input::placeholder { color: var(--GR14) !important }
        
     /* Search Options Dropdown */
     .ZF-zT {
         background: var(--GR6) !important;
         color: var(--GR16) !important;
     }
+
+        /* "No recent items" message */
+        .gsan_a { color: var(--GR14) !important }
 
         /* Labels */
         .boo>.ZG { color: var(--GR16) !important }
@@ -321,6 +327,9 @@
         /* Email Count */
         .bsU { color: var(--GR14) !important }
 
+        /* "Categories" Arrow Button Hover */
+        .aij { background-color: transparent !important }
+
     /* Hover */
     .TO.NQ,
     .n6 .ah9:hover, /* "More" */
@@ -337,6 +346,11 @@
 
         /* Text */
         .TO.nZ .n0 { color: var(--GR18) !important }
+
+    /* While Dragging */    
+    .nY { background: transparent !important } /* Rounded corner fix */
+    
+        .TK .TO:active { background: var(--GR6) !important }
 
 /* MAIN CONTENT */
 
@@ -436,6 +450,11 @@
         /* "Settings" Focused State (Outer Ring) */
         .asa::before { border-color: var(--GR10) !important }
 
+        /* "..." menu */
+    
+            /* "Select messages to see more actions" */
+            .asd { color: var(--GR14) !important }
+
     /* Page Count (1 of 3) */
     .Dj, /* Inbox */
     .h0  /* Email View */
@@ -444,6 +463,12 @@
     }
 
 /* INBOX LIST */
+
+    /* "no new mail!" row */
+    .TD {
+        background: var(--GR3) !important;
+        color: var(--GR14) !important;
+    }
 
     /* Toolbar */
 
@@ -481,8 +506,8 @@
 
         /* Attachment Pill */
         .brc {
-            box-shadow: inset 0 0 0 1px var(--GR8) !important;
-            color: var(--GR12) !important
+            box-shadow: inset 0 0 0 1px var(--GR12) !important;
+            color: var(--GR14) !important
         }
 
             .brc:hover {
@@ -493,13 +518,34 @@
     /* Icons */
 
         /* Checkbox */
-        .xY > .T-Jo { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_outline_blank_white_20dp.png') !important }
+        .xY > .T-Jo {
+            background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_outline_blank_white_20dp.png') !important;
+            opacity: 0.4 !important;
+        }
 
         /* Checkbox (Checked) */
-        .xY > .T-Jo-Jp { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_white_20dp.png') !important }
+        .xY > .T-Jo-Jp {
+            background-image: url('https://www.gstatic.com/images/icons/material/system/1x/check_box_white_20dp.png') !important;
+            opacity: 0.8 !important;
+        }
 
         /* Star */
-        td.apU > .T-KT.aXw::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/star_border_white_20dp.png') !important }
+        td.apU > .T-KT.aXw::before {
+            background-image: url('https://www.gstatic.com/images/icons/material/system/1x/star_border_white_20dp.png') !important;
+            opacity: 0.4 !important;
+        }
+
+        /* Non-important */
+        .a9q {
+            background-image: url(https://www.gstatic.com/images/icons/material/system/1x/label_important_outline_white_20dp.png) !important;
+            opacity: 0.4 !important;
+        }
+
+        /* Important */
+        .a9q.pH {
+            background-image: url('https://www.gstatic.com/images/icons/material/system/1x/label_important_googyellow500_20dp.png') !important;
+            opacity: 0.8 !important;
+        }
 
         /* Archive */
         .brq { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/archive_white_20dp.png') !important }
@@ -684,13 +730,13 @@
     /* Thread */
 
         /* Author */
-        .hx .gD { color: var(--GR16) !important }
+        .hx .gD { color: var(--GR18) !important }
 
         /* Author Email */
-        .go { color: var(--GR12) !important }
+        .go { color: var(--GR14) !important }
 
         /* Date */
-        .g3 { color: var(--GR12) !important }
+        .g3 { color: var(--GR14) !important }
 
         /* Icons */
         
@@ -698,10 +744,15 @@
             .bi4 > .T-KT:not(.T-KT-Jp):not(.byM)::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/star_border_white_20dp.png') !important }
 
             /* Reply */
-            .hB { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/reply_white_20dp.png') !important }
+            .hB, /* Inline */
+            .mL /* In ... menu */
+            { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/reply_white_20dp.png') !important }
 
             /* Reply All */
             .aaq .mK { background-image: url(https://www.gstatic.com/images/icons/material/system/1x/reply_all_white_20dp.png) !important }
+
+            /* Forward (In ... menu) */
+            .mI { background-image: url(https://www.gstatic.com/images/icons/material/system/1x/forward_white_20dp.png) !important }
 
         /* Email Content */
         .a3s {
@@ -733,6 +784,24 @@
 
                 /* Text */
                 .aQA { color: var(--GR16) !important }
+
+        /* Recepient ("me") Hover Popover */
+        .ajA { background: var(--GR6) !important }
+
+            /* Labels */
+            .ajB .gG { color: var(--GR18) !important }
+
+            /* Value */
+            .hx { color: var(--GR16) !important }
+
+            /* Links */
+            .h1, /* "Filter messages from this mailing list") */
+            .gt a /* Security "Learn More" */
+            { color: var(--GRSELECTED) !important }
+
+                .h1:focus, .h1:hover,
+                .gt a:focus, .gt a:hover
+                { color: var(--GR18) !important }
 
     /* Recommended Responses */
 
