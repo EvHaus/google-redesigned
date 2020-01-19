@@ -792,15 +792,15 @@
             .ajB .gG { color: var(--GR18) !important }
 
             /* Value */
-            .hx { color: var(--GR16) !important }
+            .gI { color: var(--GR16) !important }
 
             /* Links */
             .h1, /* "Filter messages from this mailing list") */
-            .gt a /* Security "Learn More" */
+            .gI a /* Security "Learn More" */
             { color: var(--GRSELECTED) !important }
 
                 .h1:focus, .h1:hover,
-                .gt a:focus, .gt a:hover
+                .gI a:focus, .gI a:hover
                 { color: var(--GR18) !important }
 
     /* Recommended Responses */
