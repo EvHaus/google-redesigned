@@ -223,6 +223,25 @@
                 filter: invert(1) !important
             }
 
+        /* "Create Filter" Button */
+        .acM { color: var(--GR14) !important } 
+
+        /* "Search" Button */
+        .T-I-atl { background: var(--GR8) !important }
+
+            .T-I-atl:hover { box-shadow: 0 1px 2px 0 var(--GR10), 0 1px 3px 1px var(--GR1) !important }
+
+/* FILTER CREATION DROPDOWN */
+
+    /* Back Arrow before "When a message arrives..." */
+    .btl.acK { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_back_white_20dp.png') !important }
+
+    /* "Learn More" Icon */
+    .btn::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/help_white_20dp.png') !important } 
+
+    /* "Learn More" Button */
+    .btn { color: var(--GR14) !important }
+
 /* MAIN BODY */
 
     .wl { background: var(--GR3) !important }
