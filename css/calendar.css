@@ -33,7 +33,7 @@
 
 /* ICONS */
 
-    .gb_ja svg, /* Header Hamburger Menu */
+    .gb_sa svg, /* Header Hamburger Menu */
     .rF3YF span, /* Header/Sidebar Arrows, Search */
     .gb_Wa.gb_xe svg, /* Header Settings, Apps, Bell */
     .xmVoP, /* Header "2 weeks" Button Arrow */
@@ -68,6 +68,9 @@
         background: var(--GR4) !important;
         color: var(--GR16) !important;
     }
+
+        /* "Calendar" */
+        .gb_0c .gb_9d { color: var(--GR16) !important }
 
     /* Square Buttons */
     .GXlaye.qRI4pc, /* Today */
@@ -238,7 +241,7 @@
     /* MEET WITH */
 
         /* "Meet with" */
-        .Ox3r3c { color: var(--GR12) !important }
+        .qISYgf { color: var(--GR12) !important }
         
         /* Selected Person Pill */
         .cnTo8e.FYQzvb::before { background: var(--GR4) !important }
@@ -411,6 +414,24 @@
     
     /* Time Event (Selected) */
     .g3dbUc.smECzc.KKjvXb { background: var(--GR10) !important }
+
+    /* "x more" row */
+    .g3dbUc.KCIIIb { color: var(--GR12) !important } 
+
+        .g3dbUc.smECzc:hover, .g3dbUc.KCIIIb:hover {
+            background: var(--GR6) !important;
+            color: var(--GR16) !important
+        }
+
+    /* "x more" Popover */
+    
+        /* Day of the Week */
+        .QJLQUd { color: var(--GR14) !important }
+
+        /* Day Number */
+        .ebs3Ne { color: var(--GR16) !important }
+
+            .ebs3Ne:hover { background: var(--GR2) !important }
 
 /* YEAR VIEW */
 
@@ -905,6 +926,12 @@
 
         /* Outside of work week area */
         .SJbruc { background: var(--GR3) !important }
+
+        /* Find a time block */
+        .BoaG2d {
+            background-color: var(--GR18) !important;
+            border-color: var(--GR18) !important
+        }
 
 /* SETTINGS */
 
