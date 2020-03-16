@@ -1,3 +1,4 @@
+@-moz-document url-prefix("https://mail.google.com") {
 /* COLOR PALETTE */
 
 :root {
@@ -72,7 +73,7 @@
     }
 
     /* "Gmail" logo */
-	img.gb_ua
+	.gb_nc img.gb_ua
     {
         background: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png') no-repeat center center !important;
         height: 0 !important;
@@ -581,6 +582,9 @@
         /* Snooze */
         .brv { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png') !important }
 
+        /* Add to Tasks */
+        .Vj { background-image: url('//ssl.gstatic.com/ui/v1/icons/mail/rfr/task_add_filled_20_white_1x.png') !important }
+
         /* Move to Inbox */
         .bq5 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/move_to_inbox_white_20dp.png') !important }
 
@@ -768,7 +772,7 @@
             { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/reply_white_20dp.png') !important }
 
             /* Reply All */
-            .aaq .mK { background-image: url(https://www.gstatic.com/images/icons/material/system/1x/reply_all_white_20dp.png) !important }
+            .mK { background-image: url(https://www.gstatic.com/images/icons/material/system/1x/reply_all_white_20dp.png) !important }
 
             /* Forward (In ... menu) */
             .mI { background-image: url(https://www.gstatic.com/images/icons/material/system/1x/forward_white_20dp.png) !important }
@@ -830,6 +834,23 @@
     }
 
         .bra:hover { background: var(--GR3) !important }
+
+    /* Collapsed Threads */
+
+        /* Number */
+        .bh > .adv .adx {
+            background: var(--GR6) !important;
+            box-shadow: inset 0 0 0 1px var(--GR10);
+            color: var(--GR16) !important;
+        }
+
+            /* Hover Icons */
+            .bh > .adv .adx::before {
+                background-image: url('https://www.gstatic.com/images/icons/material/system/1x/expand_all_white_20dp.png')
+            }
+
+        /* Divider */
+         .bh > .adv > .Bk::after { border-color: var(--GR8) !important }
 
     /* Footer Action Buttons */
     
@@ -925,3 +946,4 @@
             .aU7 { color: var(--GR16) !important }
             
                 .aU7:hover { color: var(--GRSELECTED) !important }
+}
