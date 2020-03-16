@@ -1,4 +1,3 @@
-@-moz-document url-prefix("https://mail.google.com") {
 /* COLOR PALETTE */
 
 :root {
@@ -583,7 +582,7 @@
         .brv { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png') !important }
 
         /* Add to Tasks */
-        .Vj { background-image: url('//ssl.gstatic.com/ui/v1/icons/mail/rfr/task_add_filled_20_white_1x.png') !important }
+        .Vj { background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/task_add_filled_20_white_1x.png') !important }
 
         /* Move to Inbox */
         .bq5 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/move_to_inbox_white_20dp.png') !important }
@@ -946,4 +945,3 @@
             .aU7 { color: var(--GR16) !important }
             
                 .aU7:hover { color: var(--GRSELECTED) !important }
-}
