@@ -1,3 +1,4 @@
+@-moz-document url-prefix("https://mail.google.com") {
 /* COLOR PALETTE */
 
 :root {
@@ -945,3 +946,4 @@
             .aU7 { color: var(--GR16) !important }
             
                 .aU7:hover { color: var(--GRSELECTED) !important }
+}
