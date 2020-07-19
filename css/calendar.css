@@ -42,7 +42,7 @@
     .d29e1c, /* Event Popover Three Dots */
     .cjq2Db, /* Event Popover Close */
     .kMp0We .DPvwYc, /* Event Popover Rows */
-    .QusFJf, /* Create Event Popover Icons */
+    .GyffFb,  /* Create Event Popover Icons */
     .aStPEd, /* Create Event Popover Out of Office Visibility Help Icon */
     .uSx8Od svg, /* Create Event Page Location/Conferencing */
     .uSx8Od, /* Create Event Page Calendar */
@@ -70,7 +70,7 @@
     }
 
         /* "Calendar" */
-        .gb_0c .gb_9d { color: var(--GR16) !important }
+        .gb_9c .gb_ne { color: var(--GR16) !important }
 
     /* Square Buttons */
     .GXlaye.qRI4pc, /* Today */
@@ -495,6 +495,12 @@
 
 /* EVENT POPOVER */
 
+    /* Header (July 2020) */
+    .ik71Ie {
+        background: var(--GR4) !important;
+        box-shadow: inset 0 1px 0 var(--GR12) !important;
+    }
+
     /* Body */
     .JtukPc { background: var(--GR6) !important }
 
@@ -522,7 +528,14 @@
         .bjNu9b .Kww6bc { fill: var(--GRSELECTED) !important }
 
     /* Date & Address */
-    .DN1TJ { color: var(--GR16) !important }
+    .DN1TJ,
+    .s6I1Kd /* July 2020 */
+    {
+        color: var(--GR16) !important;
+    }
+
+    /* "Does not repeat", "Free / Default visibility / Do not notify" */
+    .NAgJzc { color: var(--GR14) !important }
 
     /* RTE for Description */
     .XOE24 { background: var(--GR4) !important }
@@ -534,6 +547,9 @@
         .XOE24:not(.W1ZWq) .gHlG4 .Erb9le:not(.Hcv3ye) .qmMNRc:hover {
             background: var(--GR2) !important
         }
+
+        /* "Add description" */
+        .iSSROb { color: var(--GR12) !important } 
     
     /* Close Icon Circle */
     .XsU8xf { background-color: var(--GR3) !important }
@@ -595,7 +611,7 @@
     .shdZ7e .zHQkBf { color: var(--GR16) !important }
 
         /* Placeholder Text */
-        .shdZ7e .snByac { color: var(--GR12) !important }
+        .bnPQpd:not(.YkAcPc) { color: var(--GR12) !important }
 
         /* Underline */
         .shdZ7e .mIZh1c { background: var(--GR12) !important }
@@ -637,12 +653,12 @@
         .DSC0Mc { background: var(--GRSELECTED) !important }
 
         /* Add Time Button */
-        .e3UiQ {
-            border-color: transparent !important;
+        .EfSkZd {
+            border-color: var(--GR12) !important;
             color: var(--GR16) !important;
         }
 
-            .e3UiQ:hover {
+            .EfSkZd:hover {
                 color: var(--GR17) !important;
             }
 
@@ -660,6 +676,9 @@
                 color: var(--GR18) !important;
                 cursor: pointer;
             }
+
+    /* "All Day" checkbox (July 2020) */
+    .cAP2G { color: var(--GR16) !important }
 
     /* "Suggested times" Button */
     .tDiQl { border-color: var(--GR12) !important }
@@ -717,11 +736,21 @@
         
         .nYqxP:hover { color: var(--GR18) !important }
 
-    /* "Save" Button */
-    .Y5sE8d {
+    /* Buttons */
+    .Y5sE8d, /* "Save" */
+    .twhhs.s2r4Od .Fxmcue /* "Add Google Meet video conferencing" */
+    {
         background: var(--GR10) !important;
-        color: var(--GR18) !important;
+        color: var(--GR16) !important;
     }
+
+        .Y5sE8d:hover,
+        .twhhs.s2r4Od .Fxmcue:hover {
+            color: var(--GR18) !important
+        }
+
+        /* "Add Google Meet video conferencing" text */
+        .twhhs.s2r4Od .Fxmcue .snByac { color: inherit !important } 
 
 /* EDIT POPOVER */
 
@@ -756,12 +785,15 @@
         .BHE4Yb .nQOrEb { border-color: var(--GRSELECTED) !important }
 
     /* Occurences Row */
-    .GY2CZb { background: transparent !important }
+    .M2lnFe.RDPZE {
+        background: transparent !important;
+        color: var(--GR16) !important;
+    }
 
     /* "Cancel" / "Done" Buttons */
-    .UQuaGc { color: var(--GR16) !important }
+    .I7OXgf .UQuaGc { color: var(--GR16) !important }
 
-        .UQuaGc:hover { color: var(--GR18) !important }
+        .I7OXgf .UQuaGc:hover { color: var(--GR18) !important }
 
 /* CREATE EVENT PAGE */
 
@@ -769,6 +801,7 @@
 
     /* Checkboxes */
     .dRjtd .i6LVBe, /* "All Day" */
+    .cAP2G .k2NHHb, /* "All Day" Event Popover (July 2020) */
     .kMp0We .wimXt,  /* Guests Can */
     .WefNYe .uVccjd, /* Settings Page */
     .Lzfnue .uVccjd /* Trash Page */
@@ -779,6 +812,8 @@
         /* Checkmark */
         .dRjtd .i6LVBe .MbUTNc,
         .dRjtd .i6LVBe .Ii6cVc,
+        .cAP2G .k2NHHb .MbUTNc,
+        .cAP2G .k2NHHb .Ii6cVc,
         .kMp0We .wimXt .MbUTNc,
         .kMp0We .wimXt .Ii6cVc,
         .WefNYe .uVccjd .MbUTNc,
@@ -875,6 +910,11 @@
     
     /* "Guests Can" */
     .hGcgEd { color: var(--GR16) !important }
+
+    /* "Find a time" button */
+    .A9M8Me:not(.Y5sE8d) { color: var(--GR16) !important }
+
+        .A9M8Me:not(.Y5sE8d):hover { color: var(--GR18) !important }
     
     /* "Find a Time" date range */
     .oPF3Ce { color: var(--GR16) !important }
