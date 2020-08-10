@@ -554,8 +554,14 @@
     /* Close Icon Circle */
     .XsU8xf { background-color: var(--GR3) !important }
 
-    /* "Going?" Footer */
+    /* Action Footer */
     .NAFvr { background: var(--GR5) !important }
+
+        /* Buttons */
+        .NAFvr .UQuaGc { color: var(--GR14) !important }
+
+        /* "Yes" */
+        .NAFvr .l3F1ye { color: var(--GRSELECTED) !important }
 
         /* Divider */
         .mKdssd { background: var(--GR10) !important }
@@ -738,14 +744,16 @@
 
     /* Buttons */
     .Y5sE8d, /* "Save" */
-    .twhhs.s2r4Od .Fxmcue /* "Add Google Meet video conferencing" */
+    .twhhs.s2r4Od .Fxmcue, /* "Add Google Meet video conferencing" */
+    .w1OTme  /* Join with Google Meet */
     {
         background: var(--GR10) !important;
         color: var(--GR16) !important;
     }
 
         .Y5sE8d:hover,
-        .twhhs.s2r4Od .Fxmcue:hover {
+        .twhhs.s2r4Od .Fxmcue:hover,
+        .w1OTme:hover {
             color: var(--GR18) !important
         }
 
@@ -851,20 +859,6 @@
             background: var(--GR8) !important;
             cursor: pointer;
         }
-
-    /* Join Hangsout Meet */
-    .cBVkjf { border-color: var(--GR12) !important }
-
-        /* Links & Accents */
-        .Q30cfe,
-        .Fjbmi a {
-            color: var(--GRSELECTED) !important;
-        }
-
-            .Q30cfe:hover,
-            .Fjbmi a:hover {
-                color: var(--GR18) !important;
-            }
 
     /* Notification "Before at" text */
     .j3nyw { color: var(--GR16) !important }
