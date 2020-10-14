@@ -33,9 +33,8 @@
 
 /* ICONS */
 
-    .gb_sa svg, /* Header Hamburger Menu */
+    .gb_ta svg, /* Header Icons */
     .rF3YF span, /* Header/Sidebar Arrows, Search */
-    .gb_Wa.gb_xe svg, /* Header Settings, Apps, Bell */
     .xmVoP, /* Header "2 weeks" Button Arrow */
     .gb_ne.gb_oe button svg, /* Header Search Icons */
     .xJ65bd, /* Event Popover Header */
@@ -105,7 +104,7 @@
     .rF3YF:hover { background-color: var(--GR7) !important }
 
     /* "Calendar" title */
-    .gb_Zc .gb_5d { color: var(--GR16) !important }
+    .gb_1c .gb_ge { color: var(--GR16) !important }
 
     /* Calendar Range */
 	.rSoRzd { color: var(--GR16) !important }
@@ -496,7 +495,7 @@
 /* EVENT POPOVER */
 
     /* Header (July 2020) */
-    .ik71Ie {
+    .wmCMbe {
         background: var(--GR4) !important;
         box-shadow: inset 0 1px 0 var(--GR12) !important;
     }
@@ -533,6 +532,11 @@
     {
         color: var(--GR16) !important;
     }
+
+    /* "Find a time" */
+    .ij27gb:not(.Y5sE8d) { color: var(--GR16) !important }
+
+        .ij27gb:not(.Y5sE8d):hover { color: var(--GR18) !important }
 
     /* "Does not repeat", "Free / Default visibility / Do not notify" */
     .NAgJzc { color: var(--GR14) !important }
@@ -729,10 +733,13 @@
         .FaGtTe { background: var(--GRSELECTED) !important }
 
     /* Out of office "Decline message" label */
-    .OOp5xb { color: var(--GR12) !important }
+    .yWwNAd { color: var(--GR12) !important }
 
     /* Out of office Visibility Help Tooltip */
     .EmURbc { background: var(--GR6) !important }
+
+    /* Out of office "Availability might be shown in other Google apps" */
+    .bZvvv { color: var(--GR12) !important }
 
     /* Appointment slots duration row */
     .FXZz0b { background: transparent !important }
@@ -831,7 +838,19 @@
         {
             border-color: var(--GR0) !important
         }
-        
+
+    /* Day/Week Toggle */
+    .uUivFb {
+        border-color: var(--GR10) !important;
+        color: var(--GR12) !important;
+    }
+
+        /* Selected */
+        .wgAgQc[aria-checked="true"] .uUivFb {
+            background: var(--GR8) !important;
+            color: var(--GR16) !important;
+        }
+
     /* Tab */
     .r5F2ye .VZhFab { color: var(--GR12) !important }
     
@@ -847,6 +866,11 @@
     .DyOaYd.W1ZWq .lR3h6d {
         background-color: transparent !important;
     }
+
+    /* Appointments: "This calendar's appointment page" */
+    .cwu4dd { color: var(--GR16) !important }
+
+        .cwu4dd:focus, .cwu4dd:hover { color: var(--GR18) !important }
 
     /* Location Dropdown */
     .VOEIyf .jBmls {
