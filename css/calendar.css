@@ -1,5 +1,6 @@
-@-moz-document domain("calendar.google.com") {
 /* https://github.com/EvHaus/google-redesigned/ */
+
+@-moz-document domain("calendar.google.com") {
 
 /* COLOR PALETTE */
 
@@ -566,9 +567,25 @@
 
         /* "Yes" */
         .NAFvr .l3F1ye { color: var(--GRSELECTED) !important }
+    
+        /* "Yes" (with virtual meeting options) */
+        .Ztzsdd.KKjvXb .dvv0Pc,
+        .Ztzsdd.KKjvXb .lrZTuc {
+            background: var(--GR8) !important;
+            border-color: var(--GR10) !important;
+        }
+            
+            /* Options Arrow */
+            .DqwBN { color: var(--GR14) !important }
+    
+            /* Selected Option */
+            .j931be.KKjvXb {
+                background: var(--GR4) !important;
+                color: var(--GRSELECTED) !important;
+            }
 
         /* Divider */
-        .mKdssd { background: var(--GR10) !important }
+        .mKdssd, .mGlsq { background: var(--GR10) !important }
 
         /* "Propose a new time" buttons */
         .ZGVUP {
