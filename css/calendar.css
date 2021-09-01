@@ -34,10 +34,12 @@
 
 /* ICONS */
 
-    .gb_ta svg, /* Header Icons */
+    .gb_pa svg, /* Header Icons */
     .rF3YF span, /* Header/Sidebar Arrows, Search */
     .xmVoP, /* Header "2 weeks" Button Arrow */
     .gb_ne.gb_oe button svg, /* Header Search Icons */
+    .OkcShb, /* Sidebar > "Search for people" */
+    .K2mXPb, /* Sidebar > "+" */
     .xJ65bd, /* Event Popover Header */
     .d29e1c, /* Event Popover Three Dots */
     .cjq2Db, /* Event Popover Close */
@@ -70,7 +72,7 @@
     }
 
         /* "Calendar" */
-        .gb_9c .gb_ne { color: var(--GR16) !important }
+        .gb_Vc { color: var(--GR16) !important }
 
     /* Square Buttons */
     .GXlaye.qRI4pc, /* Today */
@@ -241,8 +243,8 @@
     /* MEET WITH */
 
         /* "Meet with" */
-        .qISYgf { color: var(--GR12) !important }
-        
+        .fWMZdd { color: var(--GR12) !important }
+    
         /* Selected Person Pill */
         .cnTo8e.FYQzvb::before { background: var(--GR4) !important }
 
@@ -258,24 +260,40 @@
 
                 .RpN9Ve:hover { background: var(--GR10) !important }
 
-    /* ADD CALENDAR */
+    /* SEARCH FOR PEOPLE */
 
         /* Input Wrapper */
-        .IIB0tc .ULpymb { background: var(--GR6) !important }
+        .ULpymb { background: var(--GR6) !important }
 
             /* Input */
             .ULpymb .zHQkBf { color: var(--GR16) !important }
 
             /* Input Placeholder */
-            .ULpymb .snByac { color: var(--GR12) !important }
+            .g1NEYe { color: var(--GR12) !important }
 
             /* Input Focus Animated Underline */
             .OabDMe { background: var(--GRSELECTED) !important }
         
-        /* ... Button */
-        div.oFBMuc { margin-left: 8px !important }
-        
-            div.oFBMuc:hover { background: var(--GR6) !important}
+        /* Search Results Dropdown */
+        .OFaVze {
+            background: var(--GR6) !important;
+            color: var(--GR16) !important;
+        }
+       
+            /* Rows / Row */
+            .pIQtMd, .AZW99 { background: transparent !important }
+    
+                /* Row Name Text */
+                .rNlsc { color: var(--GR18) !important }
+    
+                /* Row Email Text */
+                .O7pQ4 { color: var(--GR16) !important }
+
+                /* Row Hover */
+                .AZW99:hover {
+                    background: var(--GR8) !important;
+                    cursor: pointer;
+                }
 
     /* CALENDARS */
 
