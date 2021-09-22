@@ -295,6 +295,51 @@
                     cursor: pointer;
                 }
 
+    /* INSIGHTS */
+    
+        /* "Time Insights" Header */
+        .ukir3 .snByac { color: var(--GR12) !important }
+    
+            /* Collapsed > Icon */
+            .pjK1ke .bLefdf { background: var(--GR6) !important }
+    
+        /* Week Date */
+        .NCyou { color: var(--GR14) !important }
+    
+        /* "Time in meetings" */
+        .jy60Lb { color: var(--GR14) !important }
+        
+            /* (?) Icon */
+            .A1aem { color: var(--GR14) !important }
+    
+                /* Tooltip Text */
+                .CVM8jc { color: var(--GR16) !important }
+    
+                /* Tooltip Links */
+                .l3F1ye .TpQm9d { color: var(--GR16) !important }
+    
+                    .l3F1ye .TpQm9d:hover { color: var(--GR18) !important }
+    
+                    /* Background */
+                    .l3F1ye .e19J0b { background-color: var(--GR16) !important }
+    
+        /* Time */
+        .WPEztb { color: var(--GR16) !important }
+    
+        /* "avg xx.x hr" */
+        .kGOQJe { color: var(--GR12) !important }
+    
+        /* "More insights" Button */
+        .b3e6Tb {
+            background: var(--GR4) !important;
+            border-color: var(--GR8) !important
+        }
+    
+            .b3e6Tb:hover { background: var(--GR6) !important }
+            
+            /* Label */
+            .l3F1ye { color: var(--GR16) !important }
+    
     /* CALENDARS */
 
         /* Calendars Group Title */
@@ -354,6 +399,11 @@
         {
             border-color: var(--GR3) !important
 		}
+
+    /* Insights Event Highlight (on hover) */
+    .EfQccc.KKjvXb {
+        box-shadow: var(--GR0) 0 0 8px !important;
+    }
 
 /* WEEK VIEW */
 
@@ -490,6 +540,78 @@
 
         .dtaVuc:hover { background: var(--GR6) !important }
 
+/* INSIGHTS RIGHT SIDEBAR */
+    
+    /* Header */
+    
+        /* Week Range */
+        .aiNrUc { color: var(--GR12) !important }
+    
+        /* "Time Insight */
+        .BF7cNd { color: var(--GR16) !important }
+    
+            /* Visibility Icon */
+            .ZVWSZd { background: var(--GR8) !important }
+    
+                .ZVWSZd .Ce1Y1c svg {
+                    color: var(--GR16) !important;
+                    fill: var(--GR16) !important;
+                }
+    
+    /* Section Dividers */
+    .nlPDxd, .zFV1Jf { border-color: var(--GR8) !important }
+                
+    /* Section Titles */
+    .msLrsf { color: var(--GR14) !important }
+    
+    /* "Time Breakdown" Section */
+    
+        /* Chart Labels */
+        .IJDILb { color: var(--GR14) !important }
+    
+        /* "Remaining time" chart section */
+        .Ul8W4d.rKwhEe { fill: var(--GR10) !important }
+        .n4G76.CO2K4e { background-color: var(--GR10) !important }
+    
+        /* "Based on your working hours" */
+        .PlHTad { color: var(--GR12) !important }
+    
+        /* "Adjust working hours" button */
+        .pKUk7 {
+            background: var(--GR4) !important;
+            border-color: var(--GR8) !important
+        }
+    
+            .pKUk7:hover { background: var(--GR6) !important }
+    
+    /* "Time in meetings" Section */
+    
+        /* "Most meetings" / "Daily average" */
+        .SDiQL { color: var(--GR12) !important }
+    
+        /* "Most meetings" / "Daily average" Value */
+        .hPfWQd { color: var(--GR14) !important }
+    
+        /* Table Cell Label */
+        .Tz47sb {
+            border-color: var(--GR8) !important;
+            color: var(--GR14) !important
+        }
+    
+        /* Table Cell Value */
+        .hRlabf { color: var(--GR14) !important }
+    
+        /* Legend Label */
+        .eWT7sb { color: var(--GR12) !important }
+    
+    /* "People you meet with" Section */
+    
+        /* Person's Name */
+        .yVvvMc { color: var(--GR14) !important }
+    
+        /* Date */
+        .u0Pitc { color: var(--GR12) !important }
+    
 /* RIGHT SIDEBAR */
 
     /* Body */
