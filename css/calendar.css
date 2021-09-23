@@ -1220,4 +1220,38 @@
         /* Row Hover */
         .v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
         .ETUnje { border-color: var(--GR6) !important }
+    
+/* EMBEDDED IFRAME SIDEBAR INSIDE GMAIL */
+    
+    /* Header Titles */
+    .ccLsFc { color: var(--GR16) !important }
+    
+    /* Header Dividers */
+    .cOoA8d, .cBs4Te { border-color: var(--GR10) !important }
+    
+    /* Header "..." Menu Selected Option */
+    .e3odF { background: var(--GR10) !important }
+    
+    /* Create Event Popover */
+    
+        /* Header */
+        .Bofavf {
+            background: var(--GR4) !important;
+            box-shadow: inset 0 1px 0 var(--GR12) !important;
+        }
+    
+        /* "Add Title" */
+        .XTHi9c .snByac { color: var(--GR14) !important }
+    
+        /* Title */
+        .XTHi9c .zHQkBf { color: var(--GR18) !important }
+    
+        /* Section Dividers */
+        .Od6NEf, .IFQP9d, .iofSlf, .Da8wwf { border-color: var(--GR10) !important }
+    
+        /* "Add Google Meet video conferencing" */
+        .oYdi4d .FAE19b .snByac { color: var(--GR14) !important }
+    
+        /* "Join with Google Meet" */
+        .Q30cfe { color: var(--GR18) !important }
 }
