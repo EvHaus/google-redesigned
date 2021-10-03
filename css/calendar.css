@@ -478,7 +478,15 @@
         }
     
     /* Time Event (Past) */
-    .g3dbUc.UflSff { color: var(--GR12) !important }
+    .g3dbUc.UflSff {
+        color: var(--GR12) !important;
+    }
+    
+        /* Time Event (Past) Full Day */
+        .g3dbUc.UflSff:not(.smECzc) {
+            color: var(--GR8) !important;
+            filter: brightness(0.6) !important;
+        }
     
     /* Time Event (Selected) */
     .g3dbUc.smECzc.KKjvXb { background: var(--GR10) !important }
