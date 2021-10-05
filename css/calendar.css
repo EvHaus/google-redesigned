@@ -245,9 +245,12 @@
         /* "Meet with" */
         .fWMZdd { color: var(--GR12) !important }
     
+        /* Name */
+        .PNwDub { color: var(--GR18) !important }
+    
         /* Selected Person Pill */
         .cnTo8e.FYQzvb::before { background: var(--GR4) !important }
-
+    
             /* Avatar */
                 /* Circle */
                 .EzBbpc path[fill="#E0E0E0"] { fill: var(--GR0) !important }
