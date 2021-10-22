@@ -43,6 +43,8 @@
     .xJ65bd, /* Event Popover Header */
     .d29e1c, /* Event Popover Three Dots */
     .cjq2Db, /* Event Popover Close */
+    .Mz3isd .OLw7vb svg, /* Event Popover "Take Meeting Notes" */
+    .urWhWe .Ce1Y1c, /* Working Location Popover */
     .kMp0We .DPvwYc, /* Event Popover Rows */
     .GyffFb,  /* Create Event Popover Icons */
     .aStPEd, /* Create Event Popover Out of Office Visibility Help Icon */
@@ -245,12 +247,9 @@
         /* "Meet with" */
         .fWMZdd { color: var(--GR12) !important }
     
-        /* Name */
-        .PNwDub { color: var(--GR18) !important }
-    
         /* Selected Person Pill */
         .cnTo8e.FYQzvb::before { background: var(--GR4) !important }
-    
+
             /* Avatar */
                 /* Circle */
                 .EzBbpc path[fill="#E0E0E0"] { fill: var(--GR0) !important }
@@ -407,6 +406,20 @@
     .EfQccc.KKjvXb {
         box-shadow: var(--GR0) 0 0 8px !important;
     }
+    
+    /* Working Location Event (Unspecified working location) */
+    .CNb8Af {
+        background: var(--GR6) !important;
+        border-color: var(--GR12) !important;
+    }
+    
+        /* Dropdown Menu */
+        
+            /* "Working Location" */
+            .xtG4wc { color: var(--GR16) !important }
+        
+            /* Date */
+            .FZbFkc { color: var(--GR14) !important }
 
 /* WEEK VIEW */
 
@@ -451,7 +464,7 @@
 	.tNDBE:not(.Wyo4Qe), /* Left-most */
     .CIFHgc, /* Left-most in Business */
     .PhLhOd, /* Header */
-    .t8qpF, /* Vertical */
+    .zYZlv, /* Vertical */
     .QIadxc /* Horizontal */
     {
         border-color: var(--GR3) !important
@@ -646,7 +659,7 @@
 
 /* EVENT POPOVER */
 
-    /* Header (July 2020) */
+    /* Header */
     .wmCMbe {
         background: var(--GR4) !important;
         box-shadow: inset 0 1px 0 var(--GR12) !important;
@@ -684,11 +697,16 @@
     {
         color: var(--GR16) !important;
     }
-
-    /* "Find a time" */
+    
+    /* "Take meeting notes" */
     .ij27gb:not(.Y5sE8d) { color: var(--GR16) !important }
 
         .ij27gb:not(.Y5sE8d):hover { color: var(--GR18) !important }
+
+    /* "Find a time" */
+    .IPEQnf { color: var(--GR16) !important }
+
+        .IPEQnf:hover { color: var(--GR18) !important }
 
     /* "Does not repeat", "Free / Default visibility / Do not notify" */
     .NAgJzc { color: var(--GR14) !important }
@@ -917,6 +935,25 @@
         
         .nYqxP:hover { color: var(--GR18) !important }
 
+    /* "Appointment Schedule" */
+    
+        /* "Premium" */
+        .ujkAm { color: var(--GR14) !important }
+    
+            /* Icon */
+            .Nxjmad { fill: var(--GR14) !important }
+    
+        /* "Make appointments easier" */
+        .YHVshb { color: var(--GR16) !important }
+    
+        /* Description Text */
+        .Pf26K { color: var(--GR14) !important }
+    
+        /* "Learn more" */
+        .nP8GJb { color: var(--GRSELECTED) !important }
+
+            .nP8GJb:focus, .nP8GJb:hover { color: var(--GR14) !important }
+    
     /* Buttons */
     .Y5sE8d, /* "Save" */
     .twhhs.s2r4Od .Fxmcue, /* "Add Google Meet video conferencing" */
@@ -1206,7 +1243,7 @@
     /* Working Hours */
 
         /* "To" block */
-        .aJRNHb { background: transparent !important }
+        .VLl48b { background: transparent !important }
 
 /* TRASH */
 
