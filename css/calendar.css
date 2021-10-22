@@ -215,7 +215,23 @@
     .VfPpkd-BIzmGd { background: var(--GR6) !important }
         
         /* Text */
-        .u5sQsb { color: var(--GR16) !important }
+        .u5sQsb,
+        .mr0WL /* 2021-10 Update with dropdown menu */
+        {
+            color: var(--GR16) !important
+        }
+    
+        /* Dropdown Menu */
+    
+            /* Appointment schedule */
+    
+                /* "Create a shareable..." */
+                .EpsCn { color: var(--GR14) !important }
+    
+                /* "Learn more" */
+                .QLjMSb { color: var(--GRSELECTED) !important }
+
+                    .QLjMSb:focus, .QLjMSb:hover { color: var(--GR14) !important }
 
     /* MINI CALENDAR */
 
