@@ -689,7 +689,8 @@
 
     /* Dividers (appear when setting description) */
     .AZLU4c.gUZKAc:not(.sMVRZe):not(.dBA1M),
-    .AZLU4c:not(.gUZKAc).sMVRZe:not(.dBA1M) {
+    .AZLU4c:not(.gUZKAc).sMVRZe:not(.dBA1M),
+    .kxh2c:not(.gUZKAc).sMVRZe:not(.dBA1M) {
         border-color: var(--GR12) !important
     }
 
@@ -924,6 +925,23 @@
         color: var(--GR16) !important
     }
 
+    /* Placeholders */
+    .ULpymb .snByac, /* "Add guests" */
+    .bnPQpd:not(.YkAcPc), /* "Add location" / "Add description or attachments" */
+    .OnrKec .snByac /* "Add attachment" */
+    {
+        color: var(--GR14) !important
+    }
+    
+    /* "Calendar cannot be shown" */
+    .JmmUXc .GEhdLd { color: var(--GR14) !important }
+    
+    /* "Guest Permissions" */
+    .jfFyNc { color: var(--GR16) !important }
+    
+        /* "Invite others" */
+        .YKMjTd { color: var(--GR14) !important }
+    
     /* Task "Add Description" */
     .Qfwgwb { background: var(--GR4) !important }
 
@@ -1031,6 +1049,14 @@
 
         .I7OXgf .UQuaGc:hover { color: var(--GR18) !important }
 
+/* VIDEO CALL DIALOG */
+    
+    /* "Your event now includes Google Meet" */
+    .aDEC0d { color: var(--GR18) !important }
+    
+    /* Content */
+    .Lr2sbd { color: var(--GR16) !important }
+    
 /* CREATE EVENT PAGE */
 
 .p9lUpf { background: var(--GR4) !important }
@@ -1093,6 +1119,9 @@
 
         .cwu4dd:focus, .cwu4dd:hover { color: var(--GR18) !important }
 
+    /* "Time zone" */
+    .nWBDde { color: var(--GR14) !important }
+    
     /* Location Dropdown */
     .VOEIyf .jBmls {
         background: var(--GR6) !important;
