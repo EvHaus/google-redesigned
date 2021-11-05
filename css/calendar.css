@@ -113,6 +113,12 @@
 
     /* Calendar Range */
 	.rSoRzd { color: var(--GR16) !important }
+    
+    /* Week Number (if enabled via settings) */
+    .wWdzec {
+        background: var(--GR8) !important;
+        color: var(--GR16) !important;
+    }
 
 /* GENERIC DROPDOWNS */
 
@@ -257,7 +263,19 @@
 
         /* Day (selected) */
         .W0m3G.i8dSE .r4nke { color: var(--GRSELECTED) !important}
+    
+        /* Week Numbers (if enabled via settings) */
+        .OWyNBb.m1fiJb {
+            background-color: var(--GR4) !important;
+            border-color: var(--GR5) !important;
+            color: var(--GR12) !important;
+        }
 
+    /* WORLD CLOCK */
+    
+    .IAQE3d { color: var(--GR14) !important }
+        
+    
     /* MEET WITH */
 
         /* "Meet with" */
