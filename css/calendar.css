@@ -273,7 +273,11 @@
 
     /* WORLD CLOCK */
     
-    .IAQE3d { color: var(--GR14) !important }
+        /* Text */
+        .IAQE3d { color: var(--GR14) !important }
+    
+        /* Background (when event is selected) */
+        .Az5uJd.RLj2u { background: var(--GR4) !important }
         
     
     /* MEET WITH */
@@ -713,10 +717,15 @@
     }
 
     /* Links in the Description */
-    .S4zwaf a { color: var(--GR16) !important }
+    .S4zwaf a,
+    .KmD23d a {
+        color: var(--GR16) !important
+    }
         
         .S4zwaf a:focus,
-        .S4zwaf a:hover {
+        .S4zwaf a:hover,
+        .KmD23d a:hover,
+        .KmD23d a:focus {
             color: var(--GR18) !important
         }
 
@@ -823,10 +832,23 @@
         .goktNc:hover { color: var(--GR18) !important }
 
     /* "Everyone else declined the event" footer */
-    .U0vptb {
+    .McOO2b {
         background: var(--GR4) !important;
         border-color: var(--GR8) !important;
     }
+    
+        /* "Everyone else declined the event" */
+        .qwM8de { color: var(--GR16) !important }
+    
+        /* "Delete" button */
+        .UQuaGc { color: var(--GR12) !important }
+    
+            .UQuaGc.UQuaGc:focus, .UQuaGc.UQuaGc:hover {
+                color: var(--GR18) !important;
+            }
+    
+        /* "Reschedule" button */
+        .Uu2hsf.auswjd { color: var(--GR16) !important }
 
 /* TASK POPOVER */
 
@@ -1190,6 +1212,20 @@
             .lR3h6d .iuaqab a:focus, .lR3h6d .iuaqab a:hover {
                 color: var(--GR14) !important;
             }
+    
+        /* "Create meeting notes" */
+        .ICNC1e { border-color: var(--GR12) !important }
+    
+            .ICNC1e:hover { border-color: var(--GR14) !important }
+    
+            /* Icon */
+            .xgwQ2 { filter: invert(1) brightness(2) }
+    
+            /* Text */
+            .DTJQTb { color: var(--GR14) !important }
+    
+            /* "Document will be created and shared with all guests" */
+            .G8mFee { color: var(--GR14) !important }
     
     /* "Calendar cannot be shown" message */
     .srd2n { color: var(--GR14) !important }
