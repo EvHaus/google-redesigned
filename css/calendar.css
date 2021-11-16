@@ -346,33 +346,19 @@
         /* Week Date */
         .NCyou { color: var(--GR14) !important }
     
-        /* "Time in meetings" */
-        .jy60Lb { color: var(--GR14) !important }
-        
-            /* (?) Icon */
-            .A1aem { color: var(--GR14) !important }
-    
-                /* Tooltip Text */
-                .CVM8jc { color: var(--GR16) !important }
-    
-                /* Tooltip Links */
-                .l3F1ye .TpQm9d { color: var(--GR16) !important }
-    
-                    .l3F1ye .TpQm9d:hover { color: var(--GR18) !important }
-    
-                    /* Background */
-                    .l3F1ye .e19J0b { background-color: var(--GR16) !important }
-    
-        /* Time */
+        /* "x hr in meetings (avg: x hr) */
         .WPEztb { color: var(--GR16) !important }
     
-        /* "avg xx.x hr" */
-        .kGOQJe { color: var(--GR12) !important }
+        /* Popover */
+        .VIpVYd { color: var(--GR16) !important }
+            
+            /* Titles */
+            .zluh2c { color: var(--GR18) !important }
     
         /* "More insights" Button */
         .b3e6Tb {
             background: var(--GR4) !important;
-            border-color: var(--GR8) !important
+            border-color: var(--GR8) !important;
         }
     
             .b3e6Tb:hover { background: var(--GR6) !important }
@@ -752,6 +738,34 @@
 
         .IPEQnf:hover { color: var(--GR18) !important }
 
+    /* OOO event */
+    
+        /*"Automatically decline meeting" */
+        .BfY7Sb { color: var(--GR16) !important }
+
+            /* "Only new meeting invitations" / "New and existing meetings" */
+            .AtaYwe { color: var(--GR16) !important }
+
+            /* Divider */
+            .HaZkhe { background: var(--GR10) !important }
+
+        /* Default Visibility (?) Icon */
+        .ydTCC { color: var(--GR16) !important }
+    
+        /* "Availability might be shown in other Google apps" */
+        .PhsnJ { color: var(--GR14) !important }
+    
+            /* (?) Icon */
+            .A1aem { color: var(--GR14) !important }
+    
+                /* Popover */
+                .CVM8jc { color: var(--GR14) !important }
+    
+                    /* Link */
+                    .hT1Fub { color: var(--GR16) !important }
+    
+                        .hT1Fub:focus, .hT1Fub:hover { color: var(--GR18) !important }
+    
     /* "Does not repeat", "Free / Default visibility / Do not notify" */
     .NAgJzc { color: var(--GR14) !important }
 
@@ -809,6 +823,12 @@
             /* Text */
             .ZGVUP .snByac { color: var(--GR16) !important }
             .ZGVUP:hover .snByac { color: var(--GR18) !important }
+    
+                /* "x" Icon */
+                .pdqVLc .DPvwYc {
+                    color: var(--GR14) !important;
+                    fill: var(--GR14) !important;
+                }
 
         /* "Add Note" dialog */
 
@@ -841,9 +861,9 @@
         .qwM8de { color: var(--GR16) !important }
     
         /* "Delete" button */
-        .UQuaGc { color: var(--GR12) !important }
+         .McOO2b .UQuaGc { color: var(--GR12) !important }
     
-            .UQuaGc.UQuaGc:focus, .UQuaGc.UQuaGc:hover {
+             .McOO2b .UQuaGc.UQuaGc:focus, .McOO2b .UQuaGc.UQuaGc:hover {
                 color: var(--GR18) !important;
             }
     
