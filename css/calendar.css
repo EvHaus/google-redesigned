@@ -703,15 +703,15 @@
     }
 
     /* Links in the Description */
-    .S4zwaf a,
-    .KmD23d a {
+    .D29CYb a,
+    .S4zwaf a {
         color: var(--GR16) !important
     }
         
-        .S4zwaf a:focus,
+        .D29CYb a:focus,
+        .D29CYb a:hover,
         .S4zwaf a:hover,
-        .KmD23d a:hover,
-        .KmD23d a:focus {
+        .S4zwaf a:focus {
             color: var(--GR18) !important
         }
 
@@ -796,14 +796,14 @@
         .NAFvr .l3F1ye { color: var(--GRSELECTED) !important }
     
         /* "Yes" (with virtual meeting options) */
-        .Ztzsdd.KKjvXb .dvv0Pc,
-        .Ztzsdd.KKjvXb .lrZTuc {
+        .Ztzsdd .dvv0Pc,
+        .Ztzsdd .lrZTuc {
             background: var(--GR8) !important;
             border-color: var(--GR10) !important;
         }
             
             /* Options Arrow */
-            .DqwBN { color: var(--GR14) !important }
+            .Ztzsdd .snByac .NMm5M { color: var(--GR14) !important }
     
             /* Selected Option */
             .j931be.KKjvXb {
