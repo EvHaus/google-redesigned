@@ -34,7 +34,7 @@
 
 /* ICONS */
 
-    .gb_pa svg, /* Header Icons */
+    .gb_na svg, /* Header Icons */
     .rF3YF span, /* Header/Sidebar Arrows, Search */
     .xmVoP, /* Header "2 weeks" Button Arrow */
     .gb_ne.gb_oe button svg, /* Header Search Icons */
@@ -74,7 +74,7 @@
     }
 
         /* "Calendar" */
-        .gb_Vc { color: var(--GR16) !important }
+        .gb_2d { color: var(--GR16) !important }
 
     /* Square Buttons */
     .GXlaye.qRI4pc, /* Today */
@@ -728,6 +728,15 @@
         color: var(--GR16) !important;
     }
     
+    /* "Upgrade to host longer group calls" Section */
+    .NoJAOd.NoJAOd { background: var(--GR8) !important }
+    
+        /* Icon */
+        .uTTlac { fill: var(--GR22) !important }
+    
+        /* "Upgrade to host longer group calls" */
+        .FKvbye { color: var(--GR16) !important }
+    
     /* "Take meeting notes" */
     .ij27gb:not(.Y5sE8d) { color: var(--GR16) !important }
 
@@ -753,7 +762,7 @@
         .ydTCC { color: var(--GR16) !important }
     
         /* "Availability might be shown in other Google apps" */
-        .PhsnJ { color: var(--GR14) !important }
+        .CbBAab { color: var(--GR14) !important }
     
             /* (?) Icon */
             .A1aem { color: var(--GR14) !important }
@@ -1048,10 +1057,33 @@
 
             .nP8GJb:focus, .nP8GJb:hover { color: var(--GR14) !important }
     
+    /* Conference Details */
+    
+        /* "More phone numbers" */
+        .sxQCwf { color: var(--GR16) !important }
+    
+            .sxQCwf:focus, .sxQCwf:hover { color: var(--GR18) !important }
+    
+        /* "Add live stream" Button */
+        .ifM7td {
+            background: var(--GR8) !important;
+            color: var(--GR16) !important
+        }
+            
+            .ifM7td:focus, .ifM7td:hover {
+                background: var(--GR10) !important;
+                color: var(--GR18) !important
+            }
+    
+    /* "Video Call Options" Dialog */
+    
+        /* Header */
+        .aAj7T { color: var(--GR16) !important }
+    
     /* Buttons */
     .Y5sE8d, /* "Save" */
     .twhhs.s2r4Od .Fxmcue, /* "Add Google Meet video conferencing" */
-    .w1OTme  /* Join with Google Meet */
+    .uqM3cb  /* Join with Google Meet */
     {
         background: var(--GR10) !important;
         color: var(--GR16) !important;
@@ -1059,7 +1091,7 @@
 
         .Y5sE8d:hover,
         .twhhs.s2r4Od .Fxmcue:hover,
-        .w1OTme:hover {
+        .uqM3cb:hover {
             color: var(--GR18) !important
         }
 
