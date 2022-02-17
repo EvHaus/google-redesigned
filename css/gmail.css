@@ -31,7 +31,8 @@
 
 /* ICONS */
 
-    .gb_ja svg /* Header Icons */
+    .gb_ja svg, /* Header Icons */
+    .gb_Qe button svg /* Search Dropdown Icons */
     {
         color: var(--GR16) !important;
         fill: var(--GR16) !important;
@@ -150,15 +151,19 @@
 
         /* Title */
         .J-awr,
-        .afQ /* Inbox Type Dropdown - Right-side title */
+        .afQ, /* Inbox Type Dropdown - Right-side title */
+        .SK /* Email View - Label Toolbar */
         {
             color: var(--GR14) !important
         }
 
         /* Row */
         .J-N,
-        .afP  /* Inbox Type Dropdown - Right-side text */
+        .afP,  /* Inbox Type Dropdown - Right-side text */
+        .J-JK, /* Email View - Move To Dropdown - Footer Rows */
+        .J-LC  /* Email View - Labels Dropdown - Checkmark Rows */
         {
+            border-color: transparent !important;
             color: var(--GR16) !important
         }
 
@@ -166,11 +171,35 @@
             .J-Ks-KO .J-N-Jz { color: var(--GRSELECTED) !important }
 
             /* Hover */
-            .J-N-JT { background: var(--GR8) !important }
+            .J-N-JT,
+            .J-JK-JT,
+            .J-LC-JT {
+                background: var(--GR8) !important;
+            }
 
                 /* Hover Text */
                 .J-N-JT .J-N-Jz { color: var(--GR18) !important }
+    
+            /* Checkmark */
+            .J-LC-Jo { background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/check_box_outline_blank_white_20dp.png') !important }
+    
+                /* Checked */
+                .J-LC-JR-Jp .J-LC-Jo { background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/check_box_white_20dp.png') !important }
 
+        /* Search Field */
+        .agd .J-M-JJ input {
+            background: var(--GR4) !important;
+            color: var(--GR16) !important;
+        }
+    
+            .agd .J-M-JJ input:focus {
+                box-shadow: inset 0 -2px 0 0 var(--GRSELECTED) !important;
+            }
+    
+            /* Icon */
+            .A0 { background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/search_white_20dp.png') !important }
+    
+    
         /* Divider */
         .J-Kh { border-color: var(--GR10) !important }
 
@@ -193,6 +222,27 @@
         background: var(--GR6) !important;
         border-color: var(--GR8) !important;
     }
+        
+        /* Toolbar Row */
+        .aRp { background: var(--GR4) !important }
+    
+            /* Toolbar */
+            .aSP { border-color: var(--GR8) !important }
+    
+                /* Button */
+                .H2 {
+                    background: var(--GR6) !important;
+                    border-color: var(--GR8) !important;
+                    color: var(--GR16) !important;
+                    fill: currentColor !important;
+                }
+    
+                    .H2:focus, .H2:hover {
+                        background: var(--GR8) !important;
+                    }
+    
+                    /* Icon */
+                    .ap6 { filter: brightness(100) }
     
         /* Row */
         .gssb_m {
@@ -258,6 +308,9 @@
         background: var(--GR6) !important;
         color: var(--GR16) !important
     }
+    
+        /* Icon */
+        .WR .z0>.L3::before { filter: brightness(100) }
 
     /* Icons */
 
@@ -749,7 +802,7 @@
 
         /* Attachment Clip */
         .gW { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/attachment_white_20dp.png') !important }
-
+    
     /* Thread */
 
         /* Author */
