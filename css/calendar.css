@@ -1083,7 +1083,8 @@
     /* Buttons */
     .Y5sE8d, /* "Save" */
     .twhhs.s2r4Od .Fxmcue, /* "Add Google Meet video conferencing" */
-    .uqM3cb  /* Join with Google Meet */
+    .w1OTme,  /* Join with Google Meet - Event Popover */
+    .uqM3cb  /* Join with Google Meet - On Event Page */
     {
         background: var(--GR10) !important;
         color: var(--GR16) !important;
@@ -1091,6 +1092,7 @@
 
         .Y5sE8d:hover,
         .twhhs.s2r4Od .Fxmcue:hover,
+        .w1OTme:hover,
         .uqM3cb:hover {
             color: var(--GR18) !important
         }
