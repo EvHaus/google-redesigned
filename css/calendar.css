@@ -267,11 +267,17 @@
         /* Day (in month) */
         .iMprOe { color: var(--GR14) !important }
 
-        /* Day (today) */
-        .TUH0Sd .r4nke { color: var(--GR18) !important }
-
         /* Day (selected) */
-        .W0m3G.i8dSE .r4nke { color: var(--GRSELECTED) !important}
+        .W0m3G.i8dSE .r4nke {
+            background: var(--GR6) !important;
+            color: var(--GRSELECTED) !important
+        }
+    
+        /* Day (today) */
+        .TUH0Sd.TUH0Sd .r4nke {
+            background: var(--GRSELECTED) !important;
+            color: var(--GR1) !important
+        }
     
         /* Week Numbers (if enabled via settings) */
         .OWyNBb.m1fiJb {
