@@ -43,7 +43,7 @@
 
 /* ICONS */
 
-    .gb_na svg, /* Header Icons */
+    .gb_oa svg, /* Header Icons */
     .rF3YF span, /* Header/Sidebar Arrows, Search */
     .xmVoP, /* Header "2 weeks" Button Arrow */
     .gb_ne.gb_oe button svg, /* Header Search Icons */
@@ -83,7 +83,7 @@
     }
 
         /* "Calendar" */
-        .gb_2d { color: var(--GR16) !important }
+        .gb_3d { color: var(--GR16) !important }
 
     /* Square Buttons */
     .GXlaye.qRI4pc, /* Today */
@@ -527,6 +527,20 @@
     /* Current Day Highlight */
     .ef2wWc { background: var(--GR1) !important }
 
+    /* "Home" / "Office" Bar */
+    
+        /* Pill */
+        .aXFFQc { background: var(--GR8) !important }
+            
+            /* Icon */
+            .zpRRx { color: var(--GR16) !important }
+    
+            /* "Home" / "Office" Text */
+            .UG2wL { color: var(--GR16) !important }
+   
+        /* Line */
+        .tElKAd > span { background: var(--GR8) !important }
+    
     /* Time Event */
     .g3dbUc.smECzc { color: var(--GR16) !important }
     
@@ -823,14 +837,14 @@
         .NAFvr .l3F1ye { color: var(--GRSELECTED) !important }
     
         /* "Yes" (with virtual meeting options) */
-        .Ztzsdd .dvv0Pc,
-        .Ztzsdd .lrZTuc {
+        .MXHwGb .dvv0Pc,
+        .MXHwGb .lrZTuc {
             background: var(--GR8) !important;
             border-color: var(--GR10) !important;
         }
-            
+    
             /* Options Arrow */
-            .Ztzsdd .snByac .NMm5M { color: var(--GR14) !important }
+            .MXHwGb .DqwBN, .MXHwGb .NMm5M { color: var(--GR14) !important }
     
             /* Selected Option */
             .j931be.KKjvXb {
@@ -1253,7 +1267,7 @@
     .rhtYVe .snByac { color: var(--GR16) !important }
     
     /* Color Select */
-    .FpmPAb { background: var(--GR6) !important }
+    .nHFrm.nHFrm { background: transparent !important }
     
     /* "Learn more about event visibility" */
     .HvbOJ { color: var(--GRSELECTED) !important }
