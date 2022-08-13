@@ -83,7 +83,7 @@
     }
 
         /* "Calendar" */
-        .gb_3d { color: var(--GR16) !important }
+        .gb_4d { color: var(--GR16) !important }
 
     /* Square Buttons */
     .GXlaye.qRI4pc, /* Today */
@@ -917,7 +917,9 @@
     .YWILgc { border-color: var(--GR10) !important }
 
     /* "Mark Complete" button */
-    .xPejqf { color: var(--GR16) !important }
+    .LjDxcd:not(:disabled) { color: var(--GR16) !important }
+    
+        .LjDxcd:hover:not(:disabled) { color: var(--GR18) !important }
 
 /* CREATE POPOVER */
 
@@ -967,12 +969,12 @@
         .DSC0Mc { background: var(--GRSELECTED) !important }
 
         /* Add Time Button */
-        .EfSkZd {
+        .Jpx57d {
             border-color: var(--GR12) !important;
             color: var(--GR16) !important;
         }
 
-            .EfSkZd:hover {
+            .Jpx57d:hover {
                 color: var(--GR17) !important;
             }
 
