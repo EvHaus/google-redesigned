@@ -62,6 +62,46 @@
             
             .submit_as_link:hover { color: var(--GR18) !important }
 
+/* LEFT-SIDE APP BAR (Aug 2022) */
+    
+    .WR:not(.aBA):not(.aTO), .a6o::before { background: var(--GR4) !important }
+    
+    /* Hamburger Icon */
+    .gb_oa svg { color: var(--GR15) !important }
+    
+    /* Item */
+    
+        /* Text (Mail, Chat, Spaces, Meet) */
+        .apW { color: var(--GR16) !important }
+    
+        /* Selected */
+        .apV .V6, .apV .V6:hover { background: var(--GR8) !important }
+    
+        /* Hovered */
+        .aIk .V6.CL::after, /* Chat / Spaces */
+        .CL:hover::after /* Meet */
+        {
+            background: var(--GR2) !important;
+            outline: 2px solid var(--GRSELECTED) !important
+        }
+    
+    /* Icons */
+    
+        /* Mail */
+        .CL.W9::before { background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/mail_white_20dp.png') !important }
+    
+        /* Mail (Selected) */
+        .apV .W9::before { background-image: url(https://www.gstatic.com/images/icons/material/system_gm_filled/1x/mail_white_20dp.png) !important }
+    
+        /* Chat */
+        .CL.su::before { background-image: url(https://www.gstatic.com/images/icons/material/system_gm/1x/chat_bubble_outline_white_20dp.png) !important }
+    
+        /* Spaces */
+        .CL.V2::before { background-image: url(https://www.gstatic.com/images/icons/material/system_gm/1x/gmail_groups_white_20dp.png) !important }
+    
+        /* Meet */
+        .V6.CL.Xj::before { background-color: var(--GR18) !important }
+    
 /* HEADER */
 
     .aiw { border-bottom: 1px solid var(--GR6) !important }
@@ -69,19 +109,25 @@
     .gb_Vd { background: var(--GR4) !important }
 
     /* Icons */
-    .gb_sa svg {
-        color: var(--GR15) !important;
-    }
+    .gb_oa svg { color: var(--GR15) !important }
 
     /* "Gmail" logo */
-	.gb_nc img.gb_ua
+	.gb_uc img.gb_yc
     {
-        background: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png') no-repeat center center !important;
+        background: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x_r4.png') no-repeat center center !important;
         height: 0 !important;
-        opacity: 1 !important;
         padding: 40px 109px 0 0 !important;
         width: 0 !important;
     }
+    
+    /* Chat Status */
+    
+    .Yb {
+        border-color: var(--GR10) !important;
+    }
+    
+        /* "Active" text */
+        .Yc { color: var(--GR16) !important }
 
 /* SEARCH HEADER */
 
@@ -301,7 +347,11 @@
 
 /* LEFT SIDEBAR */
 
-.aZ6 { background: var(--GR2) }
+.no .aeN.aeN,
+.aqn /* Aug 2022 */
+{
+    background: var(--GR2) !important
+}
 
     /* Compose Button */
     .z0 > .L3 {
@@ -310,81 +360,118 @@
     }
     
         /* Icon */
-        .WR .z0>.L3::before { filter: brightness(100) }
+        .WR .z0>.L3::before,
+        .aIH .L3::before /* Aug 2022 */ {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/create_black_24dp.png') !important;
+            filter: invert(1) !important;
+        }
 
     /* Icons */
-
-        /* Inbox */
-        .aHS-bnt .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/inbox_white_20dp.png') !important }
-
-        /* Inbox Arrow */
-        .nZ .afM { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png') !important }
-
-        /* Starred */
-        .aHS-bnw .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/grade_white_20dp.png') !important }
-
-        /* Snoozed */
-        .aHS-bu1 .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png') !important }
-
-        /* Sent */
-        .aHS-bnu .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/send_white_20dp.png') !important }
-
-        /* Drafts */
-        .aHS-bnq .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/insert_drive_file_white_20dp.png') !important }
-
-        /* All Mail */
-        .aHS-aHO .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/mail_white_20dp.png') !important }
-
-        /* Arrow Down */
-        .aih { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png') !important }
-
-        /* Arrow Right */
-        .aii { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_right_white_20dp.png') !important }
-
-        /* Categories */
-        .qr { border-color: #FFF !important }
-
-        /* Social */
-        .aS6 .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/people_white_20dp.png') !important }
-
-        /* Updates */
-        .aS4 .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/info_white_20dp.png') !important }
-
-        /* Forums */
-        .aS3 .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/forum_white_20dp.png') !important }
-
-        /* Promotions */
-        .aS5 .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/local_offer_white_20dp.png') !important }
-
-        /* Less */
-        .air .G-asx { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/expand_less_white_20dp.png') !important }
-
-        /* More */
-        .n4 .G-asx { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/expand_more_white_20dp.png') !important }
-
-        /* Important */
-        .aHS-bns .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/label_important_white_20dp.png') !important }
-
-        /* Chats */
-        .aHS-aHP .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/hangout_white_20dp.png') !important }
         
-        /* Scheduled */
-        .TO>.aHS-nd .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/schedule_send_white_20dp.png') !important }
-
+        /* Inbox */
+        .aHS-bnt .qj,
+        .nZ>.TN.aHS-bnt .qj::before /* Aug 2022 */ {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/inbox_white_20dp.png') !important
+        }
+    
+        /* Starred */
+        .TO>.aHS-bnw>.qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/star_border_white_20dp.png') !important
+        }
+    
+        /* Snoozed */
+        .TO>.aHS-bu1>.qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/schedule_white_20dp.png') !important
+        }
+    
+        /* Sent */
+        .TO>.aHS-bnu>.qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/send_white_20dp.png') !important
+        }
+    
+        /* Drafts */
+        .TO>.aHS-bnq>.qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/insert_drive_file_white_20dp.png') !important
+        }
+    
+        /* All Mail */
+        .TO>.aHS-aHO>.qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/mail_outline_white_20dp.png') !important
+        }
+    
         /* Spam */
-        .aHS-bnv .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/report_white_20dp.png') !important }
-
+        .TO>.aHS-bnv>.qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/report_white_20dp.png') !important
+        }
+    
         /* Trash */
-        .aHS-bnx .qj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/delete_white_20dp.png') !important }
-
+        .TO>.aHS-bnx>.qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/delete_white_20dp.png') !important
+        }
+    
+        /* Less Arrow */
+        .n6 .air .G-asx { background: var(--GR16) !important }
+    
+        /* More Arrow */
+        .n6 .n4 .G-asx { background: var(--GR16) !important }
+    
+        /* Important */
+        .TO>.aHS-bns>.qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/label_important_outline_white_20dp.png') !important
+        }
+    
+        /* Scheduled */
+        .TO>.aHS-nd .qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/schedule_send_white_20dp.png') !important
+        }
+    
+        /* Categories */
+        .aEc.aHS-bnr .qj { background-color: var(--GR16) !important }
+    
+        /* Collapsed Arrow */
+        .aii {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/arrow_right_white_20dp.png') !important
+        }
+    
+        /* Expanded Arrow */
+        .aih {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/arrow_drop_down_white_20dp.png') !important
+        }
+    
+        /* Social */
+        .aS6 .qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/people_white_20dp.png') !important
+        }
+    
+        /* Updates */
+        .aS4 .qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/info_white_20dp.png') !important
+        }
+    
+        /* Forums */
+        .aS3 .qj {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/forum_white_20dp.png') !important
+        }
+    
+        /* Promotions */
+        .aS5 .qj{
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/local_offer_white_20dp.png') !important
+        }
+    
         /* Manage Labels */
-        .CL::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/settings_white_20dp.png') !important }
-
+        .CL.Q7::before {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/settings_white_20dp.png') !important
+        }
+    
         /* Create new label */
-        .Wj::before { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/add_white_20dp.png') !important }
-
-        /* Vertical 3 Dot */
-        .pM { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png') !important }
+        .CL.Wj::before {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/add_white_20dp.png') !important
+        }
+    
+        /* + for Labels */
+        .aAu {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/add_white_20dp.png') !important
+        }
 
     /* Menu Items */
     .TO { cursor: pointer !important }
@@ -424,10 +511,17 @@
     .nY { background: transparent !important } /* Rounded corner fix */
     
         .TK .TO:active { background: var(--GR6) !important }
+   
+    /* "Labels" header */
+    .aAv { color: var(--GR16) !important }
 
 /* MAIN CONTENT */
 
-    .bkK { background: var(--GR0) !important }
+    .bkK,
+    .bkK>.nH /* Aug 2022 */
+    {
+        background: var(--GR0) !important
+    }
 
     /* With preview pane enabled */
     .age { background: transparent !important }
@@ -474,7 +568,10 @@
         .G-asx { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png') !important }
 
         /* Refresh */
-        .asf { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/refresh_white_20dp.png') !important }
+        .asf.T-I-J3 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/refresh_white_20dp.png') !important }
+    
+        /* Refresh (Aug 2022) */
+        .bzn .asf:not(.T-I-J3) { background-color: var(--GR16) !important }
 
         /* Vertical 3 Dot */
         .bjy::after { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png') !important }
