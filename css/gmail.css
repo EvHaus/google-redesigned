@@ -43,6 +43,12 @@
 #loading { background: var(--GR0) !important }
 
     /* Envelope */
+    .la-k .la-m { background: var(--GR0) !important }
+    .la-i > .la-l, .la-i > .la-r, .la-k .la-l, .la-k .la-r { border-color: var(--GR0) !important }
+    .la-i div[style*="background:#fafbfb"] { background: var(--GR0) !important }
+    .la-b .la-l, .la-b .la-r, .la-b .la-m { background: var(--GR4)  }
+    .la-b .la-l.la-c {background: #c5221f}
+    .la-b .la-c.la-r {background: #fbbc04}    
     #loading div[style*="background:#d23f31"] { background: #CE9702 !important }
     #loading div[style*="background:#db4437"] { background: #FB0 !important }
 
@@ -106,8 +112,6 @@
 
     .aiw { border-bottom: 1px solid var(--GR6) !important }
 
-    .gb_Vd { background: var(--GR4) !important }
-
     /* Icons */
     .gb_oa svg { color: var(--GR15) !important }
 
@@ -130,14 +134,17 @@
         .Yc { color: var(--GR16) !important }
 
 /* SEARCH HEADER */
-
+    
     /* Input Wrapper Focused */
     /* NOTE: The classes on this seems to change very often, so using ID instead */
     #aso_search_form_anchor {
         background: var(--GR6) !important;
         border-color: var(--GR8) !important;
     }
-
+    
+        /* Input During Loading */
+        .gb_Se { background: var(--GR6) !important }
+    
         /* Input */
         #aso_search_form_anchor input { color: var(--GR16) !important }
 
@@ -518,9 +525,9 @@
 /* MAIN CONTENT */
 
     .bkK,
-    .bkK>.nH /* Aug 2022 */
+    .bkK > .nH /* Aug 2022 */
     {
-        background: var(--GR0) !important
+        background: var(--GR1) !important
     }
 
     /* With preview pane enabled */
@@ -553,9 +560,6 @@
 
 /* INBOX TOOLBAR */
 
-    /* Toolbar */
-    .aeH { background: var(--GR2) }
-
     /* Icons */
     
         /* Checkbox */
@@ -567,20 +571,23 @@
         /* Dropdown Arrow */
         .G-asx { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png') !important }
 
-        /* Refresh */
+        /* Refresh (Legacy) */
         .asf.T-I-J3 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/refresh_white_20dp.png') !important }
     
-        /* Refresh (Aug 2022) */
-        .bzn .asf:not(.T-I-J3) { background-color: var(--GR16) !important }
+            /* Aug 2022 [Remove .S4 when legacy is gone] */
+            .S4 .bzn .asf { background-color: var(--GR16) !important }
 
-        /* Vertical 3 Dot */
-        .bjy::after { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png') !important }
+        /* More */
+        .bjy { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png') !important }
 
         /* Left Arrow */
         .amI, .adj { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/chevron_left_white_20dp.png') !important }
 
         /* Right Arrow */
         .amJ, .adk { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/chevron_right_white_20dp.png') !important }
+    
+        /* Language Selector */
+        .aBS .d-Na-JX-I .d-Na-J3 { background-image: url('https://www.gstatic.com/inputtools/images/ita_sprite_grey8.png') !important }
 
         /* View Mode */
         .apK { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/vertical_split_white_20dp.png') !important }
@@ -593,24 +600,66 @@
 
         /* Archive */
         .ar8 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/archive_white_20dp.png') !important }
+    
+            /* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
+            .bzn .ar8 {
+                background-color: var(--GR16) !important;
+                -webkit-mask-image: url('https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/archive/default/20px.svg');
+            }
 
         /* Spam */
         .asl { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/report_white_20dp.png') !important }
+    
+            /* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
+            .bzn .asl {
+                background-color: var(--GR16) !important;
+                -webkit-mask-image: url('https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/report/default/20px.svg');
+            }
 
         /* Delete */
         .ar9 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/delete_white_20dp.png') !important }
+    
+            /* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
+            .bzn .ar9 {
+                background-color: var(--GR16) !important;
+                -webkit-mask-image: url('https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/delete/default/20px.svg');
+            }
 
         /* Mark as Unread */
         .bAP { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/mark_as_unread_white_20dp.png') !important }
+            
+            /* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
+            .bzn .bAP {
+                background-color: var(--GR16) !important;
+                -webkit-mask-image: url('https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/mail/default/20px.svg');
+            }
 
         /* Snooze */
         .brW { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png') !important }
+    
+            /* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
+            .bzn .brW {
+                background-color: var(--GR16) !important;
+                -webkit-mask-image: url('https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/schedule/default/20px.svg');
+            }
 
         /* Move To */
         .ase { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/drive_file_move_white_20dp.png') !important }
+    
+            /* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
+            .bzn .ase {
+                background-color: var(--GR16) !important;
+                -webkit-mask-image: url('https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/drive_file_move/default/20px.svg');
+            }
 
         /* Labels */
         .asb { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/label_white_20dp.png') !important }
+    
+            /* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
+            .bzn .asb {
+                background-color: var(--GR16) !important;
+                -webkit-mask-image: url('https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/label/default/20px.svg');
+            }
 
         /* Back */
         .ar6 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_back_white_20dp.png') !important }
@@ -659,6 +708,20 @@
                         0 1px 2px 0 var(--GR2),
                         0 1px 3px 1px var(--GR4)
         }
+    
+            /* "View Issue" button (for GitHub emails) */
+            .aOd.T-I {
+                box-shadow: inset 0 0 0 1px var(--GR12) !important;
+                color: var(--GR16) !important;
+            }
+    
+                .aOd.T-I:hover {
+                    box-shadow: inset 0 0 0 1px var(--GR14) !important;
+                    color: var(--GR18) !important;
+                }
+    
+                /* Icon */
+                .aTn { filter: invert(1) !important }
 
         /* Unread */
         .zE {
@@ -668,6 +731,9 @@
             
             .zE:hover { background: var(--GR8) !important }
 
+        /* Author count (#) */
+        .bx0 { color: var(--GR13) !important }
+    
         /* Description Text */
         .y2 { color: var(--GR12) !important }
 
@@ -734,6 +800,12 @@
 
         /* Add to Tasks */
         .Vj { background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/task_add_filled_20_white_1x.png') !important }
+    
+            /* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
+            .bzn .Vj {
+                background-color: var(--GR16) !important;
+                -webkit-mask-image: url('https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/add_task/default/20px.svg');
+            }
 
         /* Move to Inbox */
         .bq5 { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/move_to_inbox_white_20dp.png') !important }
@@ -808,6 +880,77 @@
         /* Arrow */
         .J-Ph-hFsbo { background-image: url('https://www.gstatic.com/images/icons/material/system/1x/arrow_right_white_20dp.png') !important }
 
+   
+/* QUICK SETTINGS RIGHT SIDEBAR */
+    
+    .IU {
+        background: var(--GR4) !important;
+        box-shadow: inset 1px 0 0 var(--GR6) !important;
+    }
+    
+        /* "Quick settings" Header */
+        .Q0 { color: var(--GR16) !important }
+    
+            /* "X" close button */
+            .OB { filter: invert(1) }
+   
+        /* "See all settings" button */
+        .Tj {
+            box-shadow: inset 0 0 0 1px var(--GR8) !important;
+            color: var(--GR16) !important;
+        }
+    
+            .Tj:hover {
+                box-shadow: inset 0 0 0 1px var(--GR10) !important;
+                color: var(--GR18) !important;
+            }
+    
+        /* Info icon */
+        .XO { background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/info_outline_white_20dp.png') !important }
+    
+        /* Question Icon */
+        .SV { background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/help_outline_white_20dp.png') !important }
+   
+        /* Dividers */
+        .Q3 { border-color: var(--GR6) !important }
+    
+        /* Subheaders */
+        .VM .Q5, /* "Theme" */
+        .VM .OG /* All others */
+        {
+            color: var(--GR12) !important;
+        }
+    
+        /* Text */
+        .Q2, /* "Density" */
+        .aIY, /* "You're using Gmail view" */
+        .a21, /* "Chat and meet" */
+        .ST /* "Conversation view" */
+        {
+            color: var(--GR16) !important;
+        }
+    
+        /* Links */
+        .OD { color: var(--GRSELECTED) !important }
+    
+            .OD:hover { color: var(--GR18) !important }
+    
+        /* Radio Button */
+        .Vo::before {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/radio_button_unchecked_white_24dp.png')
+        }
+        
+        /* Radio Button (Selected) */
+        .Q1:checked+.Vo::before {
+            background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/radio_button_checked_white_24dp.png')
+        }
+    
+        /* Checkbox */
+        .ST::before { background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/check_box_outline_blank_white_20dp.png') !important }
+    
+        /* Checkbox (Checked) */
+        .SS:checked+.ST::before { background-image: url('https://www.gstatic.com/images/icons/material/system_gm/1x/check_box_white_20dp.png') !important }
+    
 /* RIGHT SIDEBAR */
 
     /* Body */
@@ -825,7 +968,7 @@
     }
 
         /* "Get Addons" icon */
-        .aT5-aOt-I-JX-Jw[style*="material/system"] {
+        .aT5-aOt-I-JX-Jw[style*="googlematerialicons"] {
             background-image: url('https://www.gstatic.com/images/icons/material/system/1x/add_white_24dp.png') !important
         }
         
@@ -879,6 +1022,20 @@
 
     /* Recepients */
     .hx .hb, .ac2 { color: var(--GR14) !important }
+    
+    /* "Images are not displayed" banner */
+    .adp, .h9, .adI, .aHn {
+        background: var(--GR4) !important;
+        color: var(--GR16) !important;
+    }
+    
+        /* Image Icon */
+        .aeu { filter: invert(1) }
+    
+        /* Links */
+        .h8 { color: var(--GRSELECTED) !important }
+    
+            .h8:hover { color: var(--GR18) !important }
 
     /* Header Icons */
 
@@ -1096,4 +1253,21 @@
             .aU7 { color: var(--GR16) !important }
             
                 .aU7:hover { color: var(--GRSELECTED) !important }
+    
+    /* SETTINGS */
+ 
+    
+        /* "Settings" title */
+        .dt { color: var(--GR16) !important }
+    
+        /* Tab */
+        .v .f1, .v .f1 .f0 { color: var(--GR16) !important }
+    
+            .v .f1:hover, .v .f1 .f0:hover { color: var(--GR18) !important }
+    
+            /* Selected */
+            .v .fZ { box-shadow: inset 0 -2px 0 0 var(--GRSELECTED) !important }
+    
+                /* Text */
+                .v .fZ .f0 { color: var(--GRSELECTED) !important }
 }
