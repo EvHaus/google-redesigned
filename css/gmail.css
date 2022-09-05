@@ -688,12 +688,21 @@
         background: var(--GR3) !important;
         color: var(--GR14) !important;
     }
+    /* Empty tab background */
+    .aRs {
+        background: var(--GR1) !important;
+    }
 
     /* Toolbar */
 
         /* Separators */
         .G-Ni.G-aE:not(:first-child) {box-shadow: inset -1px 0 0 hsla(211, 18%, 88%, .122) !important }
 
+	/* Tab Icons */
+        .aIf-aLf, .aJi-aLf, .aKe-aLf, .aH2-aLf {
+           filter: invert(76%) sepia(8%) saturate(153%) hue-rotate(159deg) brightness(96%) contrast(86%);
+        }
+	
     /* Row */
     .yO {
         background: var(--GR4) !important;
