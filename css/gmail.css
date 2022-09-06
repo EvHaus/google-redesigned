@@ -682,12 +682,74 @@
 		/* Back */
 		.ar6 { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/arrow_back_white_20dp.png") !important }
 
+	/* Inbox Tabs (Primary, Promotions, Social, Updates, Forums) */
+	
+		/* Primary Icon */
+		.aIf-aLf { background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/inbox_white_20dp.png") !important }
+	
+			/* Primary Icon (Selected) */
+			.aAy.J-KU-KO > .aIf-aLf { background-color: var(--GRSELECTED) !important }
+	
+		/* Promotions Icon */
+		.aJi-aLf { background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/local_offer_white_20dp.png") !important }
+	
+			/* Promotions Icon (Selected) */
+			.aAy.J-KU-KO > .aJi-aLf { background-color: var(--GRSELECTED) !important }
+	
+		/* Social Icon */
+		.aKe-aLf { background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/people_white_20dp.png") !important }
+	
+			/* Social Icon (Selected) */
+			.aAy.J-KU-KO > .aKe-aLf { background-color: var(--GRSELECTED) !important }
+	
+		/* Updates Icon */
+		.aH2-aLf { background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/info_white_20dp.png") !important }
+	
+			/* Updates Icon (Selected) */
+			.aAy.J-KU-KO > .aH2-aLf { background-color: var(--GRSELECTED) !important }
+		
+		/* Forums Icon */
+		.aHE-aLf { background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/forum_white_20dp.png") !important }
+	
+			/* Forums Icon (Selected) */
+			.aAy.J-KU-KO > .aHE-aLf { background-color: var(--GRSELECTED) !important }
+	
+		/* Text Label */
+		.aKx > .aKz { color: var(--GR17) !important }
+	
+		/* Selected Underline */
+		.J-KU-KO::before { background-color: var(--GRSELECTED) !important }
+	
+		/* Empty Tab */
+		.aRs {
+			background: var(--GR4) !important;
+			color: var(--GR17) !important;
+		}
+	
+			/* Title */
+			.aRv { color: var(--GR19) !important }
+	
+			/* Links */
+			.aRq { color: var(--GR19) !important }
+	
+	/* Inbox Group Section */
+	
+		/* "Unread", "Everything Else", etc... */
+		.Wr > .Wn { color: var(--GR17) !important }
+	
+		/* Collapse Button */
+		.Wq, .Wq-A8 { background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/keyboard_arrow_up_white_20dp.png") !important }
+	
+		/* Expand Button */
+		.Wo, .Wo-A8 { background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/keyboard_arrow_down_white_20dp.png") !important }
+	
 	/* Buttons */
-
+	
 		/* "Settings" Focused State (Outer Ring) */
 		.asa::before { border-color: var(--GR10) !important }
 
 		/* "..." menu */
+		.J-JN-M-I-JG { background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/more_vert_white_20dp.png") !important }
 	
 			/* "Select messages to see more actions" */
 			.asd { color: var(--GR15) !important }
@@ -722,7 +784,7 @@
 		.zA:hover {
 			background: var(--GR6) !important;
 			box-shadow:
- inset 1px 0 0 var(--GR7),
+	inset 1px 0 0 var(--GR7),
 						inset -1px 0 0 var(--GR9),
 						0 1px 2px 0 var(--GR2),
 						0 1px 3px 1px var(--GR4)
@@ -1096,7 +1158,7 @@
 			.hB, /* Inline */
 			.mL /* In ... menu */
 			{
- background-image: url("https://www.gstatic.com/images/icons/material/system/1x/reply_white_20dp.png") !important }
+	background-image: url("https://www.gstatic.com/images/icons/material/system/1x/reply_white_20dp.png") !important }
 
 			/* Reply All */
 			.mK { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/reply_all_white_20dp.png") !important }
@@ -1148,12 +1210,12 @@
 			.h1, /* "Filter messages from this mailing list") */
 			.gI a /* Security "Learn More" */
 			{
- color: var(--GRSELECTED) !important }
+	color: var(--GRSELECTED) !important }
 
 				.h1:focus,
- .h1:hover,
+	.h1:hover,
 				.gI a:focus,
- .gI a:hover
+	.gI a:hover
 				{ color: var(--GR19) !important }
 
 	/* Recommended Responses */
@@ -1294,3 +1356,4 @@
 				/* Text */
 				.v .fZ .f0 { color: var(--GRSELECTED) !important }
 }
+	
