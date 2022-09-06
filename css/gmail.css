@@ -622,7 +622,8 @@
 			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
 			.bzn .ar8 {
 				background-color: var(--GR17) !important;
-				mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/archive/default/20px.svg");
+				/* stylelint-disable-next-line property-no-vendor-prefix */
+				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/archive/default/20px.svg");
 			}
 
 		/* Spam */
@@ -631,7 +632,8 @@
 			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
 			.bzn .asl {
 				background-color: var(--GR17) !important;
-				mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/report/default/20px.svg");
+				/* stylelint-disable-next-line property-no-vendor-prefix */
+				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/report/default/20px.svg");
 			}
 
 		/* Delete */
@@ -640,7 +642,8 @@
 			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
 			.bzn .ar9 {
 				background-color: var(--GR17) !important;
-				mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/delete/default/20px.svg");
+				/* stylelint-disable-next-line property-no-vendor-prefix */
+				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/delete/default/20px.svg");
 			}
 
 		/* Mark as Unread */
@@ -649,7 +652,8 @@
 			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
 			.bzn .bAP {
 				background-color: var(--GR17) !important;
-				mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/mail/default/20px.svg");
+				/* stylelint-disable-next-line property-no-vendor-prefix */
+				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/mail/default/20px.svg");
 			}
 
 		/* Snooze */
@@ -658,7 +662,8 @@
 			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
 			.bzn .brW {
 				background-color: var(--GR17) !important;
-				mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/schedule/default/20px.svg");
+				/* stylelint-disable-next-line property-no-vendor-prefix */
+				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/schedule/default/20px.svg");
 			}
 
 		/* Move To */
@@ -667,7 +672,8 @@
 			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
 			.bzn .ase {
 				background-color: var(--GR17) !important;
-				mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/drive_file_move/default/20px.svg");
+				/* stylelint-disable-next-line property-no-vendor-prefix */
+				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/drive_file_move/default/20px.svg");
 			}
 
 		/* Labels */
@@ -676,7 +682,8 @@
 			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
 			.bzn .asb {
 				background-color: var(--GR17) !important;
-				mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/label/default/20px.svg");
+				/* stylelint-disable-next-line property-no-vendor-prefix */
+				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/label/default/20px.svg");
 			}
 
 		/* Back */
@@ -885,7 +892,8 @@
 			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
 			.bzn .Vj {
 				background-color: var(--GR17) !important;
-				mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/add_task/default/20px.svg");
+				/* stylelint-disable-next-line property-no-vendor-prefix */
+				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/add_task/default/20px.svg");
 			}
 
 		/* Move to Inbox */
