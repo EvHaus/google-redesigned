@@ -1168,7 +1168,7 @@
 
 		/* Email Content */
 		.a3s {
-			background: var(--GR19);
+			background: #FFF; /* stylelint-disable-line color-no-hex */
 			border-radius: 8px;
 			padding: 32px;
 		}
