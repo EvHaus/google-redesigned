@@ -14,6 +14,22 @@
 
 /* https://github.com/EvHaus/google-redesigned/ */
 
+/* ==UserStyle==
+@name           Google Calendar Redesigned (Dark Mode)
+@namespace      USO Archive
+@author         Globex Designs, Inc.
+@description    A dark style for Google Calendar from the creators of the original
+				"Google Redesigned" extension. To report issue please visit:
+				https://github.com/EvHaus/google-redesigned
+				NOTE: This style does not support the right-side Keep/Reminders
+				sidebar.
+@version        20211116.4.4
+@license        CC-BY-4.0
+@preprocessor   uso
+==/UserStyle== */
+
+/* https://github.com/EvHaus/google-redesigned/ */
+
 @-moz-document domain("calendar.google.com") {
 
 /* COLOR PALETTE */
@@ -59,13 +75,16 @@
 	.xJ65bd, /* Event Popover Header */
 	.d29e1c, /* Event Popover Three Dots */
 	.cjq2Db, /* Event Popover Close */
-	.Mz3isd .OLw7vb svg, /* Event Popover "Take Meeting Notes" */
+	.Mz3isd .OLw7vb svg, /* Event Popover Icons Part 1 */
+	.pdqVLc .oXdlS, /* Event Popover Icons Part 2 */
 	.urWhWe .Ce1Y1c, /* Working Location Popover */
 	.kMp0We .DPvwYc, /* Event Popover Rows */
 	.GyffFb,  /* Create Event Popover Icons */
+	.Mz3isd .OLw7vb, /* Task Popover Icons */
 	.aStPEd, /* Create Event Popover Out of Office Visibility Help Icon */
 	.uSx8Od svg, /* Create Event Page Location/Conferencing */
 	.uSx8Od, /* Create Event Page Calendar */
+	.COICyc, /* Create Page RTE Toolbar "Add Attachment" Icon */
 	.fKz7Od, /* Create Page RTE Toolbar Icons */
 	.SlHBnb,  /* Create Page Rooms Search */
 	.rF3YF svg /* Trash Row Hover */
@@ -350,7 +369,7 @@
 				.PNwDub { color: var(--GR19) !important }
 	
 				/* Row Email Text */
-				.O7pQ4 { color: var(--GR17) !important }
+				.G1zVib { color: var(--GR17) !important }
 
 				/* Row Hover */
 				.AZW99:hover {
@@ -778,15 +797,37 @@
 		/* "Upgrade to host longer group calls" */
 		.FKvbye { color: var(--GR17) !important }
 	
+	/* "This group call is limited to 1 hour" Section */
+	.iKm75d.iKm75d { background: var(--GR8) !important }
+	
+		/* Icon */
+		.YQoFab { fill: var(--GR17) !important }
+	
+		/* "This group call is limited to 1 hour" */
+		.aVw7oe { color: var(--GR18) !important }
+	
+		/* "Get longer group calls..." */
+		.qf81Ud { color: var(--GR16) !important }
+	
+		/* "Explore plan" */
+		.PU9nHf { color: var(--GR17) !important }
+	
+			.PU9nHf:hover { color: var(--GR18) !important }
+	
+		/* "No thanks" */
+		.lt59Jb { color: var(--GR14) !important }
+	
+			.lt59Jb:hover { color: var(--GR16) !important }
+	
 	/* "Take meeting notes" */
-	.ij27gb:not(.Y5sE8d) { color: var(--GR17) !important }
-
-		.ij27gb:not(.Y5sE8d):hover { color: var(--GR19) !important }
-
-	/* "Find a time" */
 	.IPEQnf { color: var(--GR17) !important }
 
 		.IPEQnf:hover { color: var(--GR19) !important }
+
+	/* "Find a time" */
+	.bRNGXd:not(.Y5sE8d) { color: var(--GR17) !important }
+
+		.bRNGXd:not(.Y5sE8d):hover { color: var(--GR19) !important }
 
 	/* OOO event */
 	
@@ -1202,7 +1243,8 @@
 	.cAP2G .k2NHHb, /* "All Day" Event Popover (July 2020) */
 	.kMp0We .wimXt,  /* Guests Can */
 	.WefNYe .uVccjd, /* Settings Page */
-	.Lzfnue .uVccjd /* Trash Page */
+	.Lzfnue .uVccjd, /* Trash Page */
+	.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:not(:checked) ~ .VfPpkd-YQoJzd /* "Modify Event" */ 
 	{
 		border-color: var(--GRSELECTED) !important
 	}
@@ -1217,11 +1259,29 @@
 		.WefNYe .uVccjd .MbUTNc,
 		.WefNYe .uVccjd .Ii6cVc,
 		.Lzfnue .uVccjd .MbUTNc,
-		.Lzfnue .uVccjd .Ii6cVc
+		.Lzfnue .uVccjd .Ii6cVc,
+		.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled ~ .VfPpkd-YQoJzd .VfPpkd-HUofsb
 		{
-			border-color: var(--GR0) !important
+			border-color: var(--GR0) !important;
+			color: var(--GR0) !important;
+		}
+	
+		/* Checked */
+		.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:checked ~ .VfPpkd-YQoJzd,
+		.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:indeterminate ~ .VfPpkd-YQoJzd,
+		.Ne8lhe .VfPpkd-muHVFf-bMcfAe[data-indeterminate="true"]:enabled ~ .VfPpkd-YQoJzd {
+			background: var(--GRSELECTED) !important;
+			border-color: var(--GRSELECTED) !important;
 		}
 
+	/* "Save" button */
+	.Y5sE8d {
+		background: var(--GRSELECTED) !important;
+		color: var(--GR2) !important;
+	}
+	
+		.Y5sE8d:hover { background: var(--GR16) !important }
+	
 	/* Day/Week Toggle */
 	.uUivFb {
 		border-color: var(--GR10) !important;
@@ -1450,51 +1510,52 @@
 
 		/* Selected Calendar */
 		.LOewLb.KKjvXb { background: var(--GR6) !important }
-	
-	/* Lister */
-	.NekIXe, .Lzfnue { background: transparent !important }
-	
-		/* Table Headers */
-		.M1ZIGd { color: var(--GR17) !important }
 		
-		/* Content */
-		.ETUnje > * { color: var(--GR15) !important }
+		/* Lister */
+		.NekIXe, .Lzfnue { background: transparent !important }
 		
-		/* Row Hover */
-		.v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
-		.ETUnje { border-color: var(--GR6) !important }
+			/* Table Headers */
+			.M1ZIGd { color: var(--GR17) !important }
+			
+			/* Content */
+			.ETUnje > * { color: var(--GR15) !important }
+			
+			/* Row Hover */
+			.v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
+			.ETUnje { border-color: var(--GR6) !important }
+		
+	/* EMBEDDED IFRAME SIDEBAR INSIDE GMAIL */
+		
+		/* Header Titles */
+		.ccLsFc { color: var(--GR17) !important }
+		
+		/* Header Dividers */
+		.cOoA8d, .cBs4Te { border-color: var(--GR10) !important }
+		
+		/* Header "..." Menu Selected Option */
+		.e3odF { background: var(--GR10) !important }
+		
+		/* Create Event Popover */
+		
+			/* Header */
+			.Bofavf {
+				background: var(--GR4) !important;
+				box-shadow: inset 0 1px 0 var(--GR12) !important;
+			}
+		
+			/* "Add Title" */
+			.XTHi9c .snByac { color: var(--GR15) !important }
+		
+			/* Title */
+			.XTHi9c .zHQkBf { color: var(--GR19) !important }
+		
+			/* Section Dividers */
+			.Od6NEf, .IFQP9d, .iofSlf, .Da8wwf { border-color: var(--GR10) !important }
+		
+			/* "Add Google Meet video conferencing" */
+			.oYdi4d .FAE19b .snByac { color: var(--GR15) !important }
+		
+			/* "Join with Google Meet" */
+			.Q30cfe { color: var(--GR19) !important }
+	}
 	
-/* EMBEDDED IFRAME SIDEBAR INSIDE GMAIL */
-	
-	/* Header Titles */
-	.ccLsFc { color: var(--GR17) !important }
-	
-	/* Header Dividers */
-	.cOoA8d, .cBs4Te { border-color: var(--GR10) !important }
-	
-	/* Header "..." Menu Selected Option */
-	.e3odF { background: var(--GR10) !important }
-	
-	/* Create Event Popover */
-	
-		/* Header */
-		.Bofavf {
-			background: var(--GR4) !important;
-			box-shadow: inset 0 1px 0 var(--GR12) !important;
-		}
-	
-		/* "Add Title" */
-		.XTHi9c .snByac { color: var(--GR15) !important }
-	
-		/* Title */
-		.XTHi9c .zHQkBf { color: var(--GR19) !important }
-	
-		/* Section Dividers */
-		.Od6NEf, .IFQP9d, .iofSlf, .Da8wwf { border-color: var(--GR10) !important }
-	
-		/* "Add Google Meet video conferencing" */
-		.oYdi4d .FAE19b .snByac { color: var(--GR15) !important }
-	
-		/* "Join with Google Meet" */
-		.Q30cfe { color: var(--GR19) !important }
-}
