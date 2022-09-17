@@ -61,10 +61,12 @@
 	.cjq2Db, /* Event Popover Close */
 	.Mz3isd .OLw7vb svg, /* Event Popover Icons Part 1 */
 	.pdqVLc .oXdlS, /* Event Popover Icons Part 2 */
+	.Mz3isd .OLw7vb, /* Task Popover Icons Part 1 */
+	.hUFQnd, /* Task Popover Icons Part 2 */
+	.Lc04pd, /* Event Popover - Guests Camera Icon */
 	.urWhWe .Ce1Y1c, /* Working Location Popover */
 	.kMp0We .DPvwYc, /* Event Popover Rows */
 	.GyffFb,  /* Create Event Popover Icons */
-	.Mz3isd .OLw7vb, /* Task Popover Icons */
 	.aStPEd, /* Create Event Popover Out of Office Visibility Help Icon */
 	.uSx8Od svg, /* Create Event Page Location/Conferencing */
 	.uSx8Od, /* Create Event Page Calendar */
@@ -96,7 +98,7 @@
 		.gb_4d { color: var(--GR17) !important }
 
 	/* Square Buttons */
-	.GXlaye.qRI4pc, /* Today */
+	.Rj2Mlf:not(:disabled), /* Today */
 	.Cd9hpd /* 2 Weeks */
 	{
 		background: var(--GR6) !important;
@@ -104,14 +106,14 @@
 	}
 
 		/* Square Buttons Text */
-		.GXlaye .snByac, /* Today */
+		.Rj2Mlf:not(:disabled), /* Today */
 		.Cd9hpd .snByac /* 2 Weeks */
 		{
 			color: var(--GR17) !important;
 		}
 
 		/* Square Buttons Hover */
-		.GXlaye.qRI4pc:hover,
+		.Rj2Mlf:not(:disabled):hover,
 		.Cd9hpd:hover {
 			background: var(--GR7) !important;
 			border-color: var(--GR9) !important;
@@ -772,6 +774,13 @@
 		color: var(--GR17) !important;
 	}
 	
+	/* Guests */
+	
+		/* Home - "Edit" button */
+		.EVPvub { color: var(--GR17) !important }
+
+			.EVPvub:hover { color: var(--GR19) !important }
+	
 	/* "Upgrade to host longer group calls" Section */
 	.NoJAOd.NoJAOd { background: var(--GR8) !important }
 	
@@ -802,6 +811,18 @@
 		.lt59Jb { color: var(--GR14) !important }
 	
 			.lt59Jb:hover { color: var(--GR16) !important }
+	
+	/* "Calendar set your join method to ..." */
+	
+	.yiLrzf { background: var(--GR8) !important }
+	
+		/* Text */
+		.SFGZyc { color: var(--GR17) !important }
+	
+		/* "Got It" */
+		.CGWPk { color: var(--GR17) !important }
+	
+			.CGWPk:hover { color: var(--GR19) !important }
 	
 	/* "Take meeting notes" */
 	.IPEQnf { color: var(--GR17) !important }
@@ -861,7 +882,7 @@
 	
 	/* Close Icon Circle */
 	.XsU8xf { background-color: var(--GR3) !important }
-
+	
 	/* Action Footer */
 	.NAFvr { background: var(--GR5) !important }
 
@@ -1051,6 +1072,14 @@
 				/* Text */
 				.ncFHed .MocG8c.KKjvXb .jT5e9 { color: var(--GR19) !important }
 
+		/* "Add a label" Button */ 
+		
+			/* + Icon */
+			.Nh4qkc.Enkreb { color: var(--GR17) !important }
+		
+			/* Text */
+			.gcab7e { color: var(--GR17) !important }
+	
 	/* Reminder Repeat Select */
 	.MocG8c { color: var(--GR17) !important }
 
@@ -1228,7 +1257,7 @@
 	.kMp0We .wimXt,  /* Guests Can */
 	.WefNYe .uVccjd, /* Settings Page */
 	.Lzfnue .uVccjd, /* Trash Page */
-	.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:not(:checked) ~ .VfPpkd-YQoJzd /* "Modify Event" */ 
+	.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:not(:checked):not(:indeterminate):not([data-indeterminate="true"]) ~ .VfPpkd-YQoJzd /* "Modify Event" */
 	{
 		border-color: var(--GRSELECTED) !important
 	}
@@ -1251,9 +1280,7 @@
 		}
 	
 		/* Checked */
-		.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:checked ~ .VfPpkd-YQoJzd,
-		.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:indeterminate ~ .VfPpkd-YQoJzd,
-		.Ne8lhe .VfPpkd-muHVFf-bMcfAe[data-indeterminate="true"]:enabled ~ .VfPpkd-YQoJzd {
+		.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:checked ~ .VfPpkd-YQoJzd, .Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:indeterminate ~ .VfPpkd-YQoJzd, .Ne8lhe .VfPpkd-muHVFf-bMcfAe[data-indeterminate="true"]:enabled ~ .VfPpkd-YQoJzd {
 			background: var(--GRSELECTED) !important;
 			border-color: var(--GRSELECTED) !important;
 		}
@@ -1344,12 +1371,12 @@
 		.Vq3YLb { color: var(--GR17) !important }
 		
 		/* Links */
-		.lR3h6d .iuaqab a {
+		.lR3h6d .KRoqRc a {
 			color: var(--GRSELECTED) !important;
 			cursor: pointer !important;
 		}
 		
-			.lR3h6d .iuaqab a:focus, .lR3h6d .iuaqab a:hover {
+			.lR3h6d .KRoqRc a:focus, .lR3h6d .KRoqRc a:hover {
 				color: var(--GR15) !important;
 			}
 	
@@ -1494,52 +1521,52 @@
 
 		/* Selected Calendar */
 		.LOewLb.KKjvXb { background: var(--GR6) !important }
+	
+	/* Lister */
+	.NekIXe, .Lzfnue { background: transparent !important }
+	
+		/* Table Headers */
+		.M1ZIGd { color: var(--GR17) !important }
 		
-		/* Lister */
-		.NekIXe, .Lzfnue { background: transparent !important }
+		/* Content */
+		.ETUnje > * { color: var(--GR15) !important }
 		
-			/* Table Headers */
-			.M1ZIGd { color: var(--GR17) !important }
-			
-			/* Content */
-			.ETUnje > * { color: var(--GR15) !important }
-			
-			/* Row Hover */
-			.v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
-			.ETUnje { border-color: var(--GR6) !important }
-		
-	/* EMBEDDED IFRAME SIDEBAR INSIDE GMAIL */
-		
-		/* Header Titles */
-		.ccLsFc { color: var(--GR17) !important }
-		
-		/* Header Dividers */
-		.cOoA8d, .cBs4Te { border-color: var(--GR10) !important }
-		
-		/* Header "..." Menu Selected Option */
-		.e3odF { background: var(--GR10) !important }
-		
-		/* Create Event Popover */
-		
-			/* Header */
-			.Bofavf {
-				background: var(--GR4) !important;
-				box-shadow: inset 0 1px 0 var(--GR12) !important;
-			}
-		
-			/* "Add Title" */
-			.XTHi9c .snByac { color: var(--GR15) !important }
-		
-			/* Title */
-			.XTHi9c .zHQkBf { color: var(--GR19) !important }
-		
-			/* Section Dividers */
-			.Od6NEf, .IFQP9d, .iofSlf, .Da8wwf { border-color: var(--GR10) !important }
-		
-			/* "Add Google Meet video conferencing" */
-			.oYdi4d .FAE19b .snByac { color: var(--GR15) !important }
-		
-			/* "Join with Google Meet" */
-			.Q30cfe { color: var(--GR19) !important }
-	}
+		/* Row Hover */
+		.v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
+		.ETUnje { border-color: var(--GR6) !important }
+	
+/* EMBEDDED IFRAME SIDEBAR INSIDE GMAIL */
+	
+	/* Header Titles */
+	.ccLsFc { color: var(--GR17) !important }
+	
+	/* Header Dividers */
+	.cOoA8d, .cBs4Te { border-color: var(--GR10) !important }
+	
+	/* Header "..." Menu Selected Option */
+	.e3odF { background: var(--GR10) !important }
+	
+	/* Create Event Popover */
+	
+		/* Header */
+		.Bofavf {
+			background: var(--GR4) !important;
+			box-shadow: inset 0 1px 0 var(--GR12) !important;
+		}
+	
+		/* "Add Title" */
+		.XTHi9c .snByac { color: var(--GR15) !important }
+	
+		/* Title */
+		.XTHi9c .zHQkBf { color: var(--GR19) !important }
+	
+		/* Section Dividers */
+		.Od6NEf, .IFQP9d, .iofSlf, .Da8wwf { border-color: var(--GR10) !important }
+	
+		/* "Add Google Meet video conferencing" */
+		.oYdi4d .FAE19b .snByac { color: var(--GR15) !important }
+	
+		/* "Join with Google Meet" */
+		.Q30cfe { color: var(--GR19) !important }
+}
 	
