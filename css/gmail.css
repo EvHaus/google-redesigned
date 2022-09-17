@@ -377,6 +377,9 @@
 {
 	background: var(--GR2) !important
 }
+	
+	/* When Collapsed */
+	.WR.aeN { background: var(--GR2) !important }
 
 	/* Compose Button */
 	.z0 > .L3 {
@@ -386,10 +389,22 @@
 	
 		/* Icon */
 		.WR .z0 > .L3::before,
-		.aIH .L3::before /* Aug 2022 */ {
+		.aIH .L3::before /* Aug 2022 */
+		{
 			background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/create_black_24dp.png") !important;
 			filter: invert(1) !important;
 		}
+	
+		/* "New Chat" Icon */
+		.arL .L3::before {
+			background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/chat_bubble_outline_white_24dp.png") !important
+		}
+	
+	/* Header when hoving over "Chat", "Spaces", etc... */
+	.aJu .aBO > .aic, .bym .aTV { background: var(--GR2) !important }
+	
+		/* Triangle */
+		.aTV { border-color: var(--GR2) !important }
 
 	/* Icons */
 		
@@ -1112,9 +1127,9 @@
 	/* Recepients */
 	.hx .hb, .ac2 { color: var(--GR15) !important }
 	
-	/* "Images are not displayed" banner */
+	/* "Images are not displayed" / "Translation" banner */
 	.adp, .h9, .adI, .aHn {
-		background: var(--GR4) !important;
+		background: var(--GR2) !important;
 		color: var(--GR17) !important;
 	}
 	
@@ -1122,9 +1137,28 @@
 		.aeu { filter: invert(1) }
 	
 		/* Links */
-		.h8 { color: var(--GRSELECTED) !important }
+		.h8 { color: var(--GR19) !important }
 	
-			.h8:hover { color: var(--GR19) !important }
+			.h8:hover { color: var(--GRSELECTED) !important }
+	
+	/* Translation Bar */
+	
+		/* Translation Icon */
+		.hc { background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/translate_white_20dp.png") !important }
+	
+		/* Chevron Right */
+		.adG { background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/chevron_right_white_20dp.png") !important }
+	
+		/* "French" / "English" */
+		.J-JN-M-I { color: var(--GR15) !important }
+	
+		/* "Translate Message" */
+		.adI .B9 { color: var(--GR19) !important }
+	
+			.adI .B9:hover { color: var(--GRSELECTED) !important }
+	
+		/* "x" Button */
+		.zz { filter: invert(1) !important }
 
 	/* Header Icons */
 
@@ -1364,4 +1398,4 @@
 				/* Text */
 				.v .fZ .f0 { color: var(--GRSELECTED) !important }
 }
-	
+		
