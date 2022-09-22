@@ -1,17 +1,16 @@
 /* ==UserStyle==
 @name           Gmail Redesigned (Dark Mode)
-@namespace      USO Archive
+@namespace      Globex Designs, Inc.
 @author         Globex Designs, Inc.
 @description    A dark style for Gmail from the creators of the original
 				"Google Redesigned" extension. To report issue please visit:
 				https://github.com/EvHaus/google-redesigned
 				NOTE: This style does not support Gmail's new Chat & Meet features.
-@version        20211116.4.4
+@version        20220921.0.0
+@homepageURL    https://github.com/EvHaus/google-redesigned
+@updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.css
 @license        CC-BY-4.0
-@preprocessor   uso
 ==/UserStyle== */
-
-/* https://github.com/EvHaus/google-redesigned/ */
 
 @-moz-document url-prefix("https://mail.google.com") {
 
