@@ -830,9 +830,9 @@
 		.IPEQnf:hover { color: var(--GR19) !important }
 
 	/* "Find a time" */
-	.bRNGXd:not(.Y5sE8d) { color: var(--GR17) !important }
+	.ij27gb:not(.Y5sE8d) { color: var(--GR17) !important }
 
-		.bRNGXd:not(.Y5sE8d):hover { color: var(--GR19) !important }
+		.ij27gb:not(.Y5sE8d):hover { color: var(--GR19) !important }
 
 	/* OOO event */
 	
@@ -861,6 +861,33 @@
 					.hT1Fub { color: var(--GR17) !important }
 	
 						.hT1Fub:focus, .hT1Fub:hover { color: var(--GR19) !important }
+	
+	/* Working Location Popover */
+	
+		/* "Working Location" title */
+		.B4kd9e { color: var(--GR17) !important }
+	
+		/* "Set repeating locations in settings" */
+		.nD0WUd { color: var(--GR15) !important }
+	
+		/* "Choose a location" */
+		.FAaxPe { color: var(--GR17) !important }
+	
+		/* "Home" / "Office" buttons */
+		.RpYYWb {
+			background: var(--GR8) !important;
+			border-color: var(--GR10) !important;
+			color: var(--GR18) !important;
+		}
+	
+			.RpYYWb:hover {
+				background: var(--GR9) !important;
+				border-color: var(--GR12) !important;
+				color: var(--GR19) !important;
+			}
+	
+		/* Calendar Title */
+		.h7kDxc.RDPZE { color: var(--GR17) !important }
 	
 	/* "Does not repeat", "Free / Default visibility / Do not notify" */
 	.NAgJzc { color: var(--GR15) !important }
@@ -1517,56 +1544,56 @@
 	.pljXM { background: transparent !important }
 	
 		/* Calendar Header */
-		.aDCdzb { color: var(--GR10) !important }
-
-		/* Selected Calendar */
-		.LOewLb.KKjvXb { background: var(--GR6) !important }
+			.aDCdzb { color: var(--GR10) !important }
 	
-	/* Lister */
-	.NekIXe, .Lzfnue { background: transparent !important }
-	
-		/* Table Headers */
-		.M1ZIGd { color: var(--GR17) !important }
+			/* Selected Calendar */
+			.LOewLb.KKjvXb { background: var(--GR6) !important }
 		
-		/* Content */
-		.ETUnje > * { color: var(--GR15) !important }
+		/* Lister */
+		.NekIXe, .Lzfnue { background: transparent !important }
 		
-		/* Row Hover */
-		.v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
-		.ETUnje { border-color: var(--GR6) !important }
-	
-/* EMBEDDED IFRAME SIDEBAR INSIDE GMAIL */
-	
-	/* Header Titles */
-	.ccLsFc { color: var(--GR17) !important }
-	
-	/* Header Dividers */
-	.cOoA8d, .cBs4Te { border-color: var(--GR10) !important }
-	
-	/* Header "..." Menu Selected Option */
-	.e3odF { background: var(--GR10) !important }
-	
-	/* Create Event Popover */
-	
-		/* Header */
-		.Bofavf {
-			background: var(--GR4) !important;
-			box-shadow: inset 0 1px 0 var(--GR12) !important;
-		}
-	
-		/* "Add Title" */
-		.XTHi9c .snByac { color: var(--GR15) !important }
-	
-		/* Title */
-		.XTHi9c .zHQkBf { color: var(--GR19) !important }
-	
-		/* Section Dividers */
-		.Od6NEf, .IFQP9d, .iofSlf, .Da8wwf { border-color: var(--GR10) !important }
-	
-		/* "Add Google Meet video conferencing" */
-		.oYdi4d .FAE19b .snByac { color: var(--GR15) !important }
-	
-		/* "Join with Google Meet" */
-		.Q30cfe { color: var(--GR19) !important }
-}
-	
+			/* Table Headers */
+			.M1ZIGd { color: var(--GR17) !important }
+			
+			/* Content */
+			.ETUnje > * { color: var(--GR15) !important }
+			
+			/* Row Hover */
+			.v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
+			.ETUnje { border-color: var(--GR6) !important }
+		
+	/* EMBEDDED IFRAME SIDEBAR INSIDE GMAIL */
+		
+		/* Header Titles */
+		.ccLsFc { color: var(--GR17) !important }
+		
+		/* Header Dividers */
+		.cOoA8d, .cBs4Te { border-color: var(--GR10) !important }
+		
+		/* Header "..." Menu Selected Option */
+		.e3odF { background: var(--GR10) !important }
+		
+		/* Create Event Popover */
+		
+			/* Header */
+			.Bofavf {
+				background: var(--GR4) !important;
+				box-shadow: inset 0 1px 0 var(--GR12) !important;
+			}
+		
+			/* "Add Title" */
+			.XTHi9c .snByac { color: var(--GR15) !important }
+		
+			/* Title */
+			.XTHi9c .zHQkBf { color: var(--GR19) !important }
+		
+			/* Section Dividers */
+			.Od6NEf, .IFQP9d, .iofSlf, .Da8wwf { border-color: var(--GR10) !important }
+		
+			/* "Add Google Meet video conferencing" */
+			.oYdi4d .FAE19b .snByac { color: var(--GR15) !important }
+		
+			/* "Join with Google Meet" */
+			.Q30cfe { color: var(--GR19) !important }
+	}
+		
