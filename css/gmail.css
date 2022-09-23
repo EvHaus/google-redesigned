@@ -6,6 +6,10 @@
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.css
 @license        CC-BY-4.0
 @author         Globex Designs, Inc.
+@description    A dark style for Gmail from the creators of the original
+				"Google Redesigned" extension. To report issue please visit:
+				https://github.com/EvHaus/google-redesigned
+				NOTE: This style does not support Gmail's new Chat & Meet features.
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://mail.google.com") {
