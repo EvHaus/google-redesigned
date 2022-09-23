@@ -1,16 +1,16 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
+@version        20220921.0.0
+@homepageURL    https://github.com/EvHaus/google-redesigned
+@updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.css
+@license        CC-BY-4.0
 @author         Globex Designs, Inc.
 @description    A dark style for Google Calendar from the creators of the original
 				"Google Redesigned" extension. To report issue please visit:
 				https://github.com/EvHaus/google-redesigned
 				NOTE: This style does not support the right-side Keep/Reminders
 				sidebar.
-@version        20220921.0.0
-@homepageURL    https://github.com/EvHaus/google-redesigned
-@updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.css
-@license        CC-BY-4.0
 ==/UserStyle== */
 
 @-moz-document domain("calendar.google.com") {
