@@ -62,6 +62,8 @@
 	.pdqVLc .oXdlS, /* Event Popover Icons Part 2 */
 	.Mz3isd .OLw7vb, /* Task Popover Icons Part 1 */
 	.hUFQnd, /* Task Popover Icons Part 2 */
+	.ElLe3, /* Task Popover Popover Edit (Delete) */
+	.CLcwNd, /* Task Popover Popover Edit (Close) */
 	.Lc04pd, /* Event Popover - Guests Camera Icon */
 	.urWhWe .Ce1Y1c, /* Working Location Popover */
 	.kMp0We .DPvwYc, /* Event Popover Rows */
@@ -1283,7 +1285,8 @@
 	.kMp0We .wimXt,  /* Guests Can */
 	.WefNYe .uVccjd, /* Settings Page */
 	.Lzfnue .uVccjd, /* Trash Page */
-	.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:not(:checked):not(:indeterminate):not([data-indeterminate="true"]) ~ .VfPpkd-YQoJzd /* "Modify Event" */
+	.dRjtd .i6LVBe, /* "All Day" on Event Page */
+	.Ne8lhe:not(.oO5tEf) .VfPpkd-muHVFf-bMcfAe:enabled:not(:checked):not(:indeterminate):not([data-indeterminate="true"]) ~ .VfPpkd-YQoJzd /* "Modify Event" on Event Page */
 	{
 		border-color: var(--GRSELECTED) !important
 	}
@@ -1299,14 +1302,14 @@
 		.WefNYe .uVccjd .Ii6cVc,
 		.Lzfnue .uVccjd .MbUTNc,
 		.Lzfnue .uVccjd .Ii6cVc,
-		.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled ~ .VfPpkd-YQoJzd .VfPpkd-HUofsb
+		.Ne8lhe:not(.oO5tEf) .VfPpkd-muHVFf-bMcfAe:enabled ~ .VfPpkd-YQoJzd .VfPpkd-HUofsb
 		{
 			border-color: var(--GR0) !important;
 			color: var(--GR0) !important;
 		}
 	
 		/* Checked */
-		.Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:checked ~ .VfPpkd-YQoJzd, .Ne8lhe .VfPpkd-muHVFf-bMcfAe:enabled:indeterminate ~ .VfPpkd-YQoJzd, .Ne8lhe .VfPpkd-muHVFf-bMcfAe[data-indeterminate="true"]:enabled ~ .VfPpkd-YQoJzd {
+		.Ne8lhe:not(.oO5tEf) .VfPpkd-muHVFf-bMcfAe:enabled:checked ~ .VfPpkd-YQoJzd {
 			background: var(--GRSELECTED) !important;
 			border-color: var(--GRSELECTED) !important;
 		}
@@ -1331,6 +1334,10 @@
 			color: var(--GR17) !important;
 		}
 
+	/* Little chevron arrows on dropdown toggles */
+	.QTQ0eb { color: var(--GR14) !important }
+	.e2CuFe.eU809d { border-color: var(--GR14) transparent !important }
+	
 	/* Tab */
 	.r5F2ye .VZhFab { color: var(--GR12) !important }
 	
@@ -1366,6 +1373,11 @@
 			background: var(--GR8) !important;
 			cursor: pointer;
 		}
+	
+	/* "Learn more about event visibility" when you don't own event */
+	.cB5rYc { color: var(--GR15) !important }
+	
+		.cB5rYc:hover { color: var(--GRSELECTED) !important }
 
 	/* Notification "Before at" text */
 	.j3nyw { color: var(--GR17) !important }
@@ -1595,4 +1607,5 @@
 			/* "Join with Google Meet" */
 			.Q30cfe { color: var(--GR19) !important }
 	}
-		
+			
+	
