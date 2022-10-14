@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gmail Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20220921.0.0
+@version        20221013.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.user.css
 @license        CC-BY-4.0
@@ -122,7 +122,7 @@
 		.CL.V2::before { background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/gmail_groups_white_20dp.png") !important }
 	
 		/* Meet */
-		.V6.CL.Xj::before { background-color: var(--GR19) !important }
+		.CL.Xj::before { background-image: url("//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/meet_white_20dp.png") !important }
 	
 /* HEADER */
 
@@ -399,6 +399,11 @@
 			background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/chat_bubble_outline_white_24dp.png") !important
 		}
 	
+		/* "New space" Icon */
+		.arM .L3::before {
+			background-image: url("https://www.gstatic.com/images/icons/material/system_gm/1x/add_white_24dp.png") !important
+		}
+	
 	/* Header when hoving over "Chat", "Spaces", etc... */
 	.aJu .aBO > .aic, .bym .aTV { background: var(--GR2) !important }
 	
@@ -449,10 +454,10 @@
 		}
 	
 		/* Less Arrow */
-		.n6 .air .G-asx { background: var(--GR17) !important }
+		.n6 .air .G-asx { background-image: url("//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/expand_less_white_20dp.png") !important }
 	
 		/* More Arrow */
-		.n6 .n4 .G-asx { background: var(--GR17) !important }
+		.n6 .n4 .G-asx { background-image: url("//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/expand_more_white_20dp.png") !important }
 	
 		/* Important */
 		.TO > .aHS-bns > .qj {
@@ -465,7 +470,7 @@
 		}
 	
 		/* Categories */
-		.aEc.aHS-bnr .qj { background-color: var(--GR17) !important }
+		.aEc.aHS-bnr .qj { background-image: url("//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/label_white_20dp.png") !important }
 	
 		/* Collapsed Arrow */
 		.aii {
@@ -603,11 +608,8 @@
 		/* Dropdown Arrow */
 		.G-asx { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/arrow_drop_down_white_20dp.png") !important }
 
-		/* Refresh (Legacy) */
-		.asf.T-I-J3 { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/refresh_white_20dp.png") !important }
-	
-			/* Aug 2022 [Remove .S4 when legacy is gone] */
-			.S4 .bzn .asf { background-color: var(--GR17) !important }
+		/* Refresh */
+		.bzn .asf { background-image: url("//ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/refresh_white_20dp.png") !important }
 
 		/* More */
 		.bjy { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png") !important }
@@ -997,13 +999,15 @@
 			/* "X" close button */
 			.OB { filter: invert(1) }
 	
-		/* "See all settings" button */
-		.Tj {
+		.Tj, /* "See all settings" button */
+		.YD  /* "Manage this organization" button */
+		{
 			box-shadow: inset 0 0 0 1px var(--GR8) !important;
 			color: var(--GR17) !important;
 		}
 	
-			.Tj:hover {
+			.Tj:hover,
+			.YD:hover {
 				box-shadow: inset 0 0 0 1px var(--GR10) !important;
 				color: var(--GR19) !important;
 			}
@@ -1397,4 +1401,4 @@
 				/* Text */
 				.v .fZ .f0 { color: var(--GRSELECTED) !important }
 }
-		
+			
