@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20220928.0.0
+@version        20221017.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -1248,16 +1248,22 @@
 		.IuSHYd:hover { background: var(--GR2) !important }
 
 		/* Selected */
-		.IuSHYd.N2RpBe:not(.RDPZE) .dobRbb { border-color: var(--GRSELECTED) !important }
+		.IuSHYd.N2RpBe {
+            background: var(--GRSELECTED) !important;
+            color: var(--GR4) !important;
+        }
 
 	/* "Ends" radio buttons */
-	.BHE4Yb .Id5V1 { border-color: var(--GR12) !important }
+    .kDzhGf .VfPpkd-gBXA9-bMcfAe:enabled:not(:checked)+.VfPpkd-RsCWK .VfPpkd-wVo5xe-LkdAo { border-color: var(--GR12) !important }
 
 		/* Selected */
-		.BHE4Yb .nQOrEb { border-color: var(--GRSELECTED) !important }
+		.kDzhGf .VfPpkd-gBXA9-bMcfAe:enabled:checked+.VfPpkd-RsCWK .VfPpkd-wVo5xe-LkdAo,
+        .kDzhGf .VfPpkd-gBXA9-bMcfAe:enabled+.VfPpkd-RsCWK .VfPpkd-Z5TpLc-LkdAo {
+            border-color: var(--GRSELECTED) !important
+        }
 
 	/* Occurences Row */
-	.M2lnFe.RDPZE {
+	.M2lnFe {
 		background: transparent !important;
 		color: var(--GR17) !important;
 	}
@@ -1280,6 +1286,7 @@
 .p9lUpf { background: var(--GR4) !important }
 
 	/* Checkboxes */
+	.dRjtd .i6LVBe, /* "All Day" */
 	.cAP2G .k2NHHb, /* "All Day" Event Popover (July 2020) */
 	.kMp0We .wimXt,  /* Guests Can */
 	.WefNYe .uVccjd, /* Settings Page */
