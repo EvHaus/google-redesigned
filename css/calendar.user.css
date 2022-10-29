@@ -1254,11 +1254,12 @@
         }
 
 	/* "Ends" radio buttons */
-    .kDzhGf .VfPpkd-gBXA9-bMcfAe:enabled:not(:checked)+.VfPpkd-RsCWK .VfPpkd-wVo5xe-LkdAo { border-color: var(--GR12) !important }
+    /* stylelint-disable-next-line max-line-length */
+    .kDzhGf .VfPpkd-gBXA9-bMcfAe:enabled:not(:checked) + .VfPpkd-RsCWK .VfPpkd-wVo5xe-LkdAo { border-color: var(--GR12) !important }
 
 		/* Selected */
-		.kDzhGf .VfPpkd-gBXA9-bMcfAe:enabled:checked+.VfPpkd-RsCWK .VfPpkd-wVo5xe-LkdAo,
-        .kDzhGf .VfPpkd-gBXA9-bMcfAe:enabled+.VfPpkd-RsCWK .VfPpkd-Z5TpLc-LkdAo {
+		.kDzhGf .VfPpkd-gBXA9-bMcfAe:enabled:checked + .VfPpkd-RsCWK .VfPpkd-wVo5xe-LkdAo,
+        .kDzhGf .VfPpkd-gBXA9-bMcfAe:enabled + .VfPpkd-RsCWK .VfPpkd-Z5TpLc-LkdAo {
             border-color: var(--GRSELECTED) !important
         }
 
@@ -1286,16 +1287,17 @@
 .p9lUpf { background: var(--GR4) !important }
 
 	/* Checkboxes */
-	.dRjtd .i6LVBe, /* "All Day" */
+	/* stylelint-disable selector-max-pseudo-class, max-line-length */
+	.dRjtd .i6LVBe, /* "All Day" on Event Page */
 	.cAP2G .k2NHHb, /* "All Day" Event Popover (July 2020) */
 	.kMp0We .wimXt,  /* Guests Can */
 	.WefNYe .uVccjd, /* Settings Page */
 	.Lzfnue .uVccjd, /* Trash Page */
-	.dRjtd .i6LVBe, /* "All Day" on Event Page */
 	.Ne8lhe:not(.oO5tEf) .VfPpkd-muHVFf-bMcfAe:enabled:not(:checked):not(:indeterminate):not([data-indeterminate="true"]) ~ .VfPpkd-YQoJzd /* "Modify Event" on Event Page */
 	{
 		border-color: var(--GRSELECTED) !important
 	}
+	/* stylelint-enable selector-max-pseudo-class, max-line-length */
 
 		/* Checkmark */
 		.dRjtd .i6LVBe .MbUTNc,
@@ -1315,6 +1317,7 @@
 		}
 	
 		/* Checked */
+		/* stylelint-disable-next-line selector-max-pseudo-class */
 		.Ne8lhe:not(.oO5tEf) .VfPpkd-muHVFf-bMcfAe:enabled:checked ~ .VfPpkd-YQoJzd {
 			background: var(--GRSELECTED) !important;
 			border-color: var(--GRSELECTED) !important;
