@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20221029.0.0
+@version        20221107.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -49,7 +49,7 @@
 
 /* ICONS */
 
-	.gb_oa svg, /* Header Icons */
+	.gb_pa svg, /* Header Icons */
 	.rF3YF span, /* Header/Sidebar Arrows, Search */
 	.xmVoP, /* Header "2 weeks" Button Arrow */
 	.gb_ne.gb_oe button svg, /* Header Search Icons */
@@ -894,14 +894,14 @@
 	.NAgJzc { color: var(--GR15) !important }
 
 	/* RTE for Description */
-	.XOE24 { background: var(--GR4) !important }
+	.T4SBCf { background: var(--GR4) !important }
 
 		/* Toolbar Dividers */
-		.XOE24 .AMBzld { border-color: var(--GR8) !important }
+		.T4SBCf .Bx5aBb { border-color: var(--GR8) !important }
 
 		/* Toolbar Button Hover */
 		/* stylelint-disable-next-line selector-max-pseudo-class */
-		.XOE24:not(.W1ZWq) .gHlG4 .Erb9le:not(.Hcv3ye) .qmMNRc:hover {
+		.T4SBCf .r7kft .CIy9F:not(.Hcv3ye) .Aworge:hover {
 			background: var(--GR2) !important
 		}
 
