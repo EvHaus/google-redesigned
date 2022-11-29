@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20221108.0.0
+@version        20221128.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -1350,6 +1350,9 @@
 			background: var(--GR8) !important;
 			color: var(--GR17) !important;
 		}
+    
+    /* "All day" checkbox label */
+    .VfPpkd-I9GLp-yrriRe { color: var(--GR17) !important }
 
 	/* Little chevron arrows on dropdown toggles */
 	.QTQ0eb { color: var(--GR14) !important }
@@ -1624,5 +1627,3 @@
 			/* "Join with Google Meet" */
 			.Q30cfe { color: var(--GR19) !important }
 	}
-			
-	
