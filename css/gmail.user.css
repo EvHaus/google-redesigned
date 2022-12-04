@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gmail Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20221029.0.0
+@version        20221204.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.user.css
 @license        CC-BY-4.0
@@ -48,7 +48,7 @@
 
 /* ICONS */
 
-	.gb_pa svg, /* Header Icons */
+	.gb_ua svg, /* Header Icons */
 	.gb_Qe button svg /* Search Dropdown Icons */
 	{
 		color: var(--GR17) !important;
@@ -132,8 +132,7 @@
 	.gb_oa svg { color: var(--GR16) !important }
 
 	/* "Gmail" logo */
-	.gb_uc img.gb_zc
-	{
+	[aria-label="Gmail"][title="Gmail"][href="#inbox"] > img {
 		background: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x_r4.png") no-repeat center center !important;
 		height: 0 !important;
 		padding: 40px 109px 0 0 !important;
@@ -158,8 +157,6 @@
 		background: var(--GR6) !important;
 		border-color: var(--GR8) !important;
 	}
-	
-		
 	
 		/* Input */
 		#aso_search_form_anchor input { color: var(--GR17) !important }
@@ -542,7 +539,7 @@
 	}
 
 	/* Active */
-	.TO.nZ { background: var(--GR6) !important }
+	.TO.nZ, .TO.ol { background: var(--GR6) !important }
 		
 		/* Icon */
 		.TO.nZ .qj { opacity: 1 !important }
@@ -800,6 +797,17 @@
 		background: var(--GR3) !important;
 		color: var(--GR15) !important;
 	}
+    
+    /* In Spam Folder > "Messages that have been in Spam..." banner */
+    .Tm .ya {
+        background: var(--GR3) !important;
+		color: var(--GR15) !important;
+    }
+    
+        /* Link */
+        .nH .ya .x2 { color: var(--GR18) !important }
+            
+            .nH .ya .x2:hover { color: var(--GRSELECTED) !important }
 
 	/* Toolbar */
 
@@ -1416,4 +1424,3 @@
 				/* Text */
 				.v .fZ .f0 { color: var(--GRSELECTED) !important }
 }
-			
