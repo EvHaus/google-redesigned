@@ -1,0 +1,21 @@
+colors: false
+
+post-merge:
+  commands:
+    install:
+      run: pnpm install
+
+post-rebase:
+  commands:
+    install:
+      run: pnpm install
+
+pre-commit:
+  parallel: true
+  commands:
+    stylelint:
+      glob: "*.{css}"
+      run: yarn stylelint-globex --fix {staged_files} && git add {staged_files}
+    prettier-package-json:
+      glob: "package.json"
+      run: yarn prettier-package-json --use-tabs --write {staged_files} && git add {staged_files}

@@ -14,17 +14,14 @@
 		"url": "https://github.com/EvHaus/google-redesigned/issues"
 	},
 	"scripts": {
-		"postinstall": "husky install",
 		"lint": "yarn stylelint && yarn packagelint",
-		"prepack": "pinst --disable",
-		"postpack": "pinst --enable",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"stylelint": "stylelint-globex css/*.css",
 		"test": "yarn lint"
 	},
 	"dependencies": {
+		"lefthook": "1.2.3",
 		"prettier-package-json": "2.6.4",
 		"stylelint-config-globex": "3.5.0"
-	},
-	"packageManager": "yarn@3.2.2"
+	}
 }
