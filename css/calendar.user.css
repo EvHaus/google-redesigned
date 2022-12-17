@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20221215.0.0
+@version        20221216.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -64,8 +64,8 @@
 		.pdqVLc .oXdlS, /* Event Popover Icons Part 2 */
 		.pdqVLc .meh4fc, /* Event Popover Icons Part 3 */
 		.vdfYDb, /* Event Popover Footer Arrow Icon */
-		.Mz3isd .OLw7vb, /* Task Popover Icons Part 1 */
-		.hUFQnd, /* Task Popover Icons Part 2 */
+		.Mz3isd .EaVNbc, /* Task Popover Icons */
+		.hUFQnd, /* Task Popover Edit Icons */
 		.ElLe3, /* Task Popover Popover Edit (Delete) */
 		.CLcwNd, /* Task Popover Popover Edit (Close) */
 		.Lc04pd, /* Event Popover - Guests Camera Icon */
@@ -394,7 +394,11 @@
 					.uQ1ixe .CeoRYc { background: transparent !important }
 	
 			/* Calendar Name */
-			.DYTqTd .NI2kfb { color: var(--GR17) !important }
+			.DYTqTd .NI2kfb,
+            .toUqff /* Dec 2022 Update */
+            {
+                color: var(--GR17) !important
+            }
 	
 				.kMp0We.Wm6kRe:hover { background: var(--GR4) !important }
 			
@@ -729,7 +733,19 @@
 		.JtukPc { background: var(--GR6) !important }
 	
 		/* Title & Labels */
-		.agOyMd .JAPzS, .NI2kfb { color: var(--GR19) !important }
+		.agOyMd .JAPzS,
+        .NI2kfb,
+        .agOyMd .UfeRlc, /* Dec 2022 Update (Title) */
+        .agOyMd div.AzuXid /* Dec 2022 Update (Date) */
+        {
+            color: var(--GR19) !important
+        }
+    
+        .pdqVLc .AzuXid, /* "Created by ...." */
+        .AzuXid /* Task "Weekly on Friday" */
+        {
+            color: var(--GR15) !important
+        }
 	
 		/* Dividers (appear when setting description) */
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.dBA1M) { border-bottom-color: var(--GR12) !important }
