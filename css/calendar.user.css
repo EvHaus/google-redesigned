@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20221216.0.0
+@version        20230108.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -42,6 +42,8 @@
 		--GRSELECTED: #FB0;
 	}
 	/* stylelint-enable color-no-hex */
+    
+    
 	
 	/* GLOBAL */
 	
@@ -752,6 +754,17 @@
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.AHjck) { border-top-color: var(--GR12) !important }
 		/* stylelint-disable-next-line selector-max-pseudo-class, max-line-length */
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.dBA1M) + .kxh2c:not(.gUZKAc).sMVRZe:not(.AHjck) { border-top-color: transparent !important }
+    
+        /* Buttons ("Event", "Task", "Reminder") */
+        .zmrbhe {
+            color: var(--GR15) !important;
+        }
+    
+            /* Selected */
+            .zmrbhe.qs41qe {
+                background: var(--GR9) !important;
+                color: var(--GRSELECTED) !important;
+            }
 	
 		/* Links in the Description */
 		.D29CYb a,
