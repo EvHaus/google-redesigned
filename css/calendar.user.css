@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230108.0.0
+@version        20230109.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -43,8 +43,6 @@
 	}
 	/* stylelint-enable color-no-hex */
     
-    
-	
 	/* GLOBAL */
 	
 		body { background: var(--GR0) !important }
@@ -52,8 +50,8 @@
 	/* ICONS */
 	
 		.gb_ua svg, /* Header Icons */
-		.CXtcdb, /* Header Search Icon */
-		.f5yPGb, /* Header Arrow Icons */
+		.ec9Aq, /* Header Search Icon */
+		.JJyfjc, /* Header Arrow Icons */
 		.xmVoP, /* Header "2 weeks" Button Arrow */
 		.IOr5M, /* Mini Calendar Arrow Icons */
 		.gb_ne.gb_oe button svg, /* Header Search Icons */
@@ -65,7 +63,8 @@
 		.Mz3isd .OLw7vb svg, /* Event Popover Icons Part 1 */
 		.pdqVLc .oXdlS, /* Event Popover Icons Part 2 */
 		.pdqVLc .meh4fc, /* Event Popover Icons Part 3 */
-		.vdfYDb, /* Event Popover Footer Arrow Icon */
+        .pdqVLc .meh4fc svg, /* Event Popover Icons "Take Meeting notes" */
+		.qau86b, /* Event Popover Footer Arrow Icon */
 		.Mz3isd .EaVNbc, /* Task Popover Icons */
 		.hUFQnd, /* Task Popover Edit Icons */
 		.ElLe3, /* Task Popover Popover Edit (Delete) */
