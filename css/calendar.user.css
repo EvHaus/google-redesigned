@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230109.0.0
+@version        20230111.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -49,7 +49,7 @@
 	
 	/* ICONS */
 	
-		.gb_ua svg, /* Header Icons */
+		.gb_Ca svg, /* Header Icons */
 		.ec9Aq, /* Header Search Icon */
 		.JJyfjc, /* Header Arrow Icons */
 		.xmVoP, /* Header "2 weeks" Button Arrow */
@@ -60,9 +60,9 @@
 		.xJ65bd, /* Event Popover Header */
 		.d29e1c, /* Event Popover Three Dots */
 		.cjq2Db, /* Event Popover Close */
-		.Mz3isd .OLw7vb svg, /* Event Popover Icons Part 1 */
-		.pdqVLc .oXdlS, /* Event Popover Icons Part 2 */
-		.pdqVLc .meh4fc, /* Event Popover Icons Part 3 */
+		.HfYfLe svg, /* Event Popover Icons */
+		.q7aeG svg, /* Event Popover (Close Icon) */
+        .pdqVLc .meh4fc, /* Event Popover Icons "Calendar Icon" */
         .pdqVLc .meh4fc svg, /* Event Popover Icons "Take Meeting notes" */
 		.qau86b, /* Event Popover Footer Arrow Icon */
 		.Mz3isd .EaVNbc, /* Task Popover Icons */
