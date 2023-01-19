@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gmail Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20221204.0.0
+@version        20230118.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.user.css
 @license        CC-BY-4.0
@@ -92,9 +92,12 @@
 	.WR:not(.aBA):not(.aTO), .a6o::before { background: var(--GR4) !important }
 	
 	/* Item */
+    
+        /* Hamburger Icon */
+        .gb_Da svg { color: var(--GR16) !important }
 	
 		/* Text (Mail, Chat, Spaces, Meet) */
-		.apW { color: var(--GR17) !important }
+		.apW { color: var(--GR16) !important }
 	
 		/* Selected */
 		.apV .V6, .apV .V6:hover { background: var(--GR8) !important }
@@ -677,6 +680,12 @@
 				/* stylelint-disable-next-line property-no-vendor-prefix */
 				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/mail/default/20px.svg");
 			}
+    
+        /* In Spam > "Delete forever" & "Not spam" buttons */
+		.Bn { color: var(--GR17) !important }
+    
+        /* Mark as read */
+        .bzn .bAO { background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/drafts_white_20dp.png') !important }
 
 		/* Snooze */
 		.brW { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png") !important }
@@ -742,8 +751,8 @@
 	
 			/* Forums Icon (Selected) */
 			.aAy.J-KU-KO > .aHE-aLf { background-color: var(--GRSELECTED) !important }
-	
-		/* Text Label */
+    
+        /* Text Label */
 		.aKx > .aKz { color: var(--GR17) !important }
 	
 		/* Selected Underline */
@@ -1278,13 +1287,15 @@
 			.h1, /* "Filter messages from this mailing list") */
 			.gI a /* Security "Learn More" */
 			{
-	color: var(--GRSELECTED) !important }
+	            color: var(--GRSELECTED) !important
+            }
 
 				.h1:focus,
-	.h1:hover,
+	            .h1:hover,
 				.gI a:focus,
-	.gI a:hover
-				{ color: var(--GR19) !important }
+	            .gI a:hover {
+                    color: var(--GR19) !important
+                }
 
 	/* Recommended Responses */
 
@@ -1309,7 +1320,7 @@
 				background-image: url("https://www.gstatic.com/images/icons/material/system/1x/expand_all_white_20dp.png")
 			}
 
-		/* Divider */
+		    /* Divider */
 			.bh > .adv > .Bk::after { border-color: var(--GR8) !important }
 
 	/* Footer Action Buttons */
@@ -1335,8 +1346,25 @@
 		/* Forward Icon */
 		.ams.bkG::before { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/forward_white_20dp.png") !important }
 
+    /* Compose RTE editor */
+    
+        /* Border */
+        .HM .I5 { border-color: var(--GR8) !important }
+    
+            /* Outer elements */
+            .aC2,
+            .aC3,
+            .HM .ahe::after {
+                background: transparent !important
+            }
+    
+            /* Footer */
+            .iN {
+                background: var(--GR18) !important;
+                border-radius: 0 0 14px 14px !important; 
+            }
+    
 	/* Deleted messages banner */
-
 	.iS {
 		background: var(--GR2) !important;
 		border-color: var(--GR4) !important;
