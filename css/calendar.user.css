@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230111.0.0
+@version        20230126.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -40,6 +40,22 @@
 		--GR18: #DFE1E2;
 		--GR19: #EFF0F0; /* Text/Icons Hover */
 		--GRSELECTED: #FB0;
+        
+        /* Google Theme Overrides */
+        
+            /* Checkboxes */
+            --mdc-checkbox-unselected-icon-color: var(--GR17);
+            --mdc-checkbox-unselected-hover-icon-color: var(--GR15);
+            --mdc-checkbox-selected-icon-color: var(--GRSELECTED);
+            --mdc-checkbox-selected-hover-icon-color: var(--GR17);
+            --mdc-checkbox-selected-checkmark-color: var(--GR0);
+        
+            /* Dropdown Menus */
+            --mdc-theme-surface: var(--GR6);
+            --mdc-theme-on-surface: var(--GR17);
+        
+            /* Dropdown/Select Buttons */
+            --textfield-surface: var(--GR6);
 	}
 	/* stylelint-enable color-no-hex */
     
@@ -49,7 +65,7 @@
 	
 	/* ICONS */
 	
-		.gb_Ca svg, /* Header Icons */
+		#gb svg, /* Header Icons */
 		.ec9Aq, /* Header Search Icon */
 		.JJyfjc, /* Header Arrow Icons */
 		.xmVoP, /* Header "2 weeks" Button Arrow */
@@ -386,22 +402,15 @@
 				.l3F1ye { color: var(--GR17) !important }
 		
 		/* CALENDARS */
+    
+            /* "Time Insights" */
+            .qADfd { color: var(--GR12) !important }
 	
-			/* Calendars Group Title */
-			.uQ1ixe .snByac { color: var(--GR12) !important }
-	
-				.I2LGc:hover { background: var(--GR4) !important }
-				
-					.uQ1ixe .CeoRYc { background: transparent !important }
+			/* Calendars Group Title ("My calendars") */
+			.o8t45d { color: var(--GR12) !important }
 	
 			/* Calendar Name */
-			.DYTqTd .NI2kfb,
-            .toUqff /* Dec 2022 Update */
-            {
-                color: var(--GR17) !important
-            }
-	
-				.kMp0We.Wm6kRe:hover { background: var(--GR4) !important }
+			.toUqff { color: var(--GR17) !important }
 			
 			/* Color Box Center */
 			.uHMk6b { border-color: var(--GR2) !important }
@@ -861,9 +870,9 @@
 			.IPEQnf:hover { color: var(--GR19) !important }
 	
 		/* "Find a time" */
-		.ij27gb:not(.Y5sE8d) { color: var(--GR17) !important }
+		.ksBjEc:not(:disabled) { color: var(--GR17) !important }
 	
-			.ij27gb:not(.Y5sE8d):hover { color: var(--GR19) !important }
+			.ksBjEc:not(:disabled):hover { color: var(--GR19) !important }
 	
 		/* OOO event */
 		
@@ -1347,41 +1356,31 @@
 	.p9lUpf { background: var(--GR4) !important }
 	
 		/* Checkboxes */
-		/* stylelint-disable selector-max-pseudo-class, max-line-length */
-		.dRjtd .i6LVBe, /* "All Day" on Event Page */
-		.cAP2G .k2NHHb, /* "All Day" Event Popover (July 2020) */
-		.kMp0We .wimXt,  /* Guests Can */
+		
 		.WefNYe .uVccjd, /* Settings Page */
-		.Lzfnue .uVccjd, /* Trash Page */
-		.Ne8lhe:not(.oO5tEf) .VfPpkd-muHVFf-bMcfAe:enabled:not(:checked):not(:indeterminate):not([data-indeterminate="true"]) ~ .VfPpkd-YQoJzd /* "Modify Event" on Event Page */
+		.Lzfnue .uVccjd /* Trash Page */
 		{
 			border-color: var(--GRSELECTED) !important
 		}
-		/* stylelint-enable selector-max-pseudo-class, max-line-length */
-	
+    
+        
 			/* Checkmark */
-			.dRjtd .i6LVBe .MbUTNc,
-			.dRjtd .i6LVBe .Ii6cVc,
-			.cAP2G .k2NHHb .MbUTNc,
-			.cAP2G .k2NHHb .Ii6cVc,
-			.kMp0We .wimXt .MbUTNc,
-			.kMp0We .wimXt .Ii6cVc,
 			.WefNYe .uVccjd .MbUTNc,
 			.WefNYe .uVccjd .Ii6cVc,
 			.Lzfnue .uVccjd .MbUTNc,
-			.Lzfnue .uVccjd .Ii6cVc,
-			.Ne8lhe:not(.oO5tEf) .VfPpkd-muHVFf-bMcfAe:enabled ~ .VfPpkd-YQoJzd .VfPpkd-HUofsb
+			.Lzfnue .uVccjd .Ii6cVc
 			{
 				border-color: var(--GR0) !important;
 				color: var(--GR0) !important;
 			}
-		
-			/* Checked */
-			/* stylelint-disable-next-line selector-max-pseudo-class */
-			.Ne8lhe:not(.oO5tEf) .VfPpkd-muHVFf-bMcfAe:enabled:checked ~ .VfPpkd-YQoJzd {
-				background: var(--GRSELECTED) !important;
-				border-color: var(--GRSELECTED) !important;
-			}
+    
+        /* Overrides for GCal themes to fix new checkbox */
+        .EGbRwd .VfPpkd-muHVFf-bMcfAe:enabled:checked ~ .VfPpkd-YQoJzd,
+        .EGbRwd .VfPpkd-muHVFf-bMcfAe:enabled:indeterminate ~ .VfPpkd-YQoJzd,
+        .EGbRwd .VfPpkd-muHVFf-bMcfAe[data-indeterminate=true]:enabled ~ .VfPpkd-YQoJzd {
+            background-color: var(--checkbox-color, var(--mdc-checkbox-selected-icon-color));
+            border-color: var(--checkbox-color, var(--mdc-checkbox-selected-icon-color));
+        }
 	
 		/* "Save" button */
 		.Y5sE8d {
@@ -1412,7 +1411,7 @@
 		.VfPpkd-I9GLp-yrriRe { color: var(--GR17) !important }
 	
 		/* Little chevron arrows on dropdown toggles */
-		.QTQ0eb { color: var(--GR14) !important }
+		.CQwPTd { color: var(--GR14) !important }
 		.e2CuFe.eU809d { border-color: var(--GR14) transparent !important }
 		
 		/* Tabs ("Event Details", "Find a Time", "Guests") */
