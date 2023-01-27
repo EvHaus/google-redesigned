@@ -15,13 +15,13 @@ This repository holds the user styles which you can install via your favorite us
 #### Firefox
 
 - Install [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
-- Go to https://userstyles.org/styles/152198/gmail-redesigned-dark-mode
+- Go to https://github.com/EvHaus/google-redesigned/raw/master/css/gmail.user.css
 - Click the "Install" button
 
 #### Chrome
 
 - Install [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)
-- Go to https://userstyles.org/styles/152198/gmail-redesigned-dark-mode
+- Go to https://github.com/EvHaus/google-redesigned/raw/master/css/gmail.user.css
 - Click the "Install" button
 
 ----
@@ -37,11 +37,11 @@ This repository holds the user styles which you can install via your favorite us
 #### Firefox
 
 - Install [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
-- Go to https://userstyles.org/styles/7339/google-calendar-redesigned-dark-mode
+- Go to https://github.com/EvHaus/google-redesigned/raw/master/css/calendar.user.css
 - Click the "Install" button
 
 #### Chrome
 
 - Install [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)
-- Go to https://userstyles.org/styles/7339/google-calendar-redesigned-dark-mode
+- Go to https://github.com/EvHaus/google-redesigned/raw/master/css/calendar.user.css
 - Click the "Install" button
