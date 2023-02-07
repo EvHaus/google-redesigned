@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230202.0.0
+@version        20230206.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -961,6 +961,9 @@
 		
 		/* Action Footer */
 		.NAFvr { background: var(--GR5) !important }
+    
+            /* "Going?" */
+            .YTCBlf { color: var(--GR15) !important }
 		
 			/* "Yes" button */
 			.wIfg3e .dvv0Pc,
@@ -1456,6 +1459,12 @@
 	
 		/* "Time zone" */
 		.nWBDde { color: var(--GR15) !important }
+    
+            /* "Event time zone" modal */
+            .cC1eCc .VfPpkd-P5QLlc { background: var(--GR5) !important }
+    
+                /* "Event time zone" title */
+                .cC1eCc .VfPpkd-k2Wrsb { color: var(--GR15) !important }
 		
 		/* Location Dropdown */
 		.VOEIyf .jBmls {
