@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230206.0.0
+@version        20230214.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -90,12 +90,13 @@
 		.kMp0We .DPvwYc, /* Event Popover Rows */
 		.GyffFb,  /* Create Event Popover Icons */
 		.aStPEd, /* Create Event Popover Out of Office Visibility Help Icon */
-		.uSx8Od svg, /* Create Event Page Location/Conferencing */
+		.GjP4J, /* Create Event Page Location/Conferencing */
 		.uSx8Od, /* Create Event Page Calendar */
 		.COICyc, /* Create Page RTE Toolbar "Add Attachment" Icon */
 		.fKz7Od, /* Create Page RTE Toolbar Icons */
 		.jZasib,  /* Create Page RTE Toolbar Attachment Icon */
 		.SlHBnb,  /* Create Page Rooms Search */
+        .HHHDef, /* Create Page > Guests > Optional Attendee */
 		.rF3YF svg /* Trash Row Hover */
 		{
 			color: var(--GR17) !important;
@@ -110,8 +111,8 @@
 	/* HEADER */
 	
 		/* Google keeps changing the class name for the header, so
-			* to prevent it from breaking. This specific descended
-			* selector is used */
+		 * to prevent it from breaking. This specific descended
+		 * selector is used */
 		header > div {
 			background: var(--GR4) !important;
 			color: var(--GR17) !important;
@@ -120,34 +121,11 @@
 			/* "Calendar" */
 			.gb_4d { color: var(--GR17) !important }
 	
-		/* Square Buttons */
-		.Rj2Mlf:not(:disabled), /* Today */
-		.Cd9hpd /* 2 Weeks */
-		{
-			background: var(--GR6) !important;
-			border-color: var(--GR8) !important;
-		}
-	
-			/* Square Buttons Text */
-			.Rj2Mlf:not(:disabled), /* Today */
-			.Cd9hpd .snByac /* 2 Weeks */
-			{
-				color: var(--GR17) !important;
-			}
-	
-			/* Square Buttons Hover */
-			.Rj2Mlf:not(:disabled):hover,
-			.Cd9hpd:hover {
-				background: var(--GR7) !important;
-				border-color: var(--GR9) !important;
-			}
-	
-			/* Square Buttons Selected */
-			.Cd9hpd:hover .mAozAc.u3bW4e,
-			.Cd9hpd .mAozAc.iWO5td {
-				background: var(--GR8) !important;
-				border-color: var(--GR10) !important;
-			}
+		/* Square Buttons ("Today", "Week"/"Agenda"/etc..., "More Insights") */
+		.Rj2Mlf:not(:disabled) {
+            border-color: var(--GR8) !important;
+            color: var(--GR17) !important;
+        }
 	
 		/* Circle Button Hover */
 		.rF3YF:hover { background-color: var(--GR7) !important }
@@ -170,29 +148,30 @@
 		.JPdR6b { background: var(--GR6) !important }
 	
 			/* Row Text */
-			.z80M1, /* Settings Dropdown */
-			.QA0Szd-xl07Ob .uyYuVb /* "Add Calendar" Dropdown */
-			{
-				color: var(--GR17) !important
-			}
+			.OwNvm,
+            .z80M1 /* Create Page > "Going?" Dropdown */
+            {
+                color: var(--GR17) !important
+            }
 	
-			/* Row (disabled) Text */
-			.z80M1.RDPZE { color: var(--GR10) !important }
+			/* Separator */
+			.VfPpkd-StrnGf-rymPhb-clz4Ic { border-bottom-color: var(--GR10) !important }
 	
 			/* Keyboard Shortcut Key */
-			.mdj4H { color: var(--GR12) !important }
+			.q6oraf .VfPpkd-StrnGf-rymPhb .VfPpkd-StrnGf-rymPhb-IhFlZd {
+                color: var(--GR12) !important
+            }
 	
 			/* Row Hover */
-			.z80M1.FwR7Pc {
+			.OwNvm:hover,
+            .z80M1:hover /* Create Page > "Going?" Dropdown */
+            {
 				background: var(--GR8) !important;
 				color: var(--GR19) !important;
 			}
 	
 			/* Checkmark Icon */
-			.z80M1.N2RpBe::before {
-				border-bottom-color: var(--GR17) !important;
-				border-right-color: var(--GR17) !important;
-			}
+            .OwNvm .VfPpkd-StrnGf-rymPhb-f7MjDc { color: var(--GR17) !important }
 	
 	/* SEARCH HEADER */
 	
