@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230214.0.0
+@version        20230225.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -710,7 +710,8 @@
 				background-image: url("https://www.gstatic.com/images/icons/material/system/1x/add_white_24dp.png") !important
 			}
 	
-	/* EVENT POPOVER */
+	/* E
+    VENT POPOVER */
 	
 		/* Header */
 		.wmCMbe {
@@ -1042,7 +1043,7 @@
 			/* "Reschedule" button */
 			.Uu2hsf.auswjd { color: var(--GR17) !important }
 	
-	/* TASK POPOVER */
+    /* TASK POPOVER */
 	
 		/* Date Input */
 		.xSJpA { background: var(--GR4) !important }
@@ -1058,7 +1059,113 @@
 		.LjDxcd:not(:disabled) { color: var(--GR17) !important }
 		
 			.LjDxcd:hover:not(:disabled) { color: var(--GR19) !important }
+    
+	/* BOOKABLE APPOINTMENT SCHEDULE POPOVER */
+    
+        /* "Feedback" button */
+        .jRvFtb:first-child { border-color: var(--GR11) !important }
+    
+        /* "Bookable Appointment Schedule" */
+        .EG7Wgf { color: var(--GR15) !important }
+    
+        /* Title */
+        .Zzucte span { color: var(--GR17) !important }
+    
+        /* "See all your booking pages" */
+        .Su7cHd { color: var(--GR17) !important }
+    
+            .Su7cHd:hover { color: var(--GR19) !important }
+    
+        /* Share > Modal */
+    
+            /* "Learn More" */
+            .jSSX4d { color: var(--GR17) !important }
+    
+                .jSSX4d:hover { color: var(--GR19) !important }
+   
+            /* Tab Icon */
+            .WbUJNb .VfPpkd-cfyjzb { color: var(--GR15) !important }
+    
+                /* Selected */
+                .WbUJNb.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-cfyjzb { color: var(--GRSELECTED) !important }
+    
+            /* "All appointment schedules" / "A single booking page" */
+            .UgWSL { color: var(--GR17) !important }
+    
+                /* "Preview" */
+                .vyidCf { color: var(--GR17) !important }
+    
+                    .vyidCf:hover { color: var(--GR19) !important }
 	
+            /* "Booking page link" section */
+            .sgyaM { background-color: var(--GR3) !important }
+    
+                /* "Booking page link" */
+                .gz10ye { color: var(--GR13) !important }
+    
+            /* "Share this page with others..." */
+            .wFB2uc { color: var(--GR13) !important }
+    
+            /* "Button code* section */
+            .pwIq8e { background-color: var(--GR3) !important }
+    
+    /* BOOKABLE APPOINTMENT SCHEDULE SIDEBAR (DETAILED CREATE SECTION) */
+    
+        /* "Bookable Appointment Schedule" */
+        .j1AQEe { color: var(--GR13) !important }
+    
+        /* "Appointment duration" and other section titles */
+        .q8ybv { color: var(--GR17) !important }
+    
+        /* "How long should each appointment last?" and other descriptions */
+        .xCsm3b { color: var(--GR15) !important }
+    
+        /* "Learn more" */
+        .aMUTT { color: var(--GR17) !important }
+    
+            .aMUTT:hover { color: var(--GR19) !important }
+    
+        /* Mon/Tue/Wed... "-" divider */
+        .Qm5tYb { background: var(--GR4) !important }
+    
+        /* "Unavailable" */
+        .Ozodyc { color: var(--GR14) !important }
+    
+        /* Divider */
+        .BJ27Eb { background: var(--GR11) !important }
+    
+        /* Accordion section arrows */
+        .MzaEpe { color: var(--GR15) !important }
+    
+        /* "Scheduling window" */
+        
+            /* "Available now" and other options */
+            .YDBLM { color: var(--GR17) !important }
+    
+            /* "Limit the date range for all appointments" */
+            .D1luMd { color: var(--GR14) !important }
+    
+            /* "Maximum time in advance that an appointment can be booked" */
+            .MPvktc { color: var(--GR14) !important }
+    
+        /* "Booked appointment settings" */
+    
+            /* "Buffer time" and other titles */
+            .A9nNhd { color: var(--GR17) !important }
+    
+        /* "Calendars checked for availability" */
+    
+            /* Primary calendar name */
+            .wa3Mff { color: var(--GR17) !important }
+    
+                /* Checkbox > Checkmark */
+                .Ne8lhe .VfPpkd-muHVFf-bMcfAe:disabled~.VfPpkd-YQoJzd .VfPpkd-HUofsb {
+                    color: var(--GR2) !important;
+                }
+    
+            /* More calendars */
+            .S6s5D { color: var(--GR17) !important }
+    
 	/* CREATE POPOVER */
 	
 		/* Name Input */
@@ -1402,7 +1509,7 @@
 		.e2CuFe.eU809d { border-color: var(--GR14) transparent !important }
 		
 		/* Tabs ("Event Details", "Find a Time", "Guests") */
-		.WbUJNb .VfPpkd-jY41G-V67aGc { color: var(--GR12) !important }
+		.WbUJNb .VfPpkd-jY41G-V67aGc { color: var(--GR14) !important }
 		
 			/* Active */
 			.WbUJNb.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc { color: var(--GR17) !important }
