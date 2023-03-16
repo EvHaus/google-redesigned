@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230316.0.0
+@version        20230315.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -394,23 +394,6 @@
 			/* Color Box Center */
 			.uHMk6b { border-color: var(--GR2) !important }
 			
-	/* DAY/WEEK/4-DAY VIEW */
-
-		/* Time Event (Past) */
-		.afiDFd.UflSff {
-			filter: brightness(0.6) contrast(1.5) !important;
-		}
-
-		/* Time Event (Past) Full Day With Overflow */
-		.g3dbUc.UflSff:is(.JRw8kf, .XFPdgf) {
-			overflow: visible !important;
-		}
-
-			/* Arrow */
-			.zWcBU.BvHyo.gpOGPc {
-				translate: calc(1px + 100%) -1px !important;
-			}
-
 	/* DAY VIEW */
 	
 		/* Body */
@@ -571,8 +554,18 @@
 			/* Time Event (Past) Full Day */
 			.g3dbUc.UflSff:not(.smECzc) {
 				color: var(--GR8) !important;
-				filter: brightness(0.6) !important;
+				filter: brightness(0.6) contrast(1.25) !important;
 			}
+    
+            /* Time Event (Past) Full Day With Overflow */
+            .g3dbUc.UflSff:is(.JRw8kf, .XFPdgf) {
+                overflow: visible !important;
+            }
+
+                /* Arrow */
+                .zWcBU.BvHyo.gpOGPc {
+                    translate: calc(1px + 100%) -1px !important;
+                }
 		
 		/* Time Event (Selected) */
 		.g3dbUc.smECzc.KKjvXb { background: var(--GR10) !important }
