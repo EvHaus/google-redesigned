@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230315.0.0
+@version        20230505.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -149,7 +149,8 @@
 	
 			/* Row Text */
 			.OwNvm,
-            .z80M1 /* Create Page > "Going?" Dropdown */
+            .z80M1, /* Create Page > "Going?" Dropdown */
+            .VfPpkd-rymPhb-fpDzbe-fmcmS /* Create Event > "Busy" */
             {
                 color: var(--GR17) !important
             }
@@ -161,9 +162,14 @@
 			.q6oraf .VfPpkd-StrnGf-rymPhb .VfPpkd-StrnGf-rymPhb-IhFlZd {
                 color: var(--GR12) !important
             }
+    
+            /* Selected Row */
+            .s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd {
+                background: var(--GR8) !important
+            }
 	
 			/* Row Hover */
-			.OwNvm:hover,
+            .OwNvm:hover,
             .z80M1:hover /* Create Page > "Going?" Dropdown */
             {
 				background: var(--GR8) !important;
@@ -720,8 +726,7 @@
 				background-image: url("https://www.gstatic.com/images/icons/material/system/1x/add_white_24dp.png") !important
 			}
 	
-	/* E
-    VENT POPOVER */
+	/* EVENT POPOVER */
 	
 		/* Header */
 		.wmCMbe {
@@ -733,13 +738,27 @@
 		.JtukPc { background: var(--GR6) !important }
 	
 		/* Title & Labels */
-		.agOyMd .JAPzS,
-        .NI2kfb,
-        .agOyMd .UfeRlc, /* Dec 2022 Update (Title) */
+        .agOyMd .UfeRlc, /* Task Titles */
+		.tMfWZc:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd, /* Title */
         .agOyMd div.AzuXid /* Dec 2022 Update (Date) */
         {
             color: var(--GR19) !important
         }
+    
+            /* Title */
+            .WmnPA .VfPpkd-fmcmS-wGMbrd {
+                caret-color: var(--GRSELECTED) !important;
+            }
+    
+            /* Title Underline */
+            .tMfWZc:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-RWgCYc-ksKsZd::before {
+                border-bottom-color: var(--GR13) !important;
+            }
+    
+               /* Highlighted */
+                .WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-RWgCYc-ksKsZd::after {
+                    border-bottom-color: var(--GRSELECTED) !important;
+                }
     
         .pdqVLc .AzuXid, /* "Created by ...." */
         .AzuXid /* Task "Weekly on Friday" */
@@ -1587,6 +1606,20 @@
 		
 		/* Color Select */
 		.nHFrm.nHFrm { background: transparent !important }
+    
+        /* "Busy" status selector / "Default visibility" selector */
+        .hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic {
+            background: var(--GR6) !important;
+        }
+    
+            .h6n9p:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-uusGie-fmcmS, /* "Busy" label */
+            .hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-uusGie-fmcmS /* "Visibility" label */
+            {
+                color: var(--GR17) !important
+            }
+    
+            /* Little chevron arrows on dropdown toggles */
+            .VfPpkd-t08AT-Bz112c { fill: var(--GR14) !important }
 		
 		/* "Learn more about event visibility" */
 		.HvbOJ { color: var(--GRSELECTED) !important }
