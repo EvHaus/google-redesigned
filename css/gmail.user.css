@@ -48,7 +48,7 @@
 
 /* ICONS */
 
-	.gb_ua svg, /* Header Icons */
+	.gb_Ia svg, /* Header Icons */
 	.gb_Qe button svg /* Search Dropdown Icons */
 	{
 		color: var(--GR17) !important;
@@ -598,6 +598,16 @@
 			.l8:hover { color: var(--GR15) !important }
 
 /* SEARCH RESULTS */
+    
+    /* "Mail" / "Conversations" / "Spaces" Toolbar */
+    
+    .Th { background: var(--GR5) !important }
+    
+        /* Selected */
+        .qN.qO::before { background: var(--GR8) !important }
+    
+        /* Divider */
+        .U6 { border-color: var(--GR10) !important }
 	
 	/* "Advanced search" */
 	.Ol.Nk { color: var(--GR18) !important }
