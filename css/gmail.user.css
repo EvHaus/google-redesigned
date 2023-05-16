@@ -614,6 +614,22 @@
 	
 		.Ol.Nk:hover { color: var(--GRSELECTED) !important }
 	
+    /* When searching for a contact header */
+    
+    .bX {
+        background: var(--GR3) !important;
+        color: var(--GR18) !important;
+        padding-left: 10px !important;
+    }
+    
+        /* Envelope Icon */
+    
+        .CU { filter: invert(1) !important }
+    
+        /* Chevron Icon */
+    
+        .CB { filter: invert(1) !important }
+    
 /* INBOX TOOLBAR */
 
 	/* Icons */
