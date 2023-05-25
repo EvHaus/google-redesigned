@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230505.0.0
+@version        20230524.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -1205,6 +1205,9 @@
 	
 			/* Underline */
 			.shdZ7e .mIZh1c { background: var(--GR12) !important }
+    
+            /* Unfocused Name */
+            .C5uTB:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd { color: var(--GR17) !important }
 	
 		/* Type Button */
 		.qmv2fc.kaAt2 {
@@ -1581,17 +1584,32 @@
                 /* "Event time zone" title */
                 .cC1eCc .VfPpkd-k2Wrsb { color: var(--GR15) !important }
 		
-		/* Location Dropdown */
-		.VOEIyf .jBmls {
+        /* "Add location" */
+		.xlHPle .VfPpkd-fmcmS-yrriRe:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) {
 			background: var(--GR6) !important;
-			color: var(--GR17) !important;
 		}
-		
-			/* Row Hover */
-			.oKubKe[aria-selected="true"] {
-				background: var(--GR8) !important;
-				cursor: pointer;
+    
+            /* Input */
+            .dgjdGd .xZFe0d.xZFe0d:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd {
+				color: var(--GR17) !important;
 			}
+		
+                /* Input Placeholder */
+                .dgjdGd .xZFe0d.xZFe0d:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd::placeholder {
+                    color: var(--GR12) !important;
+                }
+    
+            /* Location Dropdown */
+            .VfPpkd-StrnGf-rymPhb-L8ivfd-fmcmS {
+                background: var(--GR6) !important;
+                color: var(--GR15) !important;
+            }
+    
+                /* Pin Icon */
+                .TxnXxc .VfPpkd-StrnGf-rymPhb-f7MjDc { color: var(--GR17) !important }
+    
+                /* Location Title */
+                .TxnXxc { color: var(--GR19) !important }               
 		
 		/* "Learn more about event visibility" when you don't own event */
 		.cB5rYc { color: var(--GR15) !important }
@@ -1605,7 +1623,10 @@
 		.rhtYVe .snByac { color: var(--GR17) !important }
 		
 		/* Color Select */
-		.nHFrm.nHFrm { background: transparent !important }
+		:not(.DswEsf).nB7Rvb .AHbDKf { background: var(--GR6) !important }
+    
+            /* "Add a label" Button */
+            .V8Yldb { color: var(--GR17) !important }
     
         /* "Busy" status selector / "Default visibility" selector */
         .hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic {
