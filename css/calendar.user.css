@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230524.0.0
+@version        20230528.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -1507,6 +1507,13 @@
             background-color: var(--checkbox-color, var(--mdc-checkbox-selected-icon-color));
             border-color: var(--checkbox-color, var(--mdc-checkbox-selected-icon-color));
         }
+    
+        /* Event Title */
+    
+        .WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd { color: var(--GR18) !important }
+    
+            /* Reset background */
+            .P5oTDb:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me).P5oTDb:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) { background: transparent !important }
 	
 		/* "Save" button */
 		.Y5sE8d {
@@ -1517,9 +1524,7 @@
 			.Y5sE8d:hover { background: var(--GR16) !important }
 		
 		/* "More actions" Button */
-		.lUmaj { background: var(--GR3) !important }
-		
-			.lUmaj .c7fp5b { color: var(--GR14) !important }
+		.INBYpd { background: var(--GR3) !important }
 		
 		/* Day/Week Toggle */
 		.uUivFb {
@@ -1629,7 +1634,10 @@
             .V8Yldb { color: var(--GR17) !important }
     
         /* "Busy" status selector / "Default visibility" selector */
-        .hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic {
+        .hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic,
+        /* "Before at" selector */
+        .WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me)
+        {
             background: var(--GR6) !important;
         }
     
@@ -1688,6 +1696,11 @@
 		
 		/* "Calendar cannot be shown" message */
 		.srd2n { color: var(--GR15) !important }
+    
+        /* "RSVP: Yes" selector */
+        .lUmaj { background: var(--GR6) !important }
+    
+            .lUmaj .c7fp5b { color: var(--GR16) !important }
 		
 		/* "Guests Can" */
 		.hGcgEd { color: var(--GR17) !important }
