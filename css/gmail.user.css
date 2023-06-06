@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gmail Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230513.0.0
+@version        20230605.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.user.css
 @license        CC-BY-4.0
@@ -48,7 +48,7 @@
 
 /* ICONS */
 
-	.gb_Ia svg, /* Header Icons */
+	.gb_Ka svg, /* Header Icons */
 	.gb_Qe button svg /* Search Dropdown Icons */
 	{
 		color: var(--GR17) !important;
@@ -145,6 +145,7 @@
 	/* Chat Status */
 	
 	.Yb {
+        background: var(--GR6) !important;
 		border-color: var(--GR10) !important;
 	}
 	
