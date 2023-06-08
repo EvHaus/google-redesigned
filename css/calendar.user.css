@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230528.0.0
+@version        20230607.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -975,13 +975,19 @@
             .YTCBlf { color: var(--GR15) !important }
 		
 			/* "Yes" button */
-			.wIfg3e .dvv0Pc,
-			.wIfg3e .lrZTuc {
-				border-color: var(--GR12) !important
+			.wIfg3e.KKjvXb [data-button-type=actionButton],
+            .wIfg3e.KKjvXb [data-button-type=menuButton] {
+                background: var(--GR6) !important;
+				border-color: var(--GR10) !important
 			}
+    
+                .wIfg3e.KKjvXb [data-button-type=actionButton]:hover,
+                .wIfg3e.KKjvXb [data-button-type=menuButton]:hover {
+                    background: var(--GR8) !important;
+                }
 		
 				/* Arrow Icon */
-				.p0oLxb { color: var(--GR15) !important }
+				.wIfg3e.KKjvXb .Pjbkr:not(:disabled) .VfPpkd-kBDsod { color: var(--GR15) !important }
 	
 			/* Buttons */
 			.NAFvr .UQuaGc { color: var(--GR15) !important }
