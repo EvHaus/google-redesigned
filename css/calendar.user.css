@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230607.0.0
+@version        20230903.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -39,25 +39,25 @@
 		--GR18: #DFE1E2;
 		--GR19: #EFF0F0; /* Text/Icons Hover */
 		--GRSELECTED: #FB0;
-        
-        /* Google Theme Overrides */
-        
-            /* Checkboxes */
-            --mdc-checkbox-unselected-icon-color: var(--GR8);
-            --mdc-checkbox-unselected-hover-icon-color: var(--GR15);
-            --mdc-checkbox-selected-icon-color: var(--GRSELECTED);
-            --mdc-checkbox-selected-hover-icon-color: var(--GR17);
-            --mdc-checkbox-selected-checkmark-color: var(--GR0);
-        
-            /* Dropdown Menus */
-            --mdc-theme-surface: var(--GR6);
-            --mdc-theme-on-surface: var(--GR17);
-        
-            /* Dropdown/Select Buttons */
-            --textfield-surface: var(--GR6);
+		
+		/* Google Theme Overrides */
+		
+			/* Checkboxes */
+			--mdc-checkbox-unselected-icon-color: var(--GR8);
+			--mdc-checkbox-unselected-hover-icon-color: var(--GR15);
+			--mdc-checkbox-selected-icon-color: var(--GRSELECTED);
+			--mdc-checkbox-selected-hover-icon-color: var(--GR17);
+			--mdc-checkbox-selected-checkmark-color: var(--GR0);
+		
+			/* Dropdown Menus */
+			--mdc-theme-surface: var(--GR6);
+			--mdc-theme-on-surface: var(--GR17);
+		
+			/* Dropdown/Select Buttons */
+			--textfield-surface: var(--GR6);
 	}
 	/* stylelint-enable color-no-hex */
-    
+	
 	/* GLOBAL */
 	
 		body { background: var(--GR0) !important }
@@ -77,8 +77,8 @@
 		.cjq2Db, /* Event Popover Close */
 		.HfYfLe svg, /* Event Popover Icons */
 		.q7aeG svg, /* Event Popover (Close Icon) */
-        .pdqVLc .meh4fc, /* Event Popover Icons "Calendar Icon" */
-        .pdqVLc .meh4fc svg, /* Event Popover Icons "Take Meeting notes" */
+		.pdqVLc .meh4fc, /* Event Popover Icons "Calendar Icon" */
+		.pdqVLc .meh4fc svg, /* Event Popover Icons "Take Meeting notes" */
 		.qau86b, /* Event Popover Footer Arrow Icon */
 		.Mz3isd .EaVNbc, /* Task Popover Icons */
 		.hUFQnd, /* Task Popover Edit Icons */
@@ -95,7 +95,7 @@
 		.fKz7Od, /* Create Page RTE Toolbar Icons */
 		.jZasib,  /* Create Page RTE Toolbar Attachment Icon */
 		.SlHBnb,  /* Create Page Rooms Search */
-        .HHHDef, /* Create Page > Guests > Optional Attendee */
+		.HHHDef, /* Create Page > Guests > Optional Attendee */
 		.rF3YF svg /* Trash Row Hover */
 		{
 			color: var(--GR17) !important;
@@ -110,8 +110,8 @@
 	/* HEADER */
 	
 		/* Google keeps changing the class name for the header, so
-		 * to prevent it from breaking. This specific descended
-		 * selector is used */
+			* to prevent it from breaking. This specific descended
+			* selector is used */
 		header > div {
 			background: var(--GR4) !important;
 			color: var(--GR17) !important;
@@ -122,9 +122,9 @@
 	
 		/* Square Buttons ("Today", "Week"/"Agenda"/etc..., "More Insights") */
 		.Rj2Mlf:not(:disabled) {
-            border-color: var(--GR8) !important;
-            color: var(--GR17) !important;
-        }
+			border-color: var(--GR8) !important;
+			color: var(--GR17) !important;
+		}
 	
 		/* Circle Button Hover */
 		.rF3YF:hover { background-color: var(--GR7) !important }
@@ -134,12 +134,6 @@
 	
 		/* Calendar Range */
 		.rSoRzd { color: var(--GR17) !important }
-		
-		/* Week Number (if enabled via settings) */
-		.wWdzec {
-			background: var(--GR8) !important;
-			color: var(--GR17) !important;
-		}
 	
 	/* GENERIC DROPDOWNS */
 	
@@ -148,35 +142,35 @@
 	
 			/* Row Text */
 			.OwNvm,
-            .z80M1, /* Create Page > "Going?" Dropdown */
-            .VfPpkd-rymPhb-fpDzbe-fmcmS /* Create Event > "Busy" */
-            {
-                color: var(--GR17) !important
-            }
+			.z80M1, /* Create Page > "Going?" Dropdown */
+			.VfPpkd-rymPhb-fpDzbe-fmcmS /* Create Event > "Busy" */
+			{
+				color: var(--GR17) !important
+			}
 	
 			/* Separator */
 			.VfPpkd-StrnGf-rymPhb-clz4Ic { border-bottom-color: var(--GR10) !important }
 	
 			/* Keyboard Shortcut Key */
 			.q6oraf .VfPpkd-StrnGf-rymPhb .VfPpkd-StrnGf-rymPhb-IhFlZd {
-                color: var(--GR12) !important
-            }
-    
-            /* Selected Row */
-            .s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd {
-                background: var(--GR8) !important
-            }
+				color: var(--GR12) !important
+			}
+	
+			/* Selected Row */
+			.s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd {
+				background: var(--GR8) !important
+			}
 	
 			/* Row Hover */
-            .OwNvm:hover,
-            .z80M1:hover /* Create Page > "Going?" Dropdown */
-            {
+			.OwNvm:hover,
+			.z80M1:hover /* Create Page > "Going?" Dropdown */
+			{
 				background: var(--GR8) !important;
 				color: var(--GR19) !important;
 			}
 	
 			/* Checkmark Icon */
-            .OwNvm .VfPpkd-StrnGf-rymPhb-f7MjDc { color: var(--GR17) !important }
+			.OwNvm .VfPpkd-StrnGf-rymPhb-f7MjDc { color: var(--GR17) !important }
 	
 	/* SEARCH HEADER */
 	
@@ -239,16 +233,6 @@
 	.SGWAac { border-color: var(--GR6) !important }
 	
 	/* LEFT SIDEBAR */
-	
-        /* Week count row */
-		/* Cap thing on top */
-        .TKMrfe { background: var(--GR0) !important }
-
-		/* Week number sections */
-        [role^="presentation"] [role^="row"] > div {
-        background: var(--GR0) !important;
-		color: var(--GR17) !important;
-   		}
 
 	.QQYuzf { background: var(--GR2) !important }
 	
@@ -396,9 +380,9 @@
 				.l3F1ye { color: var(--GR17) !important }
 		
 		/* CALENDARS */
-    
-            /* "Time Insights" */
-            .qADfd { color: var(--GR12) !important }
+	
+			/* "Time Insights" */
+			.qADfd { color: var(--GR12) !important }
 	
 			/* Calendars Group Title ("My calendars") */
 			.o8t45d { color: var(--GR12) !important }
@@ -523,6 +507,17 @@
 		{
 			border-color: var(--GR3) !important
 		}
+		
+		/* Week Numbers (if enabled in settings) */
+		
+			/* Cap thing on top */
+			.XnnJrc.Wyo4Qe .TKMrfe { background: var(--GR3) !important }
+
+			/* Week number sections */
+			.akJTWe {
+				background: var(--GR3) !important;
+				color: var(--GR14) !important;
+			}
 	
 		/* Day Number */
 		.YK7obe .yzYBvd { color: var(--GR12) !important }
@@ -571,17 +566,17 @@
 				color: var(--GR8) !important;
 				filter: brightness(0.6) contrast(1.25) !important;
 			}
-    
-            /* Time Event (Past) Full Day With Overflow */
-            .g3dbUc.UflSff:is(.JRw8kf, .XFPdgf) {
-                overflow: visible !important;
-            }
+	
+			/* Time Event (Past) Full Day With Overflow */
+			.g3dbUc.UflSff:is(.JRw8kf, .XFPdgf) {
+				overflow: visible !important;
+			}
 
-                /* Arrow */
-                .zWcBU.BvHyo.gpOGPc {
-                    /* stylelint-disable-next-line function-disallowed-list */
-                    translate: calc(1px + 100%) -1px !important;
-                }
+				/* Arrow */
+				.zWcBU.BvHyo.gpOGPc {
+					/* stylelint-disable-next-line function-disallowed-list */
+					translate: calc(1px + 100%) -1px !important;
+				}
 		
 		/* Time Event (Selected) */
 		.g3dbUc.smECzc.KKjvXb { background: var(--GR10) !important }
@@ -748,50 +743,50 @@
 		.JtukPc { background: var(--GR6) !important }
 	
 		/* Title & Labels */
-        .agOyMd .UfeRlc, /* Task Titles */
+		.agOyMd .UfeRlc, /* Task Titles */
 		.tMfWZc:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd, /* Title */
-        .agOyMd div.AzuXid /* Dec 2022 Update (Date) */
-        {
-            color: var(--GR19) !important
-        }
-    
-            /* Title */
-            .WmnPA .VfPpkd-fmcmS-wGMbrd {
-                caret-color: var(--GRSELECTED) !important;
-            }
-    
-            /* Title Underline */
-            .tMfWZc:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-RWgCYc-ksKsZd::before {
-                border-bottom-color: var(--GR13) !important;
-            }
-    
-               /* Highlighted */
-                .WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-RWgCYc-ksKsZd::after {
-                    border-bottom-color: var(--GRSELECTED) !important;
-                }
-    
-        .pdqVLc .AzuXid, /* "Created by ...." */
-        .AzuXid /* Task "Weekly on Friday" */
-        {
-            color: var(--GR15) !important
-        }
+		.agOyMd div.AzuXid /* Dec 2022 Update (Date) */
+		{
+			color: var(--GR19) !important
+		}
+	
+			/* Title */
+			.WmnPA .VfPpkd-fmcmS-wGMbrd {
+				caret-color: var(--GRSELECTED) !important;
+			}
+	
+			/* Title Underline */
+			.tMfWZc:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-RWgCYc-ksKsZd::before {
+				border-bottom-color: var(--GR13) !important;
+			}
+	
+				/* Highlighted */
+				.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-RWgCYc-ksKsZd::after {
+					border-bottom-color: var(--GRSELECTED) !important;
+				}
+	
+		.pdqVLc .AzuXid, /* "Created by ...." */
+		.AzuXid /* Task "Weekly on Friday" */
+		{
+			color: var(--GR15) !important
+		}
 	
 		/* Dividers (appear when setting description) */
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.dBA1M) { border-bottom-color: var(--GR12) !important }
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.AHjck) { border-top-color: var(--GR12) !important }
 		/* stylelint-disable-next-line selector-max-pseudo-class, stylistic/max-line-length */
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.dBA1M) + .kxh2c:not(.gUZKAc).sMVRZe:not(.AHjck) { border-top-color: transparent !important }
-    
-        /* Buttons ("Event", "Task", "Reminder") */
-        .zmrbhe {
-            color: var(--GR15) !important;
-        }
-    
-            /* Selected */
-            .zmrbhe.qs41qe {
-                background: var(--GR9) !important;
-                color: var(--GRSELECTED) !important;
-            }
+	
+		/* Buttons ("Event", "Task", "Reminder") */
+		.zmrbhe {
+			color: var(--GR15) !important;
+		}
+	
+			/* Selected */
+			.zmrbhe.qs41qe {
+				background: var(--GR9) !important;
+				color: var(--GRSELECTED) !important;
+			}
 	
 		/* Links in the Description */
 		.D29CYb a,
@@ -967,11 +962,11 @@
 			/* "Add description" */
 			.iSSROb { color: var(--GR12) !important }
 		
-        /* Links in the description */
-        .KmD23d a:link { color: var(--GR17) !important }
-    
-            .KmD23d a:link:hover { color: var(--GRSELECTED) !important }
-    
+		/* Links in the description */
+		.KmD23d a:link { color: var(--GR17) !important }
+	
+			.KmD23d a:link:hover { color: var(--GRSELECTED) !important }
+	
 		/* Calendar Name */
 		.s6I1Kd { color: var(--GR18) !important }
 		
@@ -980,21 +975,21 @@
 		
 		/* Action Footer */
 		.NAFvr { background: var(--GR5) !important }
-    
-            /* "Going?" */
-            .YTCBlf { color: var(--GR15) !important }
+	
+			/* "Going?" */
+			.YTCBlf { color: var(--GR15) !important }
 		
 			/* "Yes" button */
 			.wIfg3e.KKjvXb [data-button-type="actionButton"],
-            .wIfg3e.KKjvXb [data-button-type="menuButton"] {
-                background: var(--GR6) !important;
+			.wIfg3e.KKjvXb [data-button-type="menuButton"] {
+				background: var(--GR6) !important;
 				border-color: var(--GR10) !important
 			}
-    
-                .wIfg3e.KKjvXb [data-button-type="actionButton"]:hover,
-                .wIfg3e.KKjvXb [data-button-type="menuButton"]:hover {
-                    background: var(--GR8) !important;
-                }
+	
+				.wIfg3e.KKjvXb [data-button-type="actionButton"]:hover,
+				.wIfg3e.KKjvXb [data-button-type="menuButton"]:hover {
+					background: var(--GR8) !important;
+				}
 		
 				/* Arrow Icon */
 				.wIfg3e.KKjvXb .Pjbkr:not(:disabled) .VfPpkd-kBDsod { color: var(--GR15) !important }
@@ -1088,7 +1083,7 @@
 			/* "Reschedule" button */
 			.Uu2hsf.auswjd { color: var(--GR17) !important }
 	
-    /* TASK POPOVER */
+	/* TASK POPOVER */
 	
 		/* Date Input */
 		.xSJpA { background: var(--GR4) !important }
@@ -1104,113 +1099,113 @@
 		.LjDxcd:not(:disabled) { color: var(--GR17) !important }
 		
 			.LjDxcd:hover:not(:disabled) { color: var(--GR19) !important }
-    
-	/* BOOKABLE APPOINTMENT SCHEDULE POPOVER */
-    
-        /* "Feedback" button */
-        .jRvFtb:first-child { border-color: var(--GR11) !important }
-    
-        /* "Bookable Appointment Schedule" */
-        .EG7Wgf { color: var(--GR15) !important }
-    
-        /* Title */
-        .Zzucte span { color: var(--GR17) !important }
-    
-        /* "See all your booking pages" */
-        .Su7cHd { color: var(--GR17) !important }
-    
-            .Su7cHd:hover { color: var(--GR19) !important }
-    
-        /* Share > Modal */
-    
-            /* "Learn More" */
-            .jSSX4d { color: var(--GR17) !important }
-    
-                .jSSX4d:hover { color: var(--GR19) !important }
-   
-            /* Tab Icon */
-            .WbUJNb .VfPpkd-cfyjzb { color: var(--GR15) !important }
-    
-                /* Selected */
-                .WbUJNb.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-cfyjzb { color: var(--GRSELECTED) !important }
-    
-            /* "All appointment schedules" / "A single booking page" */
-            .UgWSL { color: var(--GR17) !important }
-    
-                /* "Preview" */
-                .vyidCf { color: var(--GR17) !important }
-    
-                    .vyidCf:hover { color: var(--GR19) !important }
 	
-            /* "Booking page link" section */
-            .sgyaM { background-color: var(--GR3) !important }
-    
-                /* "Booking page link" */
-                .gz10ye { color: var(--GR13) !important }
-    
-            /* "Share this page with others..." */
-            .wFB2uc { color: var(--GR13) !important }
-    
-            /* "Button code* section */
-            .pwIq8e { background-color: var(--GR3) !important }
-    
-    /* BOOKABLE APPOINTMENT SCHEDULE SIDEBAR (DETAILED CREATE SECTION) */
-    
-        /* "Bookable Appointment Schedule" */
-        .j1AQEe { color: var(--GR13) !important }
-    
-        /* "Appointment duration" and other section titles */
-        .q8ybv { color: var(--GR17) !important }
-    
-        /* "How long should each appointment last?" and other descriptions */
-        .xCsm3b { color: var(--GR15) !important }
-    
-        /* "Learn more" */
-        .aMUTT { color: var(--GR17) !important }
-    
-            .aMUTT:hover { color: var(--GR19) !important }
-    
-        /* Mon/Tue/Wed... "-" divider */
-        .Qm5tYb { background: var(--GR4) !important }
-    
-        /* "Unavailable" */
-        .Ozodyc { color: var(--GR14) !important }
-    
-        /* Divider */
-        .BJ27Eb { background: var(--GR11) !important }
-    
-        /* Accordion section arrows */
-        .MzaEpe { color: var(--GR15) !important }
-    
-        /* "Scheduling window" */
-        
-            /* "Available now" and other options */
-            .YDBLM { color: var(--GR17) !important }
-    
-            /* "Limit the date range for all appointments" */
-            .D1luMd { color: var(--GR14) !important }
-    
-            /* "Maximum time in advance that an appointment can be booked" */
-            .MPvktc { color: var(--GR14) !important }
-    
-        /* "Booked appointment settings" */
-    
-            /* "Buffer time" and other titles */
-            .A9nNhd { color: var(--GR17) !important }
-    
-        /* "Calendars checked for availability" */
-    
-            /* Primary calendar name */
-            .wa3Mff { color: var(--GR17) !important }
-    
-                /* Checkbox > Checkmark */
-                .Ne8lhe .VfPpkd-muHVFf-bMcfAe:disabled ~ .VfPpkd-YQoJzd .VfPpkd-HUofsb {
-                    color: var(--GR2) !important;
-                }
-    
-            /* More calendars */
-            .S6s5D { color: var(--GR17) !important }
-    
+	/* BOOKABLE APPOINTMENT SCHEDULE POPOVER */
+	
+		/* "Feedback" button */
+		.jRvFtb:first-child { border-color: var(--GR11) !important }
+	
+		/* "Bookable Appointment Schedule" */
+		.EG7Wgf { color: var(--GR15) !important }
+	
+		/* Title */
+		.Zzucte span { color: var(--GR17) !important }
+	
+		/* "See all your booking pages" */
+		.Su7cHd { color: var(--GR17) !important }
+	
+			.Su7cHd:hover { color: var(--GR19) !important }
+	
+		/* Share > Modal */
+	
+			/* "Learn More" */
+			.jSSX4d { color: var(--GR17) !important }
+	
+				.jSSX4d:hover { color: var(--GR19) !important }
+	
+			/* Tab Icon */
+			.WbUJNb .VfPpkd-cfyjzb { color: var(--GR15) !important }
+	
+				/* Selected */
+				.WbUJNb.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-cfyjzb { color: var(--GRSELECTED) !important }
+	
+			/* "All appointment schedules" / "A single booking page" */
+			.UgWSL { color: var(--GR17) !important }
+	
+				/* "Preview" */
+				.vyidCf { color: var(--GR17) !important }
+	
+					.vyidCf:hover { color: var(--GR19) !important }
+	
+			/* "Booking page link" section */
+			.sgyaM { background-color: var(--GR3) !important }
+	
+				/* "Booking page link" */
+				.gz10ye { color: var(--GR13) !important }
+	
+			/* "Share this page with others..." */
+			.wFB2uc { color: var(--GR13) !important }
+	
+			/* "Button code* section */
+			.pwIq8e { background-color: var(--GR3) !important }
+	
+	/* BOOKABLE APPOINTMENT SCHEDULE SIDEBAR (DETAILED CREATE SECTION) */
+	
+		/* "Bookable Appointment Schedule" */
+		.j1AQEe { color: var(--GR13) !important }
+	
+		/* "Appointment duration" and other section titles */
+		.q8ybv { color: var(--GR17) !important }
+	
+		/* "How long should each appointment last?" and other descriptions */
+		.xCsm3b { color: var(--GR15) !important }
+	
+		/* "Learn more" */
+		.aMUTT { color: var(--GR17) !important }
+	
+			.aMUTT:hover { color: var(--GR19) !important }
+	
+		/* Mon/Tue/Wed... "-" divider */
+		.Qm5tYb { background: var(--GR4) !important }
+	
+		/* "Unavailable" */
+		.Ozodyc { color: var(--GR14) !important }
+	
+		/* Divider */
+		.BJ27Eb { background: var(--GR11) !important }
+	
+		/* Accordion section arrows */
+		.MzaEpe { color: var(--GR15) !important }
+	
+		/* "Scheduling window" */
+		
+			/* "Available now" and other options */
+			.YDBLM { color: var(--GR17) !important }
+	
+			/* "Limit the date range for all appointments" */
+			.D1luMd { color: var(--GR14) !important }
+	
+			/* "Maximum time in advance that an appointment can be booked" */
+			.MPvktc { color: var(--GR14) !important }
+	
+		/* "Booked appointment settings" */
+	
+			/* "Buffer time" and other titles */
+			.A9nNhd { color: var(--GR17) !important }
+	
+		/* "Calendars checked for availability" */
+	
+			/* Primary calendar name */
+			.wa3Mff { color: var(--GR17) !important }
+	
+				/* Checkbox > Checkmark */
+				.Ne8lhe .VfPpkd-muHVFf-bMcfAe:disabled ~ .VfPpkd-YQoJzd .VfPpkd-HUofsb {
+					color: var(--GR2) !important;
+				}
+	
+			/* More calendars */
+			.S6s5D { color: var(--GR17) !important }
+	
 	/* CREATE POPOVER */
 	
 		/* Name Input */
@@ -1221,9 +1216,9 @@
 	
 			/* Underline */
 			.shdZ7e .mIZh1c { background: var(--GR12) !important }
-    
-            /* Unfocused Name */
-            .C5uTB:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd { color: var(--GR17) !important }
+	
+			/* Unfocused Name */
+			.C5uTB:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd { color: var(--GR17) !important }
 	
 		/* Type Button */
 		.qmv2fc.kaAt2 {
@@ -1504,8 +1499,8 @@
 		{
 			border-color: var(--GRSELECTED) !important
 		}
-    
-        
+	
+		
 			/* Checkmark */
 			.WefNYe .uVccjd .MbUTNc,
 			.WefNYe .uVccjd .Ii6cVc,
@@ -1515,22 +1510,22 @@
 				border-color: var(--GR0) !important;
 				color: var(--GR0) !important;
 			}
-    
-        /* Overrides for GCal themes to fix new checkbox */
-        .EGbRwd .VfPpkd-muHVFf-bMcfAe:enabled:checked ~ .VfPpkd-YQoJzd,
-        .EGbRwd .VfPpkd-muHVFf-bMcfAe:enabled:indeterminate ~ .VfPpkd-YQoJzd,
-        .EGbRwd .VfPpkd-muHVFf-bMcfAe[data-indeterminate="true"]:enabled ~ .VfPpkd-YQoJzd {
-            background-color: var(--checkbox-color, var(--mdc-checkbox-selected-icon-color));
-            border-color: var(--checkbox-color, var(--mdc-checkbox-selected-icon-color));
-        }
-    
-        /* Event Title */
-    
-        .WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd { color: var(--GR18) !important }
-    
-            /* Reset background */
-            /* stylelint-disable-next-line stylistic/max-line-length */
-            .P5oTDb:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me).P5oTDb:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) { background: transparent !important }
+	
+		/* Overrides for GCal themes to fix new checkbox */
+		.EGbRwd .VfPpkd-muHVFf-bMcfAe:enabled:checked ~ .VfPpkd-YQoJzd,
+		.EGbRwd .VfPpkd-muHVFf-bMcfAe:enabled:indeterminate ~ .VfPpkd-YQoJzd,
+		.EGbRwd .VfPpkd-muHVFf-bMcfAe[data-indeterminate="true"]:enabled ~ .VfPpkd-YQoJzd {
+			background-color: var(--checkbox-color, var(--mdc-checkbox-selected-icon-color));
+			border-color: var(--checkbox-color, var(--mdc-checkbox-selected-icon-color));
+		}
+	
+		/* Event Title */
+	
+		.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd { color: var(--GR18) !important }
+	
+			/* Reset background */
+			/* stylelint-disable-next-line stylistic/max-line-length */
+			.P5oTDb:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me).P5oTDb:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) { background: transparent !important }
 	
 		/* "Save" button */
 		.Y5sE8d {
@@ -1579,7 +1574,7 @@
 				border-color: var(--GRSELECTED) !important
 			}
 		
-	   /* Section Dividers */
+		/* Section Dividers */
 		.FYEgid .ubAIBb::before,
 		.kHux5e::before{
 			border-top-color: var(--GR8) !important
@@ -1599,39 +1594,39 @@
 	
 		/* "Time zone" */
 		.nWBDde { color: var(--GR15) !important }
-    
-            /* "Event time zone" modal */
-            .cC1eCc .VfPpkd-P5QLlc { background: var(--GR5) !important }
-    
-                /* "Event time zone" title */
-                .cC1eCc .VfPpkd-k2Wrsb { color: var(--GR15) !important }
+	
+			/* "Event time zone" modal */
+			.cC1eCc .VfPpkd-P5QLlc { background: var(--GR5) !important }
+	
+				/* "Event time zone" title */
+				.cC1eCc .VfPpkd-k2Wrsb { color: var(--GR15) !important }
 		
-        /* "Add location" */
+		/* "Add location" */
 		.xlHPle .VfPpkd-fmcmS-yrriRe:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) {
 			background: var(--GR6) !important;
 		}
-    
-            /* Input */
-            .dgjdGd .xZFe0d.xZFe0d:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd {
+	
+			/* Input */
+			.dgjdGd .xZFe0d.xZFe0d:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd {
 				color: var(--GR17) !important;
 			}
 		
-                /* Input Placeholder */
-                .dgjdGd .xZFe0d.xZFe0d:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd::placeholder {
-                    color: var(--GR12) !important;
-                }
-    
-            /* Location Dropdown */
-            .VfPpkd-StrnGf-rymPhb-L8ivfd-fmcmS {
-                background: var(--GR6) !important;
-                color: var(--GR15) !important;
-            }
-    
-                /* Pin Icon */
-                .TxnXxc .VfPpkd-StrnGf-rymPhb-f7MjDc { color: var(--GR17) !important }
-    
-                /* Location Title */
-                .TxnXxc { color: var(--GR19) !important }
+				/* Input Placeholder */
+				.dgjdGd .xZFe0d.xZFe0d:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd::placeholder {
+					color: var(--GR12) !important;
+				}
+	
+			/* Location Dropdown */
+			.VfPpkd-StrnGf-rymPhb-L8ivfd-fmcmS {
+				background: var(--GR6) !important;
+				color: var(--GR15) !important;
+			}
+	
+				/* Pin Icon */
+				.TxnXxc .VfPpkd-StrnGf-rymPhb-f7MjDc { color: var(--GR17) !important }
+	
+				/* Location Title */
+				.TxnXxc { color: var(--GR19) !important }
 		
 		/* "Learn more about event visibility" when you don't own event */
 		.cB5rYc { color: var(--GR15) !important }
@@ -1646,26 +1641,26 @@
 		
 		/* Color Select */
 		:not(.DswEsf).nB7Rvb .AHbDKf { background: var(--GR6) !important }
-    
-            /* "Add a label" Button */
-            .V8Yldb { color: var(--GR17) !important }
-    
-        /* "Busy" status selector / "Default visibility" selector */
-        .hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic,
-        /* "Before at" selector */
-        .WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me)
-        {
-            background: var(--GR6) !important;
-        }
-    
-            .h6n9p:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-uusGie-fmcmS, /* "Busy" label */
-            .hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-uusGie-fmcmS /* "Visibility" label */
-            {
-                color: var(--GR17) !important
-            }
-    
-            /* Little chevron arrows on dropdown toggles */
-            .VfPpkd-t08AT-Bz112c { fill: var(--GR14) !important }
+	
+			/* "Add a label" Button */
+			.V8Yldb { color: var(--GR17) !important }
+	
+		/* "Busy" status selector / "Default visibility" selector */
+		.hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic,
+		/* "Before at" selector */
+		.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me)
+		{
+			background: var(--GR6) !important;
+		}
+	
+			.h6n9p:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-uusGie-fmcmS, /* "Busy" label */
+			.hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-uusGie-fmcmS /* "Visibility" label */
+			{
+				color: var(--GR17) !important
+			}
+	
+			/* Little chevron arrows on dropdown toggles */
+			.VfPpkd-t08AT-Bz112c { fill: var(--GR14) !important }
 		
 		/* "Learn more about event visibility" */
 		.HvbOJ { color: var(--GRSELECTED) !important }
@@ -1713,11 +1708,11 @@
 		
 		/* "Calendar cannot be shown" message */
 		.srd2n { color: var(--GR15) !important }
-    
-        /* "RSVP: Yes" selector */
-        .lUmaj { background: var(--GR6) !important }
-    
-            .lUmaj .c7fp5b { color: var(--GR16) !important }
+	
+		/* "RSVP: Yes" selector */
+		.lUmaj { background: var(--GR6) !important }
+	
+			.lUmaj .c7fp5b { color: var(--GR16) !important }
 		
 		/* "Guests Can" */
 		.hGcgEd { color: var(--GR17) !important }
