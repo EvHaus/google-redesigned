@@ -712,7 +712,7 @@
 		.Bn { color: var(--GR17) !important }
     
         /* Mark as read */
-        .bzn .bAO { background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/drafts_white_20dp.png') !important }
+        .bzn .bAO { background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/drafts_white_20dp.png") !important }
 
 		/* Snooze */
 		.brW { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png") !important }

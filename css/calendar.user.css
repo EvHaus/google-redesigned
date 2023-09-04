@@ -240,13 +240,13 @@
 	
 	/* LEFT SIDEBAR */
 	
-        /*Week count row */
-		/*Cap thing on top*/
+        /* Week count row */
+		/* Cap thing on top */
         .TKMrfe { background: var(--GR0) !important }
 
-		/*Week number sections */
-        [role^="presentation"] [role^="row"] > div {      
-        background: var(--GR0) !important; 
+		/* Week number sections */
+        [role^="presentation"] [role^="row"] > div {
+        background: var(--GR0) !important;
 		color: var(--GR17) !important;
    		}
 
@@ -579,6 +579,7 @@
 
                 /* Arrow */
                 .zWcBU.BvHyo.gpOGPc {
+                    /* stylelint-disable-next-line function-disallowed-list */
                     translate: calc(1px + 100%) -1px !important;
                 }
 		
@@ -778,7 +779,7 @@
 		/* Dividers (appear when setting description) */
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.dBA1M) { border-bottom-color: var(--GR12) !important }
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.AHjck) { border-top-color: var(--GR12) !important }
-		/* stylelint-disable-next-line selector-max-pseudo-class, max-line-length */
+		/* stylelint-disable-next-line selector-max-pseudo-class, stylistic/max-line-length */
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.dBA1M) + .kxh2c:not(.gUZKAc).sMVRZe:not(.AHjck) { border-top-color: transparent !important }
     
         /* Buttons ("Event", "Task", "Reminder") */
@@ -984,14 +985,14 @@
             .YTCBlf { color: var(--GR15) !important }
 		
 			/* "Yes" button */
-			.wIfg3e.KKjvXb [data-button-type=actionButton],
-            .wIfg3e.KKjvXb [data-button-type=menuButton] {
+			.wIfg3e.KKjvXb [data-button-type="actionButton"],
+            .wIfg3e.KKjvXb [data-button-type="menuButton"] {
                 background: var(--GR6) !important;
 				border-color: var(--GR10) !important
 			}
     
-                .wIfg3e.KKjvXb [data-button-type=actionButton]:hover,
-                .wIfg3e.KKjvXb [data-button-type=menuButton]:hover {
+                .wIfg3e.KKjvXb [data-button-type="actionButton"]:hover,
+                .wIfg3e.KKjvXb [data-button-type="menuButton"]:hover {
                     background: var(--GR8) !important;
                 }
 		
@@ -1203,7 +1204,7 @@
             .wa3Mff { color: var(--GR17) !important }
     
                 /* Checkbox > Checkmark */
-                .Ne8lhe .VfPpkd-muHVFf-bMcfAe:disabled~.VfPpkd-YQoJzd .VfPpkd-HUofsb {
+                .Ne8lhe .VfPpkd-muHVFf-bMcfAe:disabled ~ .VfPpkd-YQoJzd .VfPpkd-HUofsb {
                     color: var(--GR2) !important;
                 }
     
@@ -1464,7 +1465,7 @@
 			}
 	
 		/* "Ends" radio buttons */
-		/* stylelint-disable-next-line max-line-length */
+		/* stylelint-disable-next-line stylistic/max-line-length */
 		.kDzhGf .VfPpkd-gBXA9-bMcfAe:enabled:not(:checked) + .VfPpkd-RsCWK .VfPpkd-wVo5xe-LkdAo { border-color: var(--GR12) !important }
 	
 			/* Selected */
@@ -1518,7 +1519,7 @@
         /* Overrides for GCal themes to fix new checkbox */
         .EGbRwd .VfPpkd-muHVFf-bMcfAe:enabled:checked ~ .VfPpkd-YQoJzd,
         .EGbRwd .VfPpkd-muHVFf-bMcfAe:enabled:indeterminate ~ .VfPpkd-YQoJzd,
-        .EGbRwd .VfPpkd-muHVFf-bMcfAe[data-indeterminate=true]:enabled ~ .VfPpkd-YQoJzd {
+        .EGbRwd .VfPpkd-muHVFf-bMcfAe[data-indeterminate="true"]:enabled ~ .VfPpkd-YQoJzd {
             background-color: var(--checkbox-color, var(--mdc-checkbox-selected-icon-color));
             border-color: var(--checkbox-color, var(--mdc-checkbox-selected-icon-color));
         }
@@ -1528,6 +1529,7 @@
         .WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd { color: var(--GR18) !important }
     
             /* Reset background */
+            /* stylelint-disable-next-line stylistic/max-line-length */
             .P5oTDb:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me).P5oTDb:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) { background: transparent !important }
 	
 		/* "Save" button */
@@ -1629,7 +1631,7 @@
                 .TxnXxc .VfPpkd-StrnGf-rymPhb-f7MjDc { color: var(--GR17) !important }
     
                 /* Location Title */
-                .TxnXxc { color: var(--GR19) !important }               
+                .TxnXxc { color: var(--GR19) !important }
 		
 		/* "Learn more about event visibility" when you don't own event */
 		.cB5rYc { color: var(--GR15) !important }

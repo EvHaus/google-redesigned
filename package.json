@@ -20,8 +20,8 @@
 		"test": "yarn lint"
 	},
 	"dependencies": {
-		"lefthook": "1.2.3",
-		"prettier-package-json": "2.6.4",
-		"stylelint-config-globex": "3.5.0"
+		"lefthook": "1.4.9",
+		"prettier-package-json": "2.8.0",
+		"stylelint-config-globex": "3.12.0"
 	}
 }
