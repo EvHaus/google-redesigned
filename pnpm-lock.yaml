@@ -9,8 +9,8 @@ dependencies:
     specifier: 1.2.3
     version: 1.2.3
   prettier-package-json:
-    specifier: 2.6.4
-    version: 2.6.4
+    specifier: 2.8.0
+    version: 2.8.0
   stylelint-config-globex:
     specifier: 3.5.0
     version: 3.5.0
@@ -215,7 +215,7 @@ packages:
     dev: false
 
   /concat-map@0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: false
 
   /cosmiconfig@7.1.0:
@@ -897,8 +897,8 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /prettier-package-json@2.6.4:
-    resolution: {integrity: sha512-aNZvEf0yy0UeqLdTHsFZiYjOEM9kACO02CGUR5XIHdqj3jrpHNlLkmfTaj1V/rvB4vYHHTH0i3qMf2FZ2Qtr/g==}
+  /prettier-package-json@2.8.0:
+    resolution: {integrity: sha512-WxtodH/wWavfw3MR7yK/GrS4pASEQ+iSTkdtSxPJWvqzG55ir5nvbLt9rw5AOiEcqqPCRM92WCtR1rk3TG3JSQ==}
     hasBin: true
     dependencies:
       '@types/parse-author': 2.0.1
