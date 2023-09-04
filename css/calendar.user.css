@@ -14,8 +14,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("calendar.google.com") {
-
-	/* COLOR PALETTE */
+/* COLOR PALETTE */
 	
 	/* stylelint-disable color-no-hex */
 	:root {
@@ -241,6 +240,16 @@
 	
 	/* LEFT SIDEBAR */
 	
+        /*Week count row */
+		/*Cap thing on top*/
+        .TKMrfe { background: var(--GR0) !important }
+
+		/*Week number sections */
+        [role^="presentation"] [role^="row"] > div {      
+        background: var(--GR0) !important; 
+		color: var(--GR17) !important;
+   		}
+
 	.QQYuzf { background: var(--GR2) !important }
 	
 		/* Weird line */
@@ -1879,5 +1888,4 @@
 			
 				/* "Join with Google Meet" */
 				.Q30cfe { color: var(--GR19) !important }
-		}
-	
+}
