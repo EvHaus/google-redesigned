@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gmail Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230605.0.0
+@version        20231105.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.user.css
 @license        CC-BY-4.0
@@ -92,9 +92,9 @@
 	.WR:not(.aBA):not(.aTO), .a6o::before { background: var(--GR4) !important }
 	
 	/* Item */
-    
-        /* Hamburger Icon */
-        .gb_Da svg { color: var(--GR16) !important }
+	
+		/* Hamburger Icon */
+		.gb_Da svg { color: var(--GR16) !important }
 	
 		/* Text (Mail, Chat, Spaces, Meet) */
 		.apW { color: var(--GR16) !important }
@@ -132,7 +132,7 @@
 	.aiw { border-bottom: 1px solid var(--GR6) !important }
 
 	/* Icons */
-	.gb_oa svg { color: var(--GR16) !important }
+	.gb_Na svg { color: var(--GR16) !important }
 
 	/* "Gmail" logo */
 	[aria-label="Gmail"][title="Gmail"][href="#inbox"] > img {
@@ -145,7 +145,7 @@
 	/* Chat Status */
 	
 	.Yb {
-        background: var(--GR6) !important;
+		background: var(--GR6) !important;
 		border-color: var(--GR10) !important;
 	}
 	
@@ -599,38 +599,38 @@
 			.l8:hover { color: var(--GR15) !important }
 
 /* SEARCH RESULTS */
-    
-    /* "Mail" / "Conversations" / "Spaces" Toolbar */
-    
-    .Th { background: var(--GR5) !important }
-    
-        /* Selected */
-        .qN.qO::before { background: var(--GR8) !important }
-    
-        /* Divider */
-        .U6 { border-color: var(--GR10) !important }
+	
+	/* "Mail" / "Conversations" / "Spaces" Toolbar */
+	
+	.Th { background: var(--GR5) !important }
+	
+		/* Selected */
+		.qN.qO::before { background: var(--GR8) !important }
+	
+		/* Divider */
+		.U6 { border-color: var(--GR10) !important }
 	
 	/* "Advanced search" */
 	.Ol.Nk { color: var(--GR18) !important }
 	
 		.Ol.Nk:hover { color: var(--GRSELECTED) !important }
 	
-    /* When searching for a contact header */
-    
-    .bX {
-        background: var(--GR3) !important;
-        color: var(--GR18) !important;
-        padding-left: 10px !important;
-    }
-    
-        /* Envelope Icon */
-    
-        .CU { filter: invert(1) !important }
-    
-        /* Chevron Icon */
-    
-        .CB { filter: invert(1) !important }
-    
+	/* When searching for a contact header */
+	
+	.bX {
+		background: var(--GR3) !important;
+		color: var(--GR18) !important;
+		padding-left: 10px !important;
+	}
+	
+		/* Envelope Icon */
+	
+		.CU { filter: invert(1) !important }
+	
+		/* Chevron Icon */
+	
+		.CB { filter: invert(1) !important }
+	
 /* INBOX TOOLBAR */
 
 	/* Icons */
@@ -707,12 +707,15 @@
 				/* stylelint-disable-next-line property-no-vendor-prefix */
 				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/mail/default/20px.svg");
 			}
-    
-        /* In Spam > "Delete forever" & "Not spam" buttons */
+	
+		/* In Spam > "Delete forever" & "Not spam" buttons */
 		.Bn { color: var(--GR17) !important }
-    
-        /* Mark as read */
-        .bzn .bAO { background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/drafts_white_20dp.png") !important }
+	
+		/* Mark as read */
+		.bzn .bAO { background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/drafts_white_20dp.png") !important }
+	
+		/* Mark as unread */
+		.asa .kQ9Vzb { color: var(--GR17) !important }
 
 		/* Snooze */
 		.brW { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png") !important }
@@ -778,8 +781,8 @@
 	
 			/* Forums Icon (Selected) */
 			.aAy.J-KU-KO > .aHE-aLf { background-color: var(--GRSELECTED) !important }
-    
-        /* Text Label */
+	
+		/* Text Label */
 		.aKx > .aKz { color: var(--GR17) !important }
 	
 		/* Selected Underline */
@@ -833,17 +836,17 @@
 		background: var(--GR3) !important;
 		color: var(--GR15) !important;
 	}
-    
-    /* In Spam Folder > "Messages that have been in Spam..." banner */
-    .Tm .ya {
-        background: var(--GR3) !important;
+	
+	/* In Spam Folder > "Messages that have been in Spam..." banner */
+	.Tm .ya {
+		background: var(--GR3) !important;
 		color: var(--GR15) !important;
-    }
-    
-        /* Link */
-        .nH .ya .x2 { color: var(--GR18) !important }
-            
-            .nH .ya .x2:hover { color: var(--GRSELECTED) !important }
+	}
+	
+		/* Link */
+		.nH .ya .x2 { color: var(--GR18) !important }
+			
+			.nH .ya .x2:hover { color: var(--GRSELECTED) !important }
 
 	/* Toolbar */
 
@@ -1230,11 +1233,8 @@
 		/* Expand All */
 		.ade .gx { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/expand_all_white_20dp.png") !important }
 
-		/* Print */
-		.g1 { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/print_white_20dp.png") !important }
-
-		/* Open in New Window */
-		.gZ { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/open_in_new_white_20dp.png") !important }
+		/* Print / Open in New Window */
+		.aoH { color: var(--GR15) !important }
 
 		/* More */
 		.hA { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/more_vert_white_20dp.png") !important }
@@ -1314,15 +1314,15 @@
 			.h1, /* "Filter messages from this mailing list") */
 			.gI a /* Security "Learn More" */
 			{
-	            color: var(--GRSELECTED) !important
-            }
+				color: var(--GRSELECTED) !important
+			}
 
 				.h1:focus,
-	            .h1:hover,
+				.h1:hover,
 				.gI a:focus,
-	            .gI a:hover {
-                    color: var(--GR19) !important
-                }
+				.gI a:hover {
+					color: var(--GR19) !important
+				}
 
 	/* Recommended Responses */
 
@@ -1347,7 +1347,7 @@
 				background-image: url("https://www.gstatic.com/images/icons/material/system/1x/expand_all_white_20dp.png")
 			}
 
-		    /* Divider */
+			/* Divider */
 			.bh > .adv > .Bk::after { border-color: var(--GR8) !important }
 
 	/* Footer Action Buttons */
@@ -1373,24 +1373,24 @@
 		/* Forward Icon */
 		.ams.bkG::before { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/forward_white_20dp.png") !important }
 
-    /* Compose RTE editor */
-    
-        /* Border */
-        .HM .I5 { border-color: var(--GR8) !important }
-    
-            /* Outer elements */
-            .aC2,
-            .aC3,
-            .HM .ahe::after {
-                background: transparent !important
-            }
-    
-            /* Footer */
-            .iN {
-                background: var(--GR18) !important;
-                border-radius: 0 0 14px 14px !important; 
-            }
-    
+	/* Compose RTE editor */
+	
+		/* Border */
+		.HM .I5 { border-color: var(--GR8) !important }
+	
+			/* Outer elements */
+			.aC2,
+			.aC3,
+			.HM .ahe::after {
+				background: transparent !important
+			}
+	
+			/* Footer */
+			.iN {
+				background: var(--GR18) !important;
+				border-radius: 0 0 14px 14px !important; 
+			}
+	
 	/* Deleted messages banner */
 	.iS {
 		background: var(--GR2) !important;
@@ -1479,3 +1479,4 @@
 				/* Text */
 				.v .fZ .f0 { color: var(--GRSELECTED) !important }
 }
+	
