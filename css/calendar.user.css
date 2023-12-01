@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20230903.0.0
+@version        20231130.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -87,8 +87,9 @@
 		.Lc04pd, /* Event Popover - Guests Camera Icon */
 		.urWhWe .Ce1Y1c, /* Working Location Popover */
 		.kMp0We .DPvwYc, /* Event Popover Rows */
-		.GyffFb,  /* Create Event Popover Icons */
+		.ydqcTb,  /* Create Event Popover Icons */
 		.aStPEd, /* Create Event Popover Out of Office Visibility Help Icon */
+		.BA2P7d, /* Create Event Popover Appointment Schedule */
 		.GjP4J, /* Create Event Page Location/Conferencing */
 		.uSx8Od, /* Create Event Page Calendar */
 		.COICyc, /* Create Page RTE Toolbar "Add Attachment" Icon */
@@ -134,6 +135,32 @@
 	
 		/* Calendar Range */
 		.rSoRzd { color: var(--GR17) !important }
+		
+		/* Calendar/Task Toggle */
+		.KSkz4b.KSkz4b,
+		.xg1yEb.xg1yEb {
+			border-color: var(--GR8) !important;
+		}
+		
+			body[data-viewfamily="TASKS"] .xg1yEb,
+			.KSkz4b.KSkz4b {
+				--gm3-icon-button-filled-focus-icon-color: var(--GR14);
+				--gm3-icon-button-filled-hover-icon-color: var(--GR14);
+				--gm3-icon-button-filled-hover-state-layer-color: var(--GR14);
+				--gm3-icon-button-filled-icon-color: var(--GR14);
+				--gm3-icon-button-filled-pressed-icon-color: var(--GR14);
+			}
+			
+			/* Selected */
+			.xg1yEb.xg1yEb,
+			body[data-viewfamily="TASKS"] .KSkz4b {
+				--gm3-icon-button-filled-container-color: var(--GR7);
+				--gm3-icon-button-filled-focus-icon-color: var(--GRSELECTED);
+				--gm3-icon-button-filled-hover-icon-color: var(--GRSELECTED);
+				--gm3-icon-button-filled-hover-state-layer-color: var(--GRSELECTED);
+				--gm3-icon-button-filled-icon-color: var(--GRSELECTED);
+				--gm3-icon-button-filled-pressed-icon-color: var(--GRSELECTED);
+			}
 	
 	/* GENERIC DROPDOWNS */
 	
@@ -248,24 +275,28 @@
 		/* MINI CALENDAR */
 	
 			/* Month */
-			.MSZkRb .r4nke { color: var(--GR17) !important }
+			.Q4y17 .r4nke { color: var(--GR17) !important }
 	
 			/* Day of the Week */
-			.SoBqBf { color: var(--GR14) !important }
+			.k50Dh, .f1QMue, .IOneve { color: var(--GR14) !important }
 	
 			/* Day Circle */
-			.W0m3G .r4nke { background: var(--GR1) !important }
+			.IOneve .r4nke { background: var(--GR1) !important }
 	
-				.W0m3G .r4nke:hover { background: var(--GR7) !important }
+				.IOneve .r4nke:hover { background: var(--GR7) !important }
 	
 			/* Day (out of month) */
-			.W0m3G { color: var(--GR10) !important }
+			.IOneve { color: var(--GR10) !important }
 	
 			/* Day (in month) */
-			.iMprOe { color: var(--GR15) !important }
+			.P7rTif, /* In Sidebar */
+			.pWJCO .r4nke /* In Create Event Popover */
+			{
+				color: var(--GR15) !important
+			}
 	
 			/* Day (selected) */
-			.W0m3G.i8dSE .r4nke {
+			.p6vobf .r4nke, .p6vobf.pWJCO .r4nke, .p6vobf.pWJCO.q2d9Ze .r4nke {
 				background: var(--GR6) !important;
 				color: var(--GRSELECTED) !important
 			}
@@ -282,6 +313,11 @@
 				border-color: var(--GR5) !important;
 				color: var(--GR12) !important;
 			}
+			
+			/* Mini Calendar in Create Event Popover that appears when you select a date */
+			
+				/* Rows */
+				.IOneve::before { background: transparent !important }
 	
 		/* WORLD CLOCK */
 		
@@ -745,7 +781,8 @@
 		/* Title & Labels */
 		.agOyMd .UfeRlc, /* Task Titles */
 		.tMfWZc:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd, /* Title */
-		.agOyMd div.AzuXid /* Dec 2022 Update (Date) */
+		.agOyMd div.AzuXid, /* Dec 2022 Update (Date) */
+		.Z5RD1e /* Nov 2023 Update (Select Fields) */
 		{
 			color: var(--GR19) !important
 		}
@@ -944,7 +981,11 @@
 			.h7kDxc.RDPZE { color: var(--GR17) !important }
 		
 		/* "Does not repeat", "Free / Default visibility / Do not notify" */
-		.NAgJzc { color: var(--GR15) !important }
+		.NAgJzc,
+		.wTj3Dc /* Nov 2023 Update */
+		{
+			color: var(--GR15) !important
+		}
 	
 		/* RTE for Description */
 		.T4SBCf { background: var(--GR4) !important }
@@ -1026,6 +1067,11 @@
 	
 			/* Divider */
 			.mKdssd, .mGlsq { background: var(--GR10) !important }
+			
+			/* Divider (Location) */
+			.anMZof.gUZKAc:not(.sMVRZe):not(.dBA1M), .anMZof:not(.gUZKAc).sMVRZe:not(.dBA1M) {
+				border-color: var(--GR10) !important
+			}
 	
 			/* "Propose a new time" buttons */
 			.ZGVUP {
@@ -1323,6 +1369,7 @@
 	
 		/* Placeholders */
 		.ULpymb .snByac, /* "Add guests" */
+		.qx9Fae:not(.YkAcPc),  /* "Add guests" (Nov 2023 Update) */
 		.bnPQpd:not(.YkAcPc), /* "Add location" / "Add description or attachments" */
 		.OnrKec .snByac /* "Add attachment" */
 		{
@@ -1521,7 +1568,13 @@
 	
 		/* Event Title */
 	
-		.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd { color: var(--GR18) !important }
+		.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd {
+			color: var(--GR18) !important;
+		}
+		
+			.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd::placeholder {
+				color: var(--GR14) !important;
+			}
 	
 			/* Reset background */
 			/* stylelint-disable-next-line stylistic/max-line-length */
