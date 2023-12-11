@@ -22,6 +22,6 @@
 	"dependencies": {
 		"lefthook": "1.5.5",
 		"prettier-package-json": "2.8.0",
-		"stylelint-config-globex": "3.12.0"
+		"stylelint-config-globex": "3.12.1"
 	}
 }
