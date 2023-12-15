@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20231130.0.0
+@version        20231214.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -1165,35 +1165,38 @@
 		/* Share > Modal */
 	
 			/* "Learn More" */
-			.jSSX4d { color: var(--GR17) !important }
+			.t6DHce { color: var(--GR17) !important }
 	
-				.jSSX4d:hover { color: var(--GR19) !important }
+				.t6DHce:hover { color: var(--GR19) !important }
 	
 			/* Tab Icon */
 			.WbUJNb .VfPpkd-cfyjzb { color: var(--GR15) !important }
 	
 				/* Selected */
 				.WbUJNb.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-cfyjzb { color: var(--GRSELECTED) !important }
+				
+			/* Divider */
+			.wQO6gd { border-top-color: var(--GR12) !important }
 	
 			/* "All appointment schedules" / "A single booking page" */
-			.UgWSL { color: var(--GR17) !important }
+			.f7HHcb { color: var(--GR17) !important }
 	
 				/* "Preview" */
-				.vyidCf { color: var(--GR17) !important }
+				.tJGdef { color: var(--GR17) !important }
 	
-					.vyidCf:hover { color: var(--GR19) !important }
+					.tJGdef:hover { color: var(--GR19) !important }
 	
 			/* "Booking page link" section */
-			.sgyaM { background-color: var(--GR3) !important }
+			.nstCc { background-color: var(--GR3) !important }
 	
 				/* "Booking page link" */
-				.gz10ye { color: var(--GR13) !important }
+				.dVkMD { color: var(--GR13) !important }
 	
 			/* "Share this page with others..." */
-			.wFB2uc { color: var(--GR13) !important }
-	
-			/* "Button code* section */
-			.pwIq8e { background-color: var(--GR3) !important }
+			.Abkp5c { color: var(--GR13) !important }
+			
+				/* Info Icon */
+				.Fs5u9c { color: var(--GR14) !important }
 	
 	/* BOOKABLE APPOINTMENT SCHEDULE SIDEBAR (DETAILED CREATE SECTION) */
 	
