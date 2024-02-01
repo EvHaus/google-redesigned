@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240110.0.0
+@version        20240131.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -134,7 +134,7 @@
 		.gb_1c .gb_ge { color: var(--GR17) !important }
 	
 		/* Calendar Range */
-		.rSoRzd { color: var(--GR17) !important }
+		.UyW9db { color: var(--GR17) !important }
 		
 		/* Calendar/Task Toggle */
 		.KSkz4b.KSkz4b,
@@ -323,7 +323,7 @@
 			}
 		
 			/* Week Numbers (if enabled via settings) */
-			.OWyNBb.m1fiJb {
+			.f1QMue.m1fiJb {
 				background-color: var(--GR4) !important;
 				border-color: var(--GR5) !important;
 				color: var(--GR12) !important;
@@ -547,14 +547,14 @@
 		/* Body */
 	
 		/* Cannot be transparent due to animation */
-		.tNDBE { background: var(--GR0) !important }
+		.RAaXne { background: var(--GR0) !important }
 	
 		/* Grid Lines */
-		.tNDBE:not(.Wyo4Qe), /* Left-most */
-		.CIFHgc, /* Left-most in Business */
-		.PhLhOd, /* Header */
-		.zYZlv, /* Vertical */
-		.QIadxc /* Horizontal */
+		.RAaXne:not(.Wyo4Qe), /* Left-most (in Business) */
+		.CIFHgc, /* Left-most in Week view (in Business) */
+		.w6FdBf, /* Header */
+		.MGaLHf, /* Vertical */
+		.FLFkR /* Horizontal */
 		{
 			border-color: var(--GR3) !important
 		}
@@ -562,22 +562,25 @@
 		/* Week Numbers (if enabled in settings) */
 		
 			/* Cap thing on top */
-			.XnnJrc.Wyo4Qe .TKMrfe { background: var(--GR3) !important }
+			.wuX2hf.Wyo4Qe .l4SGD { background: var(--GR3) !important }
 
 			/* Week number sections */
-			.akJTWe {
+			.ok6kbe {
 				background: var(--GR3) !important;
 				color: var(--GR14) !important;
 			}
 	
-		/* Day Number */
-		.YK7obe .yzYBvd { color: var(--GR12) !important }
+		/* Day Name (Mon, Tue, Wed...) */
+		.EeuFAf { color: var(--GR12) !important }
 	
-		/* Non-current Day */
-		.wy3aMe { color: var(--GR12) !important }
+		/* Day Number */
+		.o5s4T .w48V4c { color: var(--GR12) !important }
+		
+			/* Hover */
+			.w48V4c:hover { background: var(--GR4) !important }
 	
 		/* Current Day Circle */
-		.yzYBvd.F262Ye {
+		.w48V4c.F262Ye {
 			background: var(--GR7) !important;
 			color: var(--GRSELECTED) !important;
 		}
@@ -588,43 +591,49 @@
 		/* "Home" / "Office" Bar */
 		
 			/* Pill */
-			.aXFFQc { background: var(--GR8) !important }
+			.artKme { background: var(--GR8) !important }
 				
 				/* Icon */
-				.zpRRx { color: var(--GR17) !important }
+				.ZToyZc { color: var(--GR17) !important }
 		
 				/* "Home" / "Office" Text */
-				.UG2wL { color: var(--GR17) !important }
+				.dy6Mec { color: var(--GR17) !important }
 		
 			/* Line */
-			.tElKAd > span { background: var(--GR8) !important }
+			.gZzpO { background: var(--GR8) !important }
 		
 		/* Time Event */
-		.g3dbUc.smECzc { color: var(--GR17) !important }
+		.KF4T6b.smECzc { color: var(--GR17) !important }
 		
-			.g3dbUc.smECzc:hover {
+			.KF4T6b.smECzc:hover {
 				background: var(--GR6) !important;
 				color: var(--GR19) !important;
 			}
 		
 		/* Time Event (Past) */
-		.g3dbUc.UflSff {
+		.KF4T6b.UflSff {
 			color: var(--GR12) !important;
 		}
 		
 			/* Time Event (Past) Full Day */
-			.g3dbUc.UflSff:not(.smECzc) {
+			.KF4T6b.UflSff:not(.smECzc) {
 				color: var(--GR8) !important;
 				filter: brightness(0.6) contrast(1.25) !important;
 			}
 	
 			/* Time Event (Past) Full Day With Overflow */
-			.g3dbUc.UflSff:is(.JRw8kf, .XFPdgf) {
+			.KF4T6b.UflSff:is(.JRw8kf, .XFPdgf) {
 				overflow: visible !important;
 			}
 
-				/* Arrow */
-				.zWcBU.BvHyo.gpOGPc {
+				/* Arrow (Left) */
+				.PxbABe.hyd2Ge {
+					/* stylelint-disable-next-line function-disallowed-list */
+					translate: calc(-22px + 100%) -1px !important;
+				}
+				
+				/* Arrow (Right) */
+				.PxbABe.BvHyo {
 					/* stylelint-disable-next-line function-disallowed-list */
 					translate: calc(1px + 100%) -1px !important;
 				}
@@ -633,9 +642,9 @@
 		.g3dbUc.smECzc.KKjvXb { background: var(--GR10) !important }
 	
 		/* "x more" row */
-		.g3dbUc.KCIIIb { color: var(--GR12) !important }
+		.KF4T6b.KCIIIb { color: var(--GR12) !important }
 	
-			.g3dbUc.smECzc:hover, .g3dbUc.KCIIIb:hover {
+			.KF4T6b.KCIIIb:hover {
 				background: var(--GR6) !important;
 				color: var(--GR17) !important
 			}
