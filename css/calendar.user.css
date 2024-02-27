@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240131.0.0
+@version        20240226.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -462,27 +462,47 @@
 		.mdzkGf { color: var(--GR15) !important }
 	
 		/* Scroll Indicator (Left) */
-		.T8M5bd .sx5BGe::before {
+		.T8M5bd .sx5BGe::before,
+		.SGFqbe.T8M5bd .lqYlwe::before /* 2024-02 Update */
+		{
 			background-image: linear-gradient(to left, rgba(0, 0, 0, 0), var(--GR5)) !important;
 		}
 	
 		/* Scroll Indicator (Right) */
-		.T8M5bd .qmFsL::after {
+		.T8M5bd .qmFsL::after,
+		.SGFqbe.T8M5bd .uEzZIb::after /* 2024-02 Update */
+		{
 			background-image: linear-gradient(to left, var(--GR5), rgba(0, 0, 0, 0)) !important;
 		}
 	
 		/* Time Column */
-		.Gk2izd, .GENA3c { background: transparent !important }
+		.GENA3c,
+		.R6TFwe /* 2024-02 Update */
+		{
+			background: transparent !important
+		}
 			
 			/* Text */
 			.pCoqfc, .MANBAf { color: var(--GR12) !important }
+			
+			/* Timezone Label ("GMT-08") */
+			.Gk2izd,
+			.sS0sZd /* 2024-02 Update */
+			{
+				background: transparent !important
+			}
+			
+				/* Text */
+				.ouBNcf { color: var(--GR14) !important }
 	
 			/* Grid Borders */
-			.MVMVEe, /* Left-side Header */
-			.EdAri, /* Left-side Content */
-			.yEkOpe, /* Header */
-			.YvjgZe, /* Days */
-			.mmsF1c::after /* Rows */
+			.MVMVEe, /* Day Events (Left-side edge) */
+			.yEkOpe, /* Day Events (Vertical) */
+			.EDDeke, /* Timed Events (Left-side edge) */
+			.YvjgZe, /* Timed Events (Vertical) */
+			.BiKU4b, /* Timed Events (Vertical) (2024-02 Update) */
+			.mmsF1c::after, /* Timed Events (Horizontal) */
+			.sJ9Raf::after /* Timed Events (Horizontal) (2024-02 Update) */
 			{
 				border-color: var(--GR3) !important
 			}
