@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240305.0.0
+@version        20240316.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -14,8 +14,8 @@
 ==/UserStyle== */
 
 @-moz-document domain("calendar.google.com") {
-/* COLOR PALETTE */
-	
+	/* COLOR PALETTE */
+		
 	/* stylelint-disable color-no-hex */
 	:root {
 		--GR0: #0F1112; /* Background */
@@ -528,26 +528,26 @@
 	
 	/* WEEK VIEW */
 
-        /* Current Day "Mon"/"Tue"/etc... */
-        .tWjOu.F262Ye { color: var(--GRSELECTED) !important }
-    
-        /* Current Day (Day Number) Circle */
-        .nSCxEf.F262Ye {
-            background-color: var(--GR7) !important;
-            color: var(--GRSELECTED) !important;
-        }
-    
-        /* Future Day (Day Number) Circle */
-        .sVASAd.N4XV7d { color: var(--GR12) !important }
-    
-            /* Hover */
-            .nSCxEf.RKLVef:hover {
-                background-color: var(--GR7) !important;
-                color: var(--GR16) !important;
-            }
-    
+		/* Current Day "Mon"/"Tue"/etc... */
+		.tWjOu.F262Ye { color: var(--GRSELECTED) !important }
+	
+		/* Current Day (Day Number) Circle */
+		.nSCxEf.F262Ye {
+			background-color: var(--GR7) !important;
+			color: var(--GRSELECTED) !important;
+		}
+	
+		/* Future Day (Day Number) Circle */
+		.sVASAd.N4XV7d { color: var(--GR12) !important }
+	
+			/* Hover */
+			.nSCxEf.RKLVef:hover {
+				background-color: var(--GR7) !important;
+				color: var(--GR16) !important;
+			}
+	
 		/* Body */
-        .pbeTDb { background: transparent !important }
+		.pbeTDb { background: transparent !important }
 	
 		/* Non-current Day */
 		.KSxb4d, .KSxb4d.N4XV7d { color: var(--GR12) !important }
@@ -832,7 +832,7 @@
 		}
 	
 		/* Body */
-		.JtukPc { background: var(--GR6) !important }
+		.kma42e { background: var(--GR6) !important }
 	
 		/* Title & Labels */
 		.agOyMd .UfeRlc, /* Task Titles */
@@ -1929,72 +1929,73 @@
 		
 			/* Row */
 			.jxUZDd { border-color: var(--GR8) !important }
-			
-				.jxUZDd:hover { background: var(--GR2) !important }
-		
-				/* Row label */
-				.Ccr7Rb { color: var(--GR12) !important }
-	
-		/* Working Hours */
-	
-			/* "To" block */
-			.VLl48b { background: transparent !important }
-	
-	/* TRASH */
-	
-		/* Sidebar */
-		.pljXM { background: transparent !important }
-		
-			/* Calendar Header */
-				.aDCdzb { color: var(--GR10) !important }
-		
-				/* Selected Calendar */
-				.LOewLb.KKjvXb { background: var(--GR6) !important }
-			
-			/* Lister */
-			.NekIXe, .Lzfnue { background: transparent !important }
-			
-				/* Table Headers */
-				.M1ZIGd { color: var(--GR17) !important }
 				
-				/* Content */
-				.ETUnje > * { color: var(--GR15) !important }
+					.jxUZDd:hover { background: var(--GR2) !important }
+			
+					/* Row label */
+					.Ccr7Rb { color: var(--GR12) !important }
+		
+			/* Working Hours */
+		
+				/* "To" block */
+				.VLl48b { background: transparent !important }
+		
+		/* TRASH */
+		
+			/* Sidebar */
+			.pljXM { background: transparent !important }
+			
+				/* Calendar Header */
+					.aDCdzb { color: var(--GR10) !important }
+			
+					/* Selected Calendar */
+					.LOewLb.KKjvXb { background: var(--GR6) !important }
 				
-				/* Row Hover */
-				.v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
-				.ETUnje { border-color: var(--GR6) !important }
-			
-		/* EMBEDDED IFRAME SIDEBAR INSIDE GMAIL */
-			
-			/* Header Titles */
-			.ccLsFc { color: var(--GR17) !important }
-			
-			/* Header Dividers */
-			.cOoA8d, .cBs4Te { border-color: var(--GR10) !important }
-			
-			/* Header "..." Menu Selected Option */
-			.e3odF { background: var(--GR10) !important }
-			
-			/* Create Event Popover */
-			
-				/* Header */
-				.Bofavf {
-					background: var(--GR4) !important;
-					box-shadow: inset 0 1px 0 var(--GR12) !important;
-				}
-			
-				/* "Add Title" */
-				.XTHi9c .snByac { color: var(--GR15) !important }
-			
-				/* Title */
-				.XTHi9c .zHQkBf { color: var(--GR19) !important }
-			
-				/* Section Dividers */
-				.Od6NEf, .IFQP9d, .iofSlf, .Da8wwf { border-color: var(--GR10) !important }
-			
-				/* "Add Google Meet video conferencing" */
-				.oYdi4d .FAE19b .snByac { color: var(--GR15) !important }
-			
-				/* "Join with Google Meet" */
-				.Q30cfe { color: var(--GR19) !important }
-}
+				/* Lister */
+				.NekIXe, .Lzfnue { background: transparent !important }
+				
+					/* Table Headers */
+					.M1ZIGd { color: var(--GR17) !important }
+					
+					/* Content */
+					.ETUnje > * { color: var(--GR15) !important }
+					
+					/* Row Hover */
+					.v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
+					.ETUnje { border-color: var(--GR6) !important }
+				
+			/* EMBEDDED IFRAME SIDEBAR INSIDE GMAIL */
+				
+				/* Header Titles */
+				.ccLsFc { color: var(--GR17) !important }
+				
+				/* Header Dividers */
+				.cOoA8d, .cBs4Te { border-color: var(--GR10) !important }
+				
+				/* Header "..." Menu Selected Option */
+				.e3odF { background: var(--GR10) !important }
+				
+				/* Create Event Popover */
+				
+					/* Header */
+					.Bofavf {
+						background: var(--GR4) !important;
+						box-shadow: inset 0 1px 0 var(--GR12) !important;
+					}
+				
+					/* "Add Title" */
+					.XTHi9c .snByac { color: var(--GR15) !important }
+				
+					/* Title */
+					.XTHi9c .zHQkBf { color: var(--GR19) !important }
+				
+					/* Section Dividers */
+					.Od6NEf, .IFQP9d, .iofSlf, .Da8wwf { border-color: var(--GR10) !important }
+				
+					/* "Add Google Meet video conferencing" */
+					.oYdi4d .FAE19b .snByac { color: var(--GR15) !important }
+				
+					/* "Join with Google Meet" */
+					.Q30cfe { color: var(--GR19) !important }
+	}
+	
