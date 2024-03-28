@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240316.0.0
+@version        20240327.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -15,7 +15,7 @@
 
 @-moz-document domain("calendar.google.com") {
 	/* COLOR PALETTE */
-		
+	
 	/* stylelint-disable color-no-hex */
 	:root {
 		--GR0: #0F1112; /* Background */
@@ -43,8 +43,9 @@
 		/* Google Theme Overrides */
 		
 			/* Checkboxes */
-			--mdc-checkbox-unselected-icon-color: var(--GR8);
+			--mdc-checkbox-unselected-icon-color: var(--GR12);
 			--mdc-checkbox-unselected-hover-icon-color: var(--GR15);
+			--mdc-checkbox-unselected-pressed-icon-color: var(--GR16);
 			--mdc-checkbox-selected-icon-color: var(--GRSELECTED);
 			--mdc-checkbox-selected-hover-icon-color: var(--GR17);
 			--mdc-checkbox-selected-checkmark-color: var(--GR0);
@@ -880,6 +881,9 @@
 				background: var(--GR9) !important;
 				color: var(--GRSELECTED) !important;
 			}
+		
+		/* "Focus Time" > "Do not disturb" */
+		.kiifqc { color: var(--GR17) !important }
 	
 		/* Links in the Description */
 		.D29CYb a,
@@ -927,6 +931,11 @@
 		
 			/* Little response circle for "Out of office" */
 			.o4NNyc { background: var(--GR4) !important }
+		
+		/* "Out of Office" > "Message" for description */
+		.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-NLUYnc-V67aGc {
+			color: var(--GR15) !important
+		}
 		
 		/* "Upgrade to host longer group calls" Section */
 		.NoJAOd.NoJAOd { background: var(--GR8) !important }
@@ -1021,16 +1030,26 @@
 			.FAaxPe { color: var(--GR17) !important }
 		
 			/* "Home" / "Office" buttons */
-			.RpYYWb {
+			.Pn4AJ {
 				background: var(--GR8) !important;
 				border-color: var(--GR10) !important;
 				color: var(--GR18) !important;
 			}
 		
-				.RpYYWb:hover {
+				.Pn4AJ:hover {
 					background: var(--GR9) !important;
 					border-color: var(--GR12) !important;
 					color: var(--GR19) !important;
+				}
+				
+				/* Active */
+				.Pn4AJ.KKjvXb:not(:disabled) {
+					color: var(--GRSELECTED) !important;
+				}
+				
+				/* Internal background */
+				.Pn4AJ .VfPpkd-Jh9lGc::before {
+					background: transparent !important;
 				}
 		
 			/* Calendar Title */
@@ -1212,11 +1231,19 @@
 	
 		/* Title */
 		.Zzucte span { color: var(--GR17) !important }
+		
+			/* Title (when disabled) */
+			.WmnPA.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me .VfPpkd-fmcmS-wGMbrd {
+				color: var(--GR12) !important
+			}
 	
 		/* "See all your booking pages" */
 		.Su7cHd { color: var(--GR17) !important }
 	
 			.Su7cHd:hover { color: var(--GR19) !important }
+	
+		/* "Add availability to an existing schedule" */
+		.mopaRc { color: var(--GR17) !important }
 	
 		/* Share > Modal */
 	
@@ -1385,7 +1412,7 @@
 				}
 	
 		/* "All Day" checkbox (July 2020) */
-		.cAP2G { color: var(--GR17) !important }
+		.Kpcujb { color: var(--GR17) !important }
 	
 		/* "Suggested times" Button */
 		.tDiQl { border-color: var(--GR12) !important }
@@ -1751,6 +1778,9 @@
 		/* "Add Notification" Button */
 		.rhtYVe .snByac { color: var(--GR17) !important }
 		
+		/* Calendar Select */
+		.nBhvye { background: var(--GR6) !important }
+		
 		/* Color Select */
 		:not(.DswEsf).nB7Rvb .AHbDKf { background: var(--GR6) !important }
 	
@@ -1929,73 +1959,72 @@
 		
 			/* Row */
 			.jxUZDd { border-color: var(--GR8) !important }
-				
-					.jxUZDd:hover { background: var(--GR2) !important }
 			
-					/* Row label */
-					.Ccr7Rb { color: var(--GR12) !important }
+				.jxUZDd:hover { background: var(--GR2) !important }
 		
-			/* Working Hours */
-		
-				/* "To" block */
-				.VLl48b { background: transparent !important }
-		
-		/* TRASH */
-		
-			/* Sidebar */
-			.pljXM { background: transparent !important }
-			
-				/* Calendar Header */
-					.aDCdzb { color: var(--GR10) !important }
-			
-					/* Selected Calendar */
-					.LOewLb.KKjvXb { background: var(--GR6) !important }
-				
-				/* Lister */
-				.NekIXe, .Lzfnue { background: transparent !important }
-				
-					/* Table Headers */
-					.M1ZIGd { color: var(--GR17) !important }
-					
-					/* Content */
-					.ETUnje > * { color: var(--GR15) !important }
-					
-					/* Row Hover */
-					.v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
-					.ETUnje { border-color: var(--GR6) !important }
-				
-			/* EMBEDDED IFRAME SIDEBAR INSIDE GMAIL */
-				
-				/* Header Titles */
-				.ccLsFc { color: var(--GR17) !important }
-				
-				/* Header Dividers */
-				.cOoA8d, .cBs4Te { border-color: var(--GR10) !important }
-				
-				/* Header "..." Menu Selected Option */
-				.e3odF { background: var(--GR10) !important }
-				
-				/* Create Event Popover */
-				
-					/* Header */
-					.Bofavf {
-						background: var(--GR4) !important;
-						box-shadow: inset 0 1px 0 var(--GR12) !important;
-					}
-				
-					/* "Add Title" */
-					.XTHi9c .snByac { color: var(--GR15) !important }
-				
-					/* Title */
-					.XTHi9c .zHQkBf { color: var(--GR19) !important }
-				
-					/* Section Dividers */
-					.Od6NEf, .IFQP9d, .iofSlf, .Da8wwf { border-color: var(--GR10) !important }
-				
-					/* "Add Google Meet video conferencing" */
-					.oYdi4d .FAE19b .snByac { color: var(--GR15) !important }
-				
-					/* "Join with Google Meet" */
-					.Q30cfe { color: var(--GR19) !important }
-	}
+				/* Row label */
+				.Ccr7Rb { color: var(--GR12) !important }
 	
+		/* Working Hours */
+	
+			/* "To" block */
+			.VLl48b { background: transparent !important }
+	
+	/* TRASH */
+	
+		/* Sidebar */
+		.pljXM { background: transparent !important }
+		
+			/* Calendar Header */
+				.aDCdzb { color: var(--GR10) !important }
+		
+				/* Selected Calendar */
+				.LOewLb.KKjvXb { background: var(--GR6) !important }
+			
+			/* Lister */
+			.NekIXe, .Lzfnue { background: transparent !important }
+			
+				/* Table Headers */
+				.M1ZIGd { color: var(--GR17) !important }
+				
+				/* Content */
+				.ETUnje > * { color: var(--GR15) !important }
+				
+				/* Row Hover */
+				.v9Riof:hover, .ETUnje:hover { background: var(--GR4) !important }
+				.ETUnje { border-color: var(--GR6) !important }
+			
+		/* EMBEDDED IFRAME SIDEBAR INSIDE GMAIL */
+			
+			/* Header Titles */
+			.ccLsFc { color: var(--GR17) !important }
+			
+			/* Header Dividers */
+			.cOoA8d, .cBs4Te { border-color: var(--GR10) !important }
+			
+			/* Header "..." Menu Selected Option */
+			.e3odF { background: var(--GR10) !important }
+			
+			/* Create Event Popover */
+			
+				/* Header */
+				.Bofavf {
+					background: var(--GR4) !important;
+					box-shadow: inset 0 1px 0 var(--GR12) !important;
+				}
+			
+				/* "Add Title" */
+				.XTHi9c .snByac { color: var(--GR15) !important }
+			
+				/* Title */
+				.XTHi9c .zHQkBf { color: var(--GR19) !important }
+			
+				/* Section Dividers */
+				.Od6NEf, .IFQP9d, .iofSlf, .Da8wwf { border-color: var(--GR10) !important }
+			
+				/* "Add Google Meet video conferencing" */
+				.oYdi4d .FAE19b .snByac { color: var(--GR15) !important }
+			
+				/* "Join with Google Meet" */
+				.Q30cfe { color: var(--GR19) !important }
+}
