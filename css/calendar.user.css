@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240327.0.0
+@version        20240419.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -834,6 +834,9 @@
 	
 		/* Body */
 		.kma42e { background: var(--GR6) !important }
+        
+            /* General Popover Text */
+            .kma42e { color: var(--GR19) !important }
 	
 		/* Title & Labels */
 		.agOyMd .UfeRlc, /* Task Titles */
@@ -1405,14 +1408,21 @@
 			}
 	
 			/* Time Dropdown */
-				.VKy0Ic[aria-selected="true"] {
-					background: var(--GR8) !important;
-					color: var(--GR19) !important;
-					cursor: pointer;
-				}
+                
+                /* Row */
+                .VKy0Ic {
+                    color: var(--GR17) !important;
+                }
+            
+            
+                /* Selected Row */
+                .VKy0Ic[aria-selected="true"] {
+                    background: var(--GR8) !important;
+                    color: var(--GR19) !important;
+                }
 	
-		/* "All Day" checkbox (July 2020) */
-		.Kpcujb { color: var(--GR17) !important }
+		/* "All Day" checkbox */
+		.cAP2G { color: var(--GR17) !important }
 	
 		/* "Suggested times" Button */
 		.tDiQl { border-color: var(--GR12) !important }
@@ -1461,6 +1471,9 @@
 		{
 			color: var(--GR15) !important
 		}
+        
+        /* Calendar Name */
+        .P4Bbuf { color: var(--GR17) !important }
 		
 		/* "Calendar cannot be shown" */
 		.JmmUXc .GEhdLd { color: var(--GR15) !important }
@@ -1500,14 +1513,17 @@
 	
 		/* "Appointment Schedule" */
 		
-			/* "Premium" */
-			.ujkAm { color: var(--GR15) !important }
-		
-				/* Icon */
-				.Nxjmad { fill: var(--GR15) !important }
-		
-			/* "Make appointments easier" */
-			.YHVshb { color: var(--GR17) !important }
+			/* "Create a booking page..." */
+			.u6mZZ { background: var(--GR8) !important }
+            
+                /* Icon */
+                .u6mZZ .HyA7Fb { color: var(--GR17) !important }
+                
+                /* Text */
+                .LmzXcf { color: var(--GR17) !important }
+                
+                /* Underline */
+                .rTZHXe { background: var(--GR10) !important }
 		
 			/* Description Text */
 			.Pf26K { color: var(--GR15) !important }
