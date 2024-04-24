@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240419.0.0
+@version        20240423.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -831,6 +831,12 @@
 			background: var(--GR4) !important;
 			box-shadow: inset 0 1px 0 var(--GR12) !important;
 		}
+        
+            /* Header ... Menu */
+            
+                .WjVFVc .VfPpkd-StrnGf-rymPhb-ibnC6b {
+                    color: var(--GR17) !important
+                }
 	
 		/* Body */
 		.kma42e { background: var(--GR6) !important }
