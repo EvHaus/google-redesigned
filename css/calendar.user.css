@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240428.0.0
+@version        20240508.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -41,14 +41,6 @@
 		--GRSELECTED: #FB0;
 		
 		/* Google Theme Overrides */
-		
-			/* Checkboxes */
-			--mdc-checkbox-unselected-icon-color: var(--GR12);
-			--mdc-checkbox-unselected-hover-icon-color: var(--GR15);
-			--mdc-checkbox-unselected-pressed-icon-color: var(--GR16);
-			--mdc-checkbox-selected-icon-color: var(--GRSELECTED);
-			--mdc-checkbox-selected-hover-icon-color: var(--GR17);
-			--mdc-checkbox-selected-checkmark-color: var(--GR0);
 		
 			/* Dropdown Menus */
 			--mdc-theme-surface: var(--GR6);
@@ -109,6 +101,32 @@
 			filter: invert(1) !important;    
 		}
 	
+    /* CHECKBOXES */
+    
+/*     // popover
+    VfPpkd-MPu53c VfPpkd-MPu53c-OWXEXe-dgl2Hf Ne8lhe swXlm az2ine Skhfgc jYH2Te VfPpkd-MPu53c-OWXEXe-mWPk3d
+    
+    // edit
+    VfPpkd-MPu53c VfPpkd-MPu53c-OWXEXe-dgl2Hf Ne8lhe swXlm az2ine wimXt VfPpkd-MPu53c-OWXEXe-mWPk3d
+    
+    // calendars
+    VfPpkd-MPu53c VfPpkd-MPu53c-OWXEXe-gk6SMd Ne8lhe swXlm az2ine iIJNvc d7WT8c VfPpkd-MPu53c-OWXEXe-mWPk3d */
+    
+        /* The ":not" clause ensures calendar sidebar options aren't targetted */
+        .VfPpkd-MPu53c-OWXEXe-dgl2Hf > .VfPpkd-YQoJzd {
+            --mdc-checkbox-unselected-icon-color: var(--GR12);
+            --mdc-checkbox-unselected-focus-icon-color: var(--GR15);
+            --mdc-checkbox-unselected-hover-icon-color: var(--GR15);
+            --mdc-checkbox-unselected-pressed-icon-color: var(--GR16);
+            --mdc-checkbox-selected-icon-color: var(--GRSELECTED);
+            --mdc-checkbox-selected-focus-icon-color: var(--GR15);
+            --mdc-checkbox-selected-hover-icon-color: var(--GR17);
+            --mdc-checkbox-selected-checkmark-color: var(--GR0);
+            
+            /* Popover checkboxes */
+            --mdc-checkbox-selected-hover-state-layer-color: var(--GRSELECTED);
+        }
+    
 	/* HEADER */
 	
 		/* Google keeps changing the class name for the header, so
