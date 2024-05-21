@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240508.0.0
+@version        20240520.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -90,6 +90,7 @@
 		.jZasib,  /* Create Page RTE Toolbar Attachment Icon */
 		.SlHBnb,  /* Create Page Rooms Search */
 		.HHHDef, /* Create Page > Guests > Optional Attendee */
+        .nFP92b, /* Confirmation Modal > Question Icon */
 		.rF3YF svg /* Trash Row Hover */
 		{
 			color: var(--GR17) !important;
@@ -482,14 +483,16 @@
 	
 		/* Scroll Indicator (Left) */
 		.T8M5bd .sx5BGe::before,
-		.SGFqbe.T8M5bd .lqYlwe::before /* 2024-02 Update */
+		.SGFqbe.T8M5bd .lqYlwe::before, /* 2024-02 Update */
+        .oXZ1yb.T8M5bd .lqYlwe::before  /* 2024-05 Update */
 		{
 			background-image: linear-gradient(to left, rgba(0, 0, 0, 0), var(--GR5)) !important;
 		}
 	
 		/* Scroll Indicator (Right) */
 		.T8M5bd .qmFsL::after,
-		.SGFqbe.T8M5bd .uEzZIb::after /* 2024-02 Update */
+		.SGFqbe.T8M5bd .uEzZIb::after, /* 2024-02 Update */
+        .oXZ1yb.T8M5bd .uEzZIb::after  /* 2024-05 Update */
 		{
 			background-image: linear-gradient(to left, var(--GR5), rgba(0, 0, 0, 0)) !important;
 		}
@@ -859,10 +862,10 @@
                 }
 	
 		/* Body */
-		.kma42e { background: var(--GR6) !important }
-        
-            /* General Popover Text */
-            .kma42e { color: var(--GR19) !important }
+		.kma42e {
+			background: var(--GR6) !important;
+			color: var(--GR19) !important
+		}
 	
 		/* Title & Labels */
 		.agOyMd .UfeRlc, /* Task Titles */
@@ -897,7 +900,7 @@
 		/* Dividers (appear when setting description) */
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.dBA1M) { border-bottom-color: var(--GR12) !important }
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.AHjck) { border-top-color: var(--GR12) !important }
-		/* stylelint-disable-next-line selector-max-pseudo-class, stylistic/max-line-length */
+		/* stylelint-disable-next-line selector-max-pseudo-class, @stylistic/max-line-length */
 		.kxh2c:not(.gUZKAc).sMVRZe:not(.dBA1M) + .kxh2c:not(.gUZKAc).sMVRZe:not(.AHjck) { border-top-color: transparent !important }
 	
 		/* Buttons ("Event", "Task", "Reminder") */
@@ -1126,13 +1129,15 @@
 		
 			/* "Yes" button */
 			.wIfg3e.KKjvXb [data-button-type="actionButton"],
-			.wIfg3e.KKjvXb [data-button-type="menuButton"] {
+			.wIfg3e.KKjvXb [data-button-type="menuButton"],
+            .DrZ8nd.KKjvXb {
 				background: var(--GR6) !important;
 				border-color: var(--GR10) !important
 			}
 	
 				.wIfg3e.KKjvXb [data-button-type="actionButton"]:hover,
-				.wIfg3e.KKjvXb [data-button-type="menuButton"]:hover {
+				.wIfg3e.KKjvXb [data-button-type="menuButton"]:hover,
+                .DrZ8nd.KKjvXb:hover {
 					background: var(--GR8) !important;
 				}
 		
@@ -1229,6 +1234,9 @@
 					.McOO2b .UQuaGc.UQuaGc:focus, .McOO2b .UQuaGc.UQuaGc:hover {
 					color: var(--GR19) !important;
 				}
+                
+                /* "Would you like to send cancellation emails..." confirmation modal */
+                .nf2dS .zHGix { color: var(--GR19) !important }
 		
 			/* "Reschedule" button */
 			.Uu2hsf.auswjd { color: var(--GR17) !important }
@@ -1635,7 +1643,7 @@
 			}
 	
 		/* "Ends" radio buttons */
-		/* stylelint-disable-next-line stylistic/max-line-length */
+		/* stylelint-disable-next-line @stylistic/max-line-length */
 		.kDzhGf .VfPpkd-gBXA9-bMcfAe:enabled:not(:checked) + .VfPpkd-RsCWK .VfPpkd-wVo5xe-LkdAo { border-color: var(--GR12) !important }
 	
 			/* Selected */
@@ -1705,7 +1713,7 @@
 			}
 	
 			/* Reset background */
-			/* stylelint-disable-next-line stylistic/max-line-length */
+			/* stylelint-disable-next-line @stylistic/max-line-length */
 			.P5oTDb:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me).P5oTDb:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) { background: transparent !important }
 	
 		/* "Save" button */

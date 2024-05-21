@@ -1,6 +1,8 @@
 {
   "extends": "stylelint-config-globex",
   "rules": {
+    "@stylistic/block-opening-brace-space-before": null,
+    "@stylistic/indentation": null,
     "declaration-no-important": null,
     "selector-class-pattern": null,
     "selector-max-attribute": null,
@@ -10,8 +12,6 @@
     "selector-max-specificity": null,
     "selector-max-type": null,
     "selector-max-universal": null,
-    "selector-no-qualifying-type": null,
-    "stylistic/block-opening-brace-space-before": null,
-    "stylistic/indentation": null
+    "selector-no-qualifying-type": null
   }
 }
