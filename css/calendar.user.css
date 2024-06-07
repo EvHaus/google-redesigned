@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240524.0.1
+@version        20240606.0.1
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -1258,6 +1258,11 @@
 		.LjDxcd:not(:disabled) { color: var(--GR17) !important }
 		
 			.LjDxcd:hover:not(:disabled) { color: var(--GR19) !important }
+        
+        /* When deleting recurring task > "Delete repeating task" modal */
+        
+            /* Text */
+            .cC1eCc .VfPpkd-cnG4Wd { color: var(--GR15) !important } 
 	
 	/* BOOKABLE APPOINTMENT SCHEDULE POPOVER */
 	
