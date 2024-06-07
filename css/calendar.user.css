@@ -13,6 +13,7 @@
 				sidebar.
 
 @var color		GRSELECTED		"Selected/Highlighted components"	#FB0
+@var color		SCROLLBAR       "Page Scroll Bars"  				#2D3236
 @var color		GR0				"GR0: Background"					#0F1112
 @var color		GR1				"GR1: Calendar Dates Background"	#1E2224
 @var color		GR2				"GR2: Calendar side components"		#1E2224
@@ -54,6 +55,26 @@
 	/* GLOBAL */
 	
 		body { background: var(--GR0) !important }
+	
+	/* SCROLL BARS */
+
+        ::-webkit-scrollbar-thumb, /* Common Scroll Bar */
+		.mDPmMe::-webkit-scrollbar-thumb, /* Calendar Scroll Bar */
+		.WefNYe::-webkit-scrollbar-thumb /* Settings Page Scroll Bar */
+		{
+            background: var(--SCROLLBAR);
+			border: none;
+		}
+
+        /* Scroll Bar Hover */
+        ::-webkit-scrollbar-thumb:hover, .mDPmMe::-webkit-scrollbar-thumb:hover,  .WefNYe::-webkit-scrollbar-thumb:hover {
+			background: hsl(from var(--SCROLLBAR) h s l / 0.8);
+		}
+    
+        /* Scroll Bar Clicked */
+        ::-webkit-scrollbar-thumb:active, .mDPmMe::-webkit-scrollbar-thumb:active, .WefNYe::-webkit-scrollbar-thumb:active {
+            background: hsl(from var(--SCROLLBAR) h s l / 0.7);
+        }
 	
 	/* ICONS */
 	
