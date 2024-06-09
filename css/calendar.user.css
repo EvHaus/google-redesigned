@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240606.0.1
+@version        20240607.0.1
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -11,6 +11,29 @@
 				https://github.com/EvHaus/google-redesigned
 				NOTE: This style does not support the right-side Keep/Reminders
 				sidebar.
+
+@var color		GRSELECTED		"Selected/Highlighted components"	#FB0
+@var color		SCROLLBAR       "Page Scroll Bars"  				#2D3236
+@var color		GR0				"GR0: Background"					#0F1112
+@var color		GR1				"GR1: Calendar Dates Background"	#1E2224
+@var color		GR2				"GR2: Calendar side components"		#1E2224
+@var color		GR3				"GR3: Calendar grid cell borders"	#252A2D
+@var color		GR4				"GR4: Top navbar background"		#2D3236
+@var color		GR5				"GR5"								#343A3F
+@var color		GR6				"GR6"								#3B4348
+@var color		GR7				"GR7"								#434B51
+@var color		GR8				"GR8"								#4A535A
+@var color		GR9				"GR9"								#515B62
+@var color		GR10			"GR10"								#606970
+@var color		GR11			"GR11"								#70787E
+@var color		GR12			"GR12"								#80878C
+@var color		GR13			"GR13"								#90969B
+@var color		GR14			"GR14"								#A0A5A9
+@var color		GR15			"GR15"								#AFB4B7
+@var color		GR16			"GR16"								#BFC3C5
+@var color		GR17			"GR17: Text/Icons"					#CFD2D4
+@var color		GR18			"GR18"								#DFE1E2
+@var color		GR19			"GR19: Text/Icons Hover"			#EFF0F0
 ==/UserStyle== */
 
 @-moz-document domain("calendar.google.com") {
@@ -18,28 +41,6 @@
 	
 	/* stylelint-disable color-no-hex */
 	:root {
-		--GR0: #0F1112; /* Background */
-		--GR1: #17191B;
-		--GR2: #1E2224;
-		--GR3: #252A2D;
-		--GR4: #2D3236;
-		--GR5: #343A3F;
-		--GR6: #3B4348;
-		--GR7: #434B51;
-		--GR8: #4A535A;
-		--GR9: #515B62;
-		--GR10: #606970;
-		--GR11: #70787E;
-		--GR12: #80878C;
-		--GR13: #90969B;
-		--GR14: #A0A5A9;
-		--GR15: #AFB4B7;
-		--GR16: #BFC3C5;
-		--GR17: #CFD2D4; /* Text/Icons */
-		--GR18: #DFE1E2;
-		--GR19: #EFF0F0; /* Text/Icons Hover */
-		--GRSELECTED: #FB0;
-		
 		/* Google Theme Overrides */
 		
 			/* Dropdown Menus */
@@ -54,6 +55,26 @@
 	/* GLOBAL */
 	
 		body { background: var(--GR0) !important }
+	
+	/* SCROLL BARS */
+
+        ::-webkit-scrollbar-thumb, /* Common Scroll Bar */
+		.mDPmMe::-webkit-scrollbar-thumb, /* Calendar Scroll Bar */
+		.WefNYe::-webkit-scrollbar-thumb /* Settings Page Scroll Bar */
+		{
+            background: var(--SCROLLBAR);
+			border: none;
+		}
+
+        /* Scroll Bar Hover */
+        ::-webkit-scrollbar-thumb:hover, .mDPmMe::-webkit-scrollbar-thumb:hover,  .WefNYe::-webkit-scrollbar-thumb:hover {
+			background: hsl(from var(--SCROLLBAR) h s l / 0.8);
+		}
+    
+        /* Scroll Bar Clicked */
+        ::-webkit-scrollbar-thumb:active, .mDPmMe::-webkit-scrollbar-thumb:active, .WefNYe::-webkit-scrollbar-thumb:active {
+            background: hsl(from var(--SCROLLBAR) h s l / 0.7);
+        }
 	
 	/* ICONS */
 	
