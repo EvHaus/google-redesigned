@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240607.0.1
+@version        20240624.0.1
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -890,7 +890,7 @@
 	
 		/* Title & Labels */
 		.agOyMd .UfeRlc, /* Task Titles */
-		.tMfWZc:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) .VfPpkd-fmcmS-wGMbrd, /* Title */
+		.JEx5le .UfeRlc, /* Title */
 		.agOyMd div.AzuXid, /* Dec 2022 Update (Date) */
 		.Z5RD1e /* Nov 2023 Update (Select Fields) */
 		{
