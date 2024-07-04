@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240624.0.1
+@version        20240703.0.1
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -206,18 +206,19 @@
 	/* GENERIC DROPDOWNS */
 	
 		/* Body */
-		.JPdR6b { background: var(--GR6) !important }
+		.JPdR6b, .YgKUfd { background: var(--GR6) !important }
 	
 			/* Row Text */
 			.OwNvm,
-			.z80M1, /* Create Page > "Going?" Dropdown */
+			.r6B9Fd .VfPpkd-rymPhb-L8ivfd-fmcmS, /* Create Page > "Going?" Dropdown */
+			.r6B9Fd .VfPpkd-rymPhb-ibnC6b-OWXEXe-SfQLQb-M1Soyc-Bz112c .VfPpkd-rymPhb-KkROqb, /* Going? > Yes Dropdown > Icons */
 			.VfPpkd-rymPhb-fpDzbe-fmcmS /* Create Event > "Busy" */
 			{
 				color: var(--GR17) !important
 			}
 	
 			/* Separator */
-			.VfPpkd-StrnGf-rymPhb-clz4Ic { border-bottom-color: var(--GR10) !important }
+			.Iz6QOc { background: var(--GR10) !important }
 	
 			/* Keyboard Shortcut Key */
 			.q6oraf .VfPpkd-StrnGf-rymPhb .VfPpkd-StrnGf-rymPhb-IhFlZd {
@@ -225,7 +226,8 @@
 			}
 	
 			/* Selected Row */
-			.s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd {
+			.s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd,
+			.OfXTCc.KKjvXb {
 				background: var(--GR8) !important
 			}
 	
@@ -1144,27 +1146,25 @@
 		.XsU8xf { background-color: var(--GR3) !important }
 		
 		/* Action Footer */
-		.NAFvr { background: var(--GR5) !important }
+		.ldpAcc { background: var(--GR5) !important }
 	
 			/* "Going?" */
-			.YTCBlf { color: var(--GR15) !important }
+			.sgEL6b { color: var(--GR15) !important }
 		
 			/* "Yes" button */
-			.wIfg3e.KKjvXb [data-button-type="actionButton"],
-			.wIfg3e.KKjvXb [data-button-type="menuButton"],
-            .DrZ8nd.KKjvXb {
+			.qydq8.KKjvXb [data-button-type=actionButton],
+			.qydq8.KKjvXb [data-button-type=menuButton] {
 				background: var(--GR6) !important;
 				border-color: var(--GR10) !important
 			}
 	
-				.wIfg3e.KKjvXb [data-button-type="actionButton"]:hover,
-				.wIfg3e.KKjvXb [data-button-type="menuButton"]:hover,
-                .DrZ8nd.KKjvXb:hover {
+				.qydq8.KKjvXb [data-button-type=actionButton]:hover,
+				.qydq8.KKjvXb [data-button-type=menuButton]:hover {
 					background: var(--GR8) !important;
 				}
 		
 				/* Arrow Icon */
-				.wIfg3e.KKjvXb .Pjbkr:not(:disabled) .VfPpkd-kBDsod { color: var(--GR15) !important }
+				.qydq8.KKjvXb .Pjbkr:not(:disabled) .VfPpkd-kBDsod { color: var(--GR15) !important }
 	
 			/* Buttons */
 			.NAFvr .UQuaGc { color: var(--GR15) !important }
