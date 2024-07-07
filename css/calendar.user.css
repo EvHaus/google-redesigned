@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240703.0.1
+@version        20240706.0.1
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -329,33 +329,36 @@
 			
 			/* Text */
 			.mr0WL { color: var(--GR17) !important }
+            
+            /* Dropdown Text */
+            .z80M1 { color: var(--GR17) !important }
 	
 		/* MINI CALENDAR */
 	
 			/* Month */
-			.Q4y17 .r4nke { color: var(--GR17) !important }
+			.mkaajd { color: var(--GR17) !important }
 	
 			/* Day of the Week */
 			.k50Dh, .f1QMue, .IOneve { color: var(--GR14) !important }
 	
 			/* Day Circle */
-			.IOneve .r4nke { background: var(--GR1) !important }
+			.p6vobf .sOjuj { background: var(--GR1) !important }
 	
-				.IOneve .r4nke:hover { background: var(--GR7) !important }
+				.p6vobf .sOjuj:hover { background: var(--GR7) !important }
 	
 			/* Day (out of month) */
-			.IOneve { color: var(--GR10) !important }
+			.q2d9Ze .sOjuj { color: var(--GR10) !important }
 	
 			/* Day (in month) */
-			.P7rTif, /* In Sidebar */
+			.sOjuj, /* In Sidebar */
 			.pWJCO .r4nke /* In Create Event Popover */
 			{
 				color: var(--GR15) !important
 			}
 	
 			/* Day (selected) */
-			.p6vobf .r4nke, .p6vobf.pWJCO .r4nke, .p6vobf.pWJCO.q2d9Ze .r4nke {
-				background: var(--GR6) !important;
+			.pWJCO .sOjuj {
+				background-color: var(--GR6) !important;
 				color: var(--GRSELECTED) !important
 			}
 		
