@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gmail Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20231105.0.0
+@version        20251119.0.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.user.css
 @license        CC-BY-4.0
@@ -929,7 +929,8 @@
 		}
 
 		/* Star */
-		td.apU > .T-KT.aXw::before {
+		td.apU > .T-KT.aXw::before,
+        .SKW8Ab>.T-KT:not(.T-KT-Jp):not(.byM)::before {
 			background-image: url("https://www.gstatic.com/images/icons/material/system/1x/star_border_white_20dp.png") !important;
 			opacity: 0.4 !important;
 		}
@@ -1257,12 +1258,16 @@
 		
 			/* Star */
 			.bi4 > .T-KT:not(.T-KT-Jp):not(.byM)::before { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/star_border_white_20dp.png") !important }
+            
+            /* Reply/Reply all/Forward buttons */
+            .AeBiU-anl { color: var(--GR14) !important }
 
 			/* Reply */
 			.hB, /* Inline */
 			.mL /* In ... menu */
 			{
-	background-image: url("https://www.gstatic.com/images/icons/material/system/1x/reply_white_20dp.png") !important }
+                background-image: url("https://www.gstatic.com/images/icons/material/system/1x/reply_white_20dp.png") !important
+            }
 
 			/* Reply All */
 			.mK { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/reply_all_white_20dp.png") !important }
