@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gmail Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20251119.0.0
+@version        20251119.1.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.user.css
 @license        CC-BY-4.0
@@ -94,7 +94,7 @@
 	/* Item */
 	
 		/* Hamburger Icon */
-		.gb_Da svg { color: var(--GR16) !important }
+		.gb_Ha.gb_3a svg { color: var(--GR16) !important }
 	
 		/* Text (Mail, Chat, Spaces, Meet) */
 		.apW { color: var(--GR16) !important }
@@ -135,8 +135,8 @@
 	.gb_Na svg { color: var(--GR16) !important }
 
 	/* "Gmail" logo */
-	[aria-label="Gmail"][title="Gmail"][href="#inbox"] > img {
-		background: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x_r4.png") no-repeat center center !important;
+	[aria-label="Gmail"][href="#inbox"] > img {
+		background: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x_r5.png") no-repeat center center !important;
 		height: 0 !important;
 		padding: 40px 109px 0 0 !important;
 		width: 0 !important;
@@ -144,13 +144,13 @@
 	
 	/* Chat Status */
 	
-	.Yb {
+	.lJradf.X72uL {
 		background: var(--GR6) !important;
 		border-color: var(--GR10) !important;
 	}
 	
 		/* "Active" text */
-		.Yc { color: var(--GR17) !important }
+		.C2Qm1d.X72uL { color: var(--GR17) !important }
 
 /* SEARCH HEADER */
 	
