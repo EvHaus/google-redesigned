@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gmail Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20251119.1.0
+@version        20251120.1.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.user.css
 @license        CC-BY-4.0
@@ -707,6 +707,9 @@
 				/* stylelint-disable-next-line property-no-vendor-prefix */
 				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/mail/default/20px.svg");
 			}
+        
+        /* Mark as unread (hover on row & menu)  */
+        .SHFPQe, .xdwIuc { background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mark_email_unread_white_20dp.png") !important }
 	
 		/* In Spam > "Delete forever" & "Not spam" buttons */
 		.Bn { color: var(--GR17) !important }
@@ -718,7 +721,7 @@
 		.asa .kQ9Vzb { color: var(--GR17) !important }
 
 		/* Snooze */
-		.brW { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png") !important }
+		.brW, .CYNuzd { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png") !important }
 	
 			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
 			.bzn .brW {
@@ -963,7 +966,7 @@
 		.brv { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png") !important }
 
 		/* Add to Tasks */
-		.Vj { background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/task_add_filled_20_white_1x.png") !important }
+		.Vj, .ETXfRc { background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/rfr/task_add_filled_20_white_1x.png") !important }
 	
 			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
 			.bzn .Vj {
@@ -998,13 +1001,22 @@
 		.BQ { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/forward_white_20dp.png") !important }
 
 		/* Forward as attachment */
-		.In { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/attachment_white_20dp.png") !important }
+		.In, .NZhCbd { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/attachment_white_20dp.png") !important }
+        
+        /* Remove star */
+        .H9wCl { background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_fill_white_20dp.png") !important }
+        
+        /* Mark as not important */
+        .dfPhoc { background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/label_important_fill_white_20dp.png") !important }
 
 		/* Archive */
 		.aDD { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/archive_white_20dp.png") !important }
 
 		/* Move to inbox */
 		.s0 { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/move_to_inbox_white_20dp.png") !important }
+        
+        /* Filter messages like these */
+        .CpJapb { background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/filter_list_white_20dp.png") !important }
 
 		/* Not spam */
 		.s3 { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/report_off_white_20dp.png") !important }
@@ -1028,10 +1040,10 @@
 		.sZ { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/drive_file_move_white_20dp.png") !important }
 
 		/* Label as */
-		.zp { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/label_white_20dp.png") !important }
+		.zp, .IC7QX { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/label_white_20dp.png") !important }
 
 		/* Mute */
-		.s1 { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/volume_off_white_20dp.png") !important }
+		.s1, .vObQUe { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/volume_off_white_20dp.png") !important }
 
 		/* Unmute */
 		.s9 { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/volume_up_white_20dp.png") !important }
@@ -1041,6 +1053,9 @@
 
 		/* Open in new window */
 		.zn { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/open_in_new_white_20dp.png") !important }
+        
+        /* Switch to advanced toolbar */
+        .LmUdEd { filter: invert(1) }
 
 		/* Arrow */
 		.J-Ph-hFsbo { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/arrow_right_white_20dp.png") !important }
