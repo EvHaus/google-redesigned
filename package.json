@@ -20,7 +20,7 @@
 		"test": "pnpm lint"
 	},
 	"dependencies": {
-		"lefthook": "2.0.8",
+		"lefthook": "2.0.9",
 		"prettier-package-json": "2.8.0",
 		"stylelint-config-globex": "3.14.1"
 	},
