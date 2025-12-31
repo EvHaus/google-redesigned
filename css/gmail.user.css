@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gmail Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20251120.1.0
+@version        20251230.1.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.user.css
 @license        CC-BY-4.0
@@ -1374,6 +1374,12 @@
 	
 		/* Row */
 		.nr { background: transparent !important }
+    
+        /* Footer Row (2025-12) */
+        .btDi4d {
+            background: var(--GR1) !important;
+            box-shadow: 0 -3px 2px -2px var(--GR0) !important
+        }
 
 		/* Button */
 
