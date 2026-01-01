@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gmail Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20251230.1.0
+@version        20251231.1.0
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/gmail.user.css
 @license        CC-BY-4.0
@@ -670,43 +670,16 @@
 
 		/* Archive */
 		.ar8 { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/archive_white_20dp.png") !important }
-	
-			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
-			.bzn .ar8 {
-				background-color: var(--GR17) !important;
-				/* stylelint-disable-next-line property-no-vendor-prefix */
-				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/archive/default/20px.svg");
-			}
+			
 
 		/* Spam */
 		.asl { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/report_white_20dp.png") !important }
-	
-			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
-			.bzn .asl {
-				background-color: var(--GR17) !important;
-				/* stylelint-disable-next-line property-no-vendor-prefix */
-				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/report/default/20px.svg");
-			}
 
 		/* Delete */
 		.ar9 { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/delete_white_20dp.png") !important }
-	
-			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
-			.bzn .ar9 {
-				background-color: var(--GR17) !important;
-				/* stylelint-disable-next-line property-no-vendor-prefix */
-				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/delete/default/20px.svg");
-			}
 
 		/* Mark as Unread */
 		.bAP { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/mark_as_unread_white_20dp.png") !important }
-			
-			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
-			.bzn .bAP {
-				background-color: var(--GR17) !important;
-				/* stylelint-disable-next-line property-no-vendor-prefix */
-				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/mail/default/20px.svg");
-			}
         
         /* Mark as unread (hover on row & menu)  */
         .SHFPQe, .xdwIuc { background-image: url("https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mark_email_unread_white_20dp.png") !important }
@@ -722,33 +695,12 @@
 
 		/* Snooze */
 		.brW, .CYNuzd { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/watch_later_white_20dp.png") !important }
-	
-			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
-			.bzn .brW {
-				background-color: var(--GR17) !important;
-				/* stylelint-disable-next-line property-no-vendor-prefix */
-				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/schedule/default/20px.svg");
-			}
 
 		/* Move To */
 		.ase { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/drive_file_move_white_20dp.png") !important }
-	
-			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
-			.bzn .ase {
-				background-color: var(--GR17) !important;
-				/* stylelint-disable-next-line property-no-vendor-prefix */
-				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/drive_file_move/default/20px.svg");
-			}
 
 		/* Labels */
 		.asb { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/label_white_20dp.png") !important }
-	
-			/* Aug 2022 [Remove -webkit-mask-image when legacy is gone] */
-			.bzn .asb {
-				background-color: var(--GR17) !important;
-				/* stylelint-disable-next-line property-no-vendor-prefix */
-				-webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/label/default/20px.svg");
-			}
 
 		/* Back */
 		.ar6 { background-image: url("https://www.gstatic.com/images/icons/material/system/1x/arrow_back_white_20dp.png") !important }
