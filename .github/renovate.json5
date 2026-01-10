@@ -1,0 +1,7 @@
+{
+	automerge: true,
+	extends: [
+		'config:recommended',
+		'security:minimumReleaseAgeNpm'
+	],
+}
