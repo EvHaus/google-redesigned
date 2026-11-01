@@ -24,7 +24,7 @@ This repository holds the user styles which you can install via your favorite us
 - Go to https://github.com/EvHaus/google-redesigned/raw/master/css/gmail.user.css
 - Click the "Install" button
 
-----
+---
 
 ## Google Calendar
 
