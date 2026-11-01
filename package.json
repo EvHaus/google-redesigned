@@ -1,27 +1,25 @@
 {
-	"private": true,
 	"name": "google-redesigned",
 	"version": "0.0.0",
+	"private": true,
 	"description": "CSS Code Standards for Globex Designs - Stylelint Shareable Config",
-	"license": "MIT",
-	"author": "Globex Designs, Inc. <info@globexdesigns.com>",
 	"homepage": "https://github.com/EvHaus/google-redesigned",
+	"bugs": {
+		"url": "https://github.com/EvHaus/google-redesigned/issues"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/EvHaus/google-redesigned.git"
 	},
-	"bugs": {
-		"url": "https://github.com/EvHaus/google-redesigned/issues"
-	},
+	"license": "MIT",
+	"author": "Globex Designs, Inc. <info@globexdesigns.com>",
 	"scripts": {
 		"biome:check": "biome check --write",
-		"lint": "bun biome:check && bun packagelint",
-		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
+		"lint": "bun biome:check",
 		"test": "bun lint"
 	},
 	"dependencies": {
 		"@biomejs/biome": "2.6.4",
-		"lefthook": "2.2.2",
-		"prettier-package-json": "2.8.0"
+		"lefthook": "2.2.2"
 	}
 }
